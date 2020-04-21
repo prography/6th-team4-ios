@@ -15,6 +15,7 @@ protocol UsoAPIProtocol {
 }
 
 class UsoAPI: UsoAPIProtocol {
+    // API for getting data or posting data
     func getResponse(completion: @escaping (Error?) -> Void) {
         completion(nil)
     }

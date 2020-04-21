@@ -13,11 +13,15 @@ protocol RepositoryProtocol {
 }
 
 class Repository: RepositoryProtocol {
+    // Repository stores core data from api
+    // It can be generated for each api
+    // Store model structed instance data
+    // Generate it with singleton pattern
     static let shared = Repository()
+    private init() { }
     
-    
+    // Fetch repository by using api classes
     func fetchRepository(completion: @escaping (Error?) -> Void) {
         completion(nil)
     }
-    private init() { }
 }

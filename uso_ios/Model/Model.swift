@@ -8,9 +8,9 @@
 
 import Foundation
 
+
 struct Model: Codable {
-    let applicableDate: String?
-    let weatherStateName: String?
-    let weatherStateAbbr: String?
+    // Define struct of data from api
+    let data: String?
 }
 
