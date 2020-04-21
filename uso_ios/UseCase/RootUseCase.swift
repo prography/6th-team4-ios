@@ -1,5 +1,5 @@
 //
-//  ViewModel.swift
+//  UseCase.swift
 //  uso_ios
 //
 //  Created by Apple on 2020/04/15.
@@ -8,10 +8,9 @@
 
 import Foundation
 
-protocol RootViewBindable: ViewBindable {
+protocol RootUseCaseProtocol {
     
 }
-
-class RootViewModel: RootViewBindable {
+class RootUseCase: RootUseCaseProtocol {
     
 }
