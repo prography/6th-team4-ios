@@ -13,6 +13,7 @@ protocol Storyboarded {
 }
 
 extension Storyboarded where Self: UIViewController {
+    // Instantiate VC with id, VC is only one for each storyboard
     static func instantiate(storyboardName: String) -> Self {
         let id = String(describing: self)
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)

@@ -8,11 +8,11 @@
 
 import Foundation
 
-import Foundation
-
+// define overall errors from Uso app
 enum UsoError: Error {
     case networkError
     case decodeError
     case getRepositoryError
+    case getValueError
 }
 

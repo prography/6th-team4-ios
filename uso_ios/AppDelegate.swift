@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let navController = UINavigationController()
         navController.navigationBar.isHidden = true
+        // Set coordinator  before wrapping UIWindow
         coordinator = MainCoordinator(navigationController: navController)
         coordinator?.start()
         
