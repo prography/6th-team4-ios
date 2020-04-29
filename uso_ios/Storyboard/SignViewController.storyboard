@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Sign View Controller-->
         <scene sceneID="UwX-wn-OVD">
             <objects>
-                <viewController storyboardIdentifier="RootViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wiK-yW-77S" customClass="RootViewController" customModule="uso_ios" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wiK-yW-77S" customClass="SignViewController" customModule="uso_ios" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MKC-vG-8vG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,6 +29,10 @@
                                 <rect key="frame" x="165.5" y="425.5" width="83" height="45"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQ9-pD-mqT">
+                                <rect key="frame" x="171.5" y="702" width="71" height="30"/>
+                                <state key="normal" title="navigation"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -42,20 +46,23 @@
                             <constraint firstItem="UhJ-JJ-UdA" firstAttribute="height" secondItem="MKC-vG-8vG" secondAttribute="height" multiplier="0.05" id="Lhf-Vv-2ca"/>
                             <constraint firstItem="SLk-ou-AOi" firstAttribute="width" secondItem="MKC-vG-8vG" secondAttribute="width" multiplier="0.2" id="Vsi-Tb-Ftb"/>
                             <constraint firstItem="SLk-ou-AOi" firstAttribute="centerX" secondItem="MKC-vG-8vG" secondAttribute="centerX" id="aDI-Ql-Ig0"/>
+                            <constraint firstItem="EQ9-pD-mqT" firstAttribute="centerX" secondItem="MKC-vG-8vG" secondAttribute="centerX" id="iDv-MD-odm"/>
                             <constraint firstItem="XLI-nu-uUj" firstAttribute="centerX" secondItem="MKC-vG-8vG" secondAttribute="centerX" id="nVW-Kd-726"/>
                             <constraint firstItem="SLk-ou-AOi" firstAttribute="height" secondItem="MKC-vG-8vG" secondAttribute="height" multiplier="0.05" id="v0j-0j-yxN"/>
+                            <constraint firstItem="EQ9-pD-mqT" firstAttribute="centerY" secondItem="MKC-vG-8vG" secondAttribute="centerY" multiplier="1.6" id="zvS-LN-FIf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="snx-03-YQc"/>
                     </view>
                     <connections>
                         <outlet property="minusButton" destination="SLk-ou-AOi" id="Piy-Gb-aBZ"/>
+                        <outlet property="navigateButton" destination="EQ9-pD-mqT" id="Xg0-ar-qon"/>
                         <outlet property="numberLabel" destination="XLI-nu-uUj" id="AWA-mF-rF0"/>
                         <outlet property="plusButton" destination="UhJ-JJ-UdA" id="tK0-wL-2e6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="le5-Ld-G8x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="111.59420289855073" y="99.776785714285708"/>
+            <point key="canvasLocation" x="-83" y="100"/>
         </scene>
     </scenes>
 </document>

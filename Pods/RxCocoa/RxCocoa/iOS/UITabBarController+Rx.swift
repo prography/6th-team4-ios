@@ -66,10 +66,10 @@ extension Reactive where Base: UITabBarController {
     }
     
     /// Reactive wrapper for `delegate` message `tabBarController:didSelect:`.
-    public var didSelect: ControlEvent<UIViewController> {
+    public var didSelect: ControlEvent<UITabBarController> {
         let source = delegate.methodInvoked(#selector(UITabBarControllerDelegate.tabBarController(_:didSelect:)))
             .map { a in
-                return try castOrThrow(UIViewController.self, a[1])
+                return try castOrThrow(UITabBarController.self, a[1])
         }
         
         return ControlEvent(events: source)

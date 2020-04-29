@@ -10,15 +10,16 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class RootViewController: UIViewController {
+class SignViewController: UIViewController {
     @IBOutlet weak var plusButton: UIButton!
     @IBOutlet weak var minusButton: UIButton!
     @IBOutlet weak var numberLabel: UILabel!
+    @IBOutlet weak var navigateButton: UIButton!
     
     // Use delegate pattern for using coordinator from VC
     // ViewModel should be set from coordinator
     weak var coordinator: MainCoordinator?
-    var viewModel: RootViewBindable!
+    var viewModel: SignViewBindable!
     let bag = DisposeBag()
     
     
@@ -61,11 +62,16 @@ class RootViewController: UIViewController {
     
     // Layout definition of RootVC
     private func layout() {
-        
+        navigateButton.rx
+            .tap
+            .subscribe{ _ in
+                self.coordinator?.presentMainTabVC()
+        }
+        .disposed(by: bag)
     }
 }
 
 //MARK: Detail func definition of VC
-extension RootViewController: Storyboarded  {
+extension SignViewController: Storyboarded {
     
 }

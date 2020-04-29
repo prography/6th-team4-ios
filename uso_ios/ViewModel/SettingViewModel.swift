@@ -1,8 +1,8 @@
 //
-//  ViewModel.swift
+//  SettingViewModel.swift
 //  uso_ios
 //
-//  Created by Apple on 2020/04/15.
+//  Created by Apple on 2020/04/28.
 //  Copyright © 2020 sooyong. All rights reserved.
 //
 
@@ -10,17 +10,15 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-protocol RootViewBindable: ViewBindable {
-    var number: BehaviorSubject<Int> { get }
+protocol SettingViewBindable: ViewBindable {
+    
 }
 
-class RootViewModel: RootViewBindable {
+class SettingViewModel: HabitListViewBindable {
     // Abstraction of VC
     // ViewModel should be one for a VC in this project
-    var number: BehaviorSubject<Int>
     
     init() {
-        number = BehaviorSubject.init(value: 0)
     }
     
     // Bind UseCase
