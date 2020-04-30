@@ -44,6 +44,11 @@
 		188237352457ADFD002C523E /* SettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188237342457ADFD002C523E /* SettingCoordinator.swift */; };
 		188237372457AE0E002C523E /* RankingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188237362457AE0E002C523E /* RankingCoordinator.swift */; };
 		18CB4FCD245AB81100FD6651 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 18CB4FCC245AB81100FD6651 /* .swiftlint.yml */; };
+		3859DDE0245D5EA400C799BF /* RankingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859DDDF245D5EA400C799BF /* RankingUseCase.swift */; };
+		3866D35D245B0EEE001F76A9 /* RankingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3866D35C245B0EEE001F76A9 /* RankingItemTableViewCell.swift */; };
+		387B127E245BF32D0095D58B /* MyRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B127C245BF32D0095D58B /* MyRankingTableViewCell.swift */; };
+		387B127F245BF32D0095D58B /* MyRankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387B127D245BF32D0095D58B /* MyRankingTableViewCell.xib */; };
+		387B1281245BF5A00095D58B /* RankingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387B1280245BF5A00095D58B /* RankingItemTableViewCell.xib */; };
 		A69E93138987A0D7DEAE2895 /* Pods_uso_usoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6130EF413695622D9CFC22FC /* Pods_uso_usoUITests.framework */; };
 		BEC439BDE443C3FF959FD7A1 /* Pods_usoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD068E2CEB53ED9E4BCF8FFA /* Pods_usoTests.framework */; };
 		CB822D9F57CCA24C11C0A4AA /* Pods_uso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C62EB27D5D33E908EC01A5 /* Pods_uso.framework */; };
@@ -108,6 +113,11 @@
 		188237362457AE0E002C523E /* RankingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCoordinator.swift; sourceTree = "<group>"; };
 		18CB4FCC245AB81100FD6651 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		29D86E52A96C403CBA9C32B3 /* Pods-uso_iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_iosTests.debug.xcconfig"; path = "Target Support Files/Pods-uso_iosTests/Pods-uso_iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3859DDDF245D5EA400C799BF /* RankingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingUseCase.swift; sourceTree = "<group>"; };
+		3866D35C245B0EEE001F76A9 /* RankingItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingItemTableViewCell.swift; sourceTree = "<group>"; };
+		387B127C245BF32D0095D58B /* MyRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRankingTableViewCell.swift; sourceTree = "<group>"; };
+		387B127D245BF32D0095D58B /* MyRankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyRankingTableViewCell.xib; sourceTree = "<group>"; };
+		387B1280245BF5A00095D58B /* RankingItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingItemTableViewCell.xib; sourceTree = "<group>"; };
 		4A3AC7C8FD7C0F1A1EF65293 /* Pods-uso_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_ios.release.xcconfig"; path = "Target Support Files/Pods-uso_ios/Pods-uso_ios.release.xcconfig"; sourceTree = "<group>"; };
 		6130EF413695622D9CFC22FC /* Pods_uso_usoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uso_usoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE35225023FE32BBE83F9CF /* Pods-uso_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_ios.debug.xcconfig"; path = "Target Support Files/Pods-uso_ios/Pods-uso_ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +197,7 @@
 		185D2A152446C27800A09E99 /* uso */ = {
 			isa = PBXGroup;
 			children = (
+				3866D359245B0E0A001F76A9 /* Cell */,
 				185D2A662446C9E400A09E99 /* Storyboard */,
 				185D2A5D2446C79E00A09E99 /* Protocol */,
 				185D2A4E2446C31800A09E99 /* Coordinator */,
@@ -282,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				185D2A512446C3EB00A09E99 /* RootUseCase.swift */,
+				3859DDDF245D5EA400C799BF /* RankingUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -345,6 +357,17 @@
 				A0E4AD2DC9E01C5553E8C141 /* Pods-usoTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		3866D359245B0E0A001F76A9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				387B127C245BF32D0095D58B /* MyRankingTableViewCell.swift */,
+				387B127D245BF32D0095D58B /* MyRankingTableViewCell.xib */,
+				3866D35C245B0EEE001F76A9 /* RankingItemTableViewCell.swift */,
+				387B1280245BF5A00095D58B /* RankingItemTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,7 +481,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18CB4FCD245AB81100FD6651 /* .swiftlint.yml in Resources */,
+				387B1281245BF5A00095D58B /* RankingItemTableViewCell.xib in Resources */,
 				1882372D24579E13002C523E /* RankingViewController.storyboard in Resources */,
+				387B127F245BF32D0095D58B /* MyRankingTableViewCell.xib in Resources */,
 				1882372124579B33002C523E /* MainTabViewController.storyboard in Resources */,
 				1882372F24579E23002C523E /* HabitListViewController.storyboard in Resources */,
 				1882373124579E8B002C523E /* SettingViewController.storyboard in Resources */,
@@ -614,8 +639,10 @@
 				185D2A612446C84600A09E99 /* MainCoordinator.swift in Sources */,
 				185D2A632446C86F00A09E99 /* Coordinator.swift in Sources */,
 				188237332457A0C3002C523E /* HabitListCoordinator.swift in Sources */,
+				387B127E245BF32D0095D58B /* MyRankingTableViewCell.swift in Sources */,
 				185D2A522446C3EB00A09E99 /* RootUseCase.swift in Sources */,
 				185D2A582446C50F00A09E99 /* UsoError.swift in Sources */,
+				3859DDE0245D5EA400C799BF /* RankingUseCase.swift in Sources */,
 				1882372924579DEB002C523E /* SettingViewController.swift in Sources */,
 				185D2A5A2446C54200A09E99 /* UIColor+Hex.swift in Sources */,
 				1861430524583F49007151A0 /* RankingViewModel.swift in Sources */,
@@ -628,6 +655,7 @@
 				185D2A502446C3E000A09E99 /* SignViewModel.swift in Sources */,
 				185D2A652446C8B100A09E99 /* Storyboarded.swift in Sources */,
 				1861430724583F54007151A0 /* SettingViewModel.swift in Sources */,
+				3866D35D245B0EEE001F76A9 /* RankingItemTableViewCell.swift in Sources */,
 				188237352457ADFD002C523E /* SettingCoordinator.swift in Sources */,
 				1861430324583F3A007151A0 /* HabitListViewModel.swift in Sources */,
 				1882372524579CEE002C523E /* MainTabViewController.swift in Sources */,

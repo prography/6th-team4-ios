@@ -19,7 +19,7 @@ class MainCoordinator: Coordinator {
         // Bind relationship between VC, ViewModel, and UseCase
         let viewModel = SignViewModel.init()
         viewModel.bind(usecase: RootUseCase())
-        let viewController = SignViewController.instantiate(storyboardName: "SignViewController")
+        let viewController = SignViewController.instantiate()
         viewController.viewModel = viewModel
         viewController.coordinator = self
         // Navigate VC
@@ -27,22 +27,31 @@ class MainCoordinator: Coordinator {
         navigationController.pushViewController(viewController, animated: false)
     }
     func presentMainTabVC() {
-        let viewController = MainTabViewController.instantiate(storyboardName: "MainTabViewController")
+        let viewController = MainTabViewController.instantiate()
+        
         // Create Tab one
-        let tabOne = HabitListViewController.instantiate(storyboardName: "HabitListViewController")
+        let tabOne = HabitListViewController.instantiate()
         let tabOneBarItem1 = UITabBarItem(title: "Habit", image: UIImage(named: "defaultImage.png"), selectedImage: UIImage(named: "selectedImage.png"))
         tabOne.modalPresentationStyle = .fullScreen
         tabOne.tabBarItem = tabOneBarItem1
+        
         // Create Tab two
-        let tabTwo = RankingViewController.instantiate(storyboardName: "RankingViewController")
+        let tabTwo = RankingViewController.instantiate()
         let tabTwoBarItem2 = UITabBarItem(title: "Ranking", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
+        //테스트
+        let viewModel = RankingViewModel.init()
+        viewModel.bind(usecase: RankingUseCase())
+        tabTwo.viewModel = viewModel
+        
         tabTwo.modalPresentationStyle = .fullScreen
         tabTwo.tabBarItem = tabTwoBarItem2
+        
         // Create Tab three
-        let tabThree = SettingViewController.instantiate(storyboardName: "SettingViewController")
+        let tabThree = SettingViewController.instantiate()
         let tabTwoBarItem3 = UITabBarItem(title: "Setting", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
         tabThree.modalPresentationStyle = .fullScreen
         tabThree.tabBarItem = tabTwoBarItem3
+        
         viewController.viewControllers = [tabOne, tabTwo, tabThree]
         viewController.selectedIndex = 0
         navigationController.popViewController(animated: false)
