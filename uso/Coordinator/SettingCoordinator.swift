@@ -16,7 +16,7 @@ class SettingCoordinator: Coordinator {
         self.navigationController = navigationController
     }
     func start() {
-        let viewController = SettingViewController.instantiate(storyboardName: "SettingViewController")
+        let viewController = SettingViewController.instantiate()
         viewController.modalPresentationStyle = .fullScreen
         navigationController.pushViewController(viewController, animated: true)
     }

@@ -12,12 +12,17 @@ class RankingCoordinator: Coordinator {
     weak var parentCoordinator: MainCoordinator?
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
+    
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
 
     func start() {
-        let viewController = RankingViewController.instantiate(storyboardName: "RankingViewController")
+        let viewController = RankingViewController.instantiate()
+        let viewModel = RankingViewModel.init()
+        viewModel.bind(usecase: RankingUseCase())
+        viewController.viewModel = viewModel
+        
         viewController.modalPresentationStyle = .fullScreen
         navigationController.pushViewController(viewController, animated: true)
     }

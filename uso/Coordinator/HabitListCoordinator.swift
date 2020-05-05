@@ -17,7 +17,7 @@ class HabitListCoordinator: Coordinator {
     }
 
     func start() {
-        let viewController = HabitListViewController.instantiate(storyboardName: "HabitListViewController")
+        let viewController = HabitListViewController.instantiate()
         viewController.modalPresentationStyle = .fullScreen
         navigationController.pushViewController(viewController, animated: true)
     }
