@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HabitListCell" customModule="uso" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="310" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HabitTitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUg-tv-pFB">
+                        <rect key="frame" x="31" y="39.5" width="155" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ratio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAY-vk-aMn">
+                        <rect key="frame" x="227" y="39.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HUg-tv-pFB" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" id="FFg-Nf-0l6"/>
+                    <constraint firstItem="HUg-tv-pFB" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.21" id="Nak-Kz-oCE"/>
+                    <constraint firstItem="HUg-tv-pFB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="O3n-k7-Xle"/>
+                    <constraint firstItem="HUg-tv-pFB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.7" id="PPd-Uv-zHt"/>
+                    <constraint firstItem="WAY-vk-aMn" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.135484" id="YFM-ia-FJa"/>
+                    <constraint firstItem="WAY-vk-aMn" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.6" id="aV4-XZ-dae"/>
+                    <constraint firstItem="WAY-vk-aMn" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.21" id="b8F-Yg-jvs"/>
+                    <constraint firstItem="WAY-vk-aMn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xN3-FE-IRZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="habitTitleLabel" destination="HUg-tv-pFB" id="GvV-uo-HCy"/>
+                <outlet property="ratioLabel" destination="WAY-vk-aMn" id="rPI-Ep-e7t"/>
+            </connections>
+            <point key="canvasLocation" x="-72.463768115942031" y="115.17857142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -11,13 +11,30 @@ import RxSwift
 import RxCocoa
 
 protocol HabitListViewBindable: ViewBindable {
+    var isLoading: PublishSubject<Bool> { get }
+    var responseStatus: PublishSubject<ResponseStatus> { get }
+    var habitList: BehaviorSubject<HabitList> { get }
+    func fetch()
 }
 
 class HabitListViewModel: HabitListViewBindable {
-    // Abstraction of VC
-    // ViewModel should be one for a VC in this project
-    init() {}
-    // Bind UseCase
-    // It would be excuted from coordinator
-    func bind(usecase: RootUseCaseProtocol) {}
+    var isLoading: PublishSubject<Bool>
+    var responseStatus: PublishSubject<ResponseStatus>
+    var habitList: BehaviorSubject<HabitList>
+    
+    init() {
+        isLoading = PublishSubject.init()
+        responseStatus = PublishSubject.init()
+        habitList = BehaviorSubject.init(value: HabitList())
+    }
+    
+    
+    func fetch() {
+        self.isLoading.onNext(true)
+        // input usecase which make api call for this viewModel data
+        self.isLoading.onNext(false)
+        self.responseStatus.onNext(.success)
+    }
+    
+    func bind(usecase: HabitListUseCaseProtocol) {}
 }

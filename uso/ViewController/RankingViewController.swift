@@ -44,7 +44,6 @@ class RankingViewController: UIViewController {
             }
             .disposed(by: bag)
     }
-
 }
 
 // MARK: Detail func definition of VC

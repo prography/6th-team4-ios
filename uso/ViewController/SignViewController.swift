@@ -15,22 +15,26 @@ class SignViewController: UIViewController {
     @IBOutlet weak var minusButton: UIButton!
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var navigateButton: UIButton!
+    
     // Use delegate pattern for using coordinator from VC
     // ViewModel should be set from coordinator
     weak var coordinator: MainCoordinator?
     var viewModel: SignViewBindable!
     let bag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bind()
         layout()
     }
+    
     // Collection of view model binded data
     private func bind() {
         viewModel.number
             .map { String($0) }
             .bind(to: numberLabel.rx.text)
             .disposed(by: bag)
+        
         plusButton.rx
             .tap
             .subscribe { _ in
@@ -41,6 +45,7 @@ class SignViewController: UIViewController {
                     print(UsoError.getRepositoryError)
                 }
         }.disposed(by: bag)
+        
         minusButton.rx
             .tap
             .subscribe { _ in
@@ -52,6 +57,7 @@ class SignViewController: UIViewController {
                 }
         }.disposed(by: bag)
     }
+    
     // Layout definition of RootVC
     private func layout() {
         navigateButton.rx
