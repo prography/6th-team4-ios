@@ -33,10 +33,9 @@
 		1861430524583F49007151A0 /* RankingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861430424583F49007151A0 /* RankingViewModel.swift */; };
 		1861430724583F54007151A0 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861430624583F54007151A0 /* SettingViewModel.swift */; };
 		1874820524612803004A40DE /* ResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874820424612803004A40DE /* ResponseStatus.swift */; };
-		18748207246129E7004A40DE /* HabitList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18748206246129E7004A40DE /* HabitList.swift */; };
+		18748207246129E7004A40DE /* HabitItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18748206246129E7004A40DE /* HabitItem.swift */; };
 		18748209246129F0004A40DE /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18748208246129F0004A40DE /* Habit.swift */; };
-		1874820C24612BC0004A40DE /* PlusButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874820A24612BC0004A40DE /* PlusButtonCell.swift */; };
-		1874820D24612BC0004A40DE /* PlusButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1874820B24612BC0004A40DE /* PlusButtonCell.xib */; };
+		1874820C24612BC0004A40DE /* PlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874820A24612BC0004A40DE /* PlusButton.swift */; };
 		1882372124579B33002C523E /* MainTabViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1882372024579B33002C523E /* MainTabViewController.storyboard */; };
 		1882372524579CEE002C523E /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882372424579CEE002C523E /* MainTabViewController.swift */; };
 		1882372724579DDA002C523E /* HabitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882372624579DDA002C523E /* HabitListViewController.swift */; };
@@ -50,7 +49,7 @@
 		188237372457AE0E002C523E /* RankingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188237362457AE0E002C523E /* RankingCoordinator.swift */; };
 		18CB4FCD245AB81100FD6651 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 18CB4FCC245AB81100FD6651 /* .swiftlint.yml */; };
 		18F6663E24611B5400499CBC /* HabitListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6663C24611B5400499CBC /* HabitListCell.swift */; };
-		18F6663F24611B5400499CBC /* HabitListCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F6663D24611B5400499CBC /* HabitListCellTableViewCell.xib */; };
+		18F6663F24611B5400499CBC /* HabitListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F6663D24611B5400499CBC /* HabitListCell.xib */; };
 		18F6664224611D9200499CBC /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6664024611D9200499CBC /* ProfileCell.swift */; };
 		18F6664324611D9200499CBC /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F6664124611D9200499CBC /* ProfileCell.xib */; };
 		18F666452461244400499CBC /* HabitListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F666442461244400499CBC /* HabitListUseCase.swift */; };
@@ -59,6 +58,7 @@
 		387B127E245BF32D0095D58B /* MyRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B127C245BF32D0095D58B /* MyRankingTableViewCell.swift */; };
 		387B127F245BF32D0095D58B /* MyRankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387B127D245BF32D0095D58B /* MyRankingTableViewCell.xib */; };
 		387B1281245BF5A00095D58B /* RankingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387B1280245BF5A00095D58B /* RankingItemTableViewCell.xib */; };
+		9C07E6EC2467CFD400F87838 /* PlusButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C07E6EB2467CFD400F87838 /* PlusButton.xib */; };
 		A69E93138987A0D7DEAE2895 /* Pods_uso_usoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6130EF413695622D9CFC22FC /* Pods_uso_usoUITests.framework */; };
 		BEC439BDE443C3FF959FD7A1 /* Pods_usoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD068E2CEB53ED9E4BCF8FFA /* Pods_usoTests.framework */; };
 		CB822D9F57CCA24C11C0A4AA /* Pods_uso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C62EB27D5D33E908EC01A5 /* Pods_uso.framework */; };
@@ -111,10 +111,9 @@
 		1861430424583F49007151A0 /* RankingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewModel.swift; sourceTree = "<group>"; };
 		1861430624583F54007151A0 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		1874820424612803004A40DE /* ResponseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStatus.swift; sourceTree = "<group>"; };
-		18748206246129E7004A40DE /* HabitList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitList.swift; sourceTree = "<group>"; };
+		18748206246129E7004A40DE /* HabitItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitItem.swift; sourceTree = "<group>"; };
 		18748208246129F0004A40DE /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
-		1874820A24612BC0004A40DE /* PlusButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButtonCell.swift; sourceTree = "<group>"; };
-		1874820B24612BC0004A40DE /* PlusButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlusButtonCell.xib; sourceTree = "<group>"; };
+		1874820A24612BC0004A40DE /* PlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButton.swift; sourceTree = "<group>"; };
 		1882372024579B33002C523E /* MainTabViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabViewController.storyboard; sourceTree = "<group>"; };
 		1882372424579CEE002C523E /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		1882372624579DDA002C523E /* HabitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListViewController.swift; sourceTree = "<group>"; };
@@ -128,7 +127,7 @@
 		188237362457AE0E002C523E /* RankingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCoordinator.swift; sourceTree = "<group>"; };
 		18CB4FCC245AB81100FD6651 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		18F6663C24611B5400499CBC /* HabitListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListCell.swift; sourceTree = "<group>"; };
-		18F6663D24611B5400499CBC /* HabitListCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitListCellTableViewCell.xib; sourceTree = "<group>"; };
+		18F6663D24611B5400499CBC /* HabitListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitListCell.xib; sourceTree = "<group>"; };
 		18F6664024611D9200499CBC /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		18F6664124611D9200499CBC /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		18F666442461244400499CBC /* HabitListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListUseCase.swift; sourceTree = "<group>"; };
@@ -145,6 +144,7 @@
 		7440281B8358D1DB3A274291 /* Pods-uso-usoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso-usoUITests.debug.xcconfig"; path = "Target Support Files/Pods-uso-usoUITests/Pods-uso-usoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8811C256C820F8643C061922 /* Pods-usoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-usoTests.debug.xcconfig"; path = "Target Support Files/Pods-usoTests/Pods-usoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D473F0558E305B2D24B9D05 /* Pods-uso-usoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso-usoUITests.release.xcconfig"; path = "Target Support Files/Pods-uso-usoUITests/Pods-uso-usoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9C07E6EB2467CFD400F87838 /* PlusButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlusButton.xib; sourceTree = "<group>"; };
 		A0E4AD2DC9E01C5553E8C141 /* Pods-usoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-usoTests.release.xcconfig"; path = "Target Support Files/Pods-usoTests/Pods-usoTests.release.xcconfig"; sourceTree = "<group>"; };
 		AFFD845E327E38B4BA336E7B /* Pods-uso_ios-uso_iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_ios-uso_iosUITests.release.xcconfig"; path = "Target Support Files/Pods-uso_ios-uso_iosUITests/Pods-uso_ios-uso_iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BD068E2CEB53ED9E4BCF8FFA /* Pods_usoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_usoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -324,7 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				185D2A532446C40000A09E99 /* Model.swift */,
-				18748206246129E7004A40DE /* HabitList.swift */,
+				18748206246129E7004A40DE /* HabitItem.swift */,
 				18748208246129F0004A40DE /* Habit.swift */,
 			);
 			path = Model;
@@ -379,11 +379,11 @@
 			isa = PBXGroup;
 			children = (
 				18F6663C24611B5400499CBC /* HabitListCell.swift */,
-				18F6663D24611B5400499CBC /* HabitListCellTableViewCell.xib */,
+				18F6663D24611B5400499CBC /* HabitListCell.xib */,
 				18F6664024611D9200499CBC /* ProfileCell.swift */,
 				18F6664124611D9200499CBC /* ProfileCell.xib */,
-				1874820A24612BC0004A40DE /* PlusButtonCell.swift */,
-				1874820B24612BC0004A40DE /* PlusButtonCell.xib */,
+				1874820A24612BC0004A40DE /* PlusButton.swift */,
+				9C07E6EB2467CFD400F87838 /* PlusButton.xib */,
 			);
 			path = HabitList;
 			sourceTree = "<group>";
@@ -529,11 +529,11 @@
 				18CB4FCD245AB81100FD6651 /* .swiftlint.yml in Resources */,
 				387B1281245BF5A00095D58B /* RankingItemTableViewCell.xib in Resources */,
 				1882372D24579E13002C523E /* RankingViewController.storyboard in Resources */,
-				18F6663F24611B5400499CBC /* HabitListCellTableViewCell.xib in Resources */,
+				18F6663F24611B5400499CBC /* HabitListCell.xib in Resources */,
+				9C07E6EC2467CFD400F87838 /* PlusButton.xib in Resources */,
 				387B127F245BF32D0095D58B /* MyRankingTableViewCell.xib in Resources */,
 				1882372124579B33002C523E /* MainTabViewController.storyboard in Resources */,
 				1882372F24579E23002C523E /* HabitListViewController.storyboard in Resources */,
-				1874820D24612BC0004A40DE /* PlusButtonCell.xib in Resources */,
 				1882373124579E8B002C523E /* SettingViewController.storyboard in Resources */,
 				182F46FC2449690400D1730B /* LaunchScreen.storyboard in Resources */,
 				18F6664324611D9200499CBC /* ProfileCell.xib in Resources */,
@@ -696,13 +696,13 @@
 				185D2A5A2446C54200A09E99 /* UIColor+Hex.swift in Sources */,
 				1861430524583F49007151A0 /* RankingViewModel.swift in Sources */,
 				188237372457AE0E002C523E /* RankingCoordinator.swift in Sources */,
-				1874820C24612BC0004A40DE /* PlusButtonCell.swift in Sources */,
+				1874820C24612BC0004A40DE /* PlusButton.swift in Sources */,
 				18F6664224611D9200499CBC /* ProfileCell.swift in Sources */,
 				18748209246129F0004A40DE /* Habit.swift in Sources */,
 				185D2A172446C27800A09E99 /* AppDelegate.swift in Sources */,
 				185D2A5F2446C7A900A09E99 /* ViewBindable.swift in Sources */,
 				185D2A5C2446C57100A09E99 /* UsoAPI.swift in Sources */,
-				18748207246129E7004A40DE /* HabitList.swift in Sources */,
+				18748207246129E7004A40DE /* HabitItem.swift in Sources */,
 				185D2A542446C40000A09E99 /* Model.swift in Sources */,
 				1882372724579DDA002C523E /* HabitListViewController.swift in Sources */,
 				18F6663E24611B5400499CBC /* HabitListCell.swift in Sources */,
@@ -881,7 +881,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = prography.uso;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prography.uso;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -900,7 +900,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = prography.uso;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prography.uso;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

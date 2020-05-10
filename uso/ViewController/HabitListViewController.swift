@@ -9,11 +9,13 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RxDataSources
 
 class HabitListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var viewModel: HabitListViewBindable!
     let bag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bindRX()
@@ -21,24 +23,58 @@ class HabitListViewController: UIViewController {
     }
     
     func bindRX() {
-        viewModel.habitList
+        let items: Observable<[Any]> = Observable.combineLatest(viewModel.habitList, viewModel.profile) {
+            $1+$0
+        }
+        
+        items
             .bind(to: tableView.rx.items) { (tableView, row, item) -> UITableViewCell in
-            // 넘겨주는 값이 list 면 괜찮을거 같다. 이걸 일단 list 로 주고
-            // 어떤 방식으로 줄지 한번 고민해보자
-                
+                // 이거 마지막에 + 어떻게 나타낼지 고민해보자
+                if row == 0 {
+                    guard let cell = tableView.dequeueReusableCell(
+                        withIdentifier: ProfileCell.identifier,
+                        for: IndexPath.init(row: row, section: 0)) as? ProfileCell
+                        else { fatalError() }
+                    
+                    cell.onData.onNext(item as? Profile ?? Profile(description: "error"))
+                    return cell
+                } else {
+                    guard let cell = tableView.dequeueReusableCell(
+                        withIdentifier: HabitListCell.identifier,
+                        for: IndexPath.init(row: row, section: 0)) as? HabitListCell
+                        else { fatalError() }
+                    
+                    cell.onData.onNext((item as? HabitItem ?? HabitItem(name: "error", ratio: 0, contributions: [])))
+                    return cell
+                }
         }.disposed(by: bag)
     }
 }
 
 // MARK: Detail func definition of VC
-extension HabitListViewController: Storyboarded {
+extension HabitListViewController: Storyboarded, UITableViewDelegate {
+    
     func layout() {
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        // self.tableView.tableFooterView = PlusButtonCell()
         let habitListCellNib = UINib(nibName: "HabitListCell", bundle: nil)
-        tableView.register(habitListCellNib, forCellReuseIdentifier: HabitListCell.identifier)
+        self.tableView.register(habitListCellNib, forCellReuseIdentifier: HabitListCell.identifier)
         let profileCellNib = UINib(nibName: "ProfileCell", bundle: nil)
-        tableView.register(profileCellNib, forCellReuseIdentifier: ProfileCell.identifier)
-        let plusButtonCellNib = UINib(nibName: "PlusButtonCell", bundle: nil)
-        tableView.register(plusButtonCellNib, forCellReuseIdentifier: PlusButtonCell.identifier)
+        self.tableView.register(profileCellNib, forCellReuseIdentifier: ProfileCell.identifier)
+        let plusButtonView = PlusButton.instanceFromNib()
+        tableView.tableFooterView = plusButtonView
         
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return 400
+        } else {
+            return 60
+        }
     }
 }

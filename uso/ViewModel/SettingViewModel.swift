@@ -13,11 +13,12 @@ import RxCocoa
 protocol SettingViewBindable: ViewBindable {
 }
 
-class SettingViewModel: HabitListViewBindable {
+class SettingViewModel: SettingViewBindable {
     // Abstraction of VC
     // ViewModel should be one for a VC in this project
     init() {
     }
+    
     // Bind UseCase
     // It would be excuted from coordinator
     func bind(usecase: RootUseCaseProtocol) {

@@ -31,17 +31,19 @@ class MainCoordinator: Coordinator {
         
         // Create Tab one
         let tabOne = HabitListViewController.instantiate()
+        let habitListViewModel = HabitListViewModel.init()
         let tabOneBarItem1 = UITabBarItem(title: "Habit", image: UIImage(named: "defaultImage.png"), selectedImage: UIImage(named: "selectedImage.png"))
         tabOne.modalPresentationStyle = .fullScreen
+        tabOne.viewModel = habitListViewModel
         tabOne.tabBarItem = tabOneBarItem1
         
         // Create Tab two
         let tabTwo = RankingViewController.instantiate()
         let tabTwoBarItem2 = UITabBarItem(title: "Ranking", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
         //테스트
-        let viewModel = RankingViewModel.init()
-        viewModel.bind(usecase: RankingUseCase())
-        tabTwo.viewModel = viewModel
+        let rankingViewModel = RankingViewModel.init()
+        rankingViewModel.bind(usecase: RankingUseCase())
+        tabTwo.viewModel = rankingViewModel
         
         tabTwo.modalPresentationStyle = .fullScreen
         tabTwo.tabBarItem = tabTwoBarItem2

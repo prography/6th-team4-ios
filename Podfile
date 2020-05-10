@@ -8,6 +8,7 @@ target 'uso' do
   # Pods for uso
   pod 'RxSwift','~>5.0'
   pod 'RxCocoa','~>5.0'
+  pod 'RxDataSources', '~> 4.0'
   pod 'Then'
   pod 'SwiftLint'
   target 'usoTests' do
