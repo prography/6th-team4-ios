@@ -44,6 +44,8 @@
 		188237352457ADFD002C523E /* SettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188237342457ADFD002C523E /* SettingCoordinator.swift */; };
 		188237372457AE0E002C523E /* RankingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188237362457AE0E002C523E /* RankingCoordinator.swift */; };
 		18CB4FCD245AB81100FD6651 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 18CB4FCC245AB81100FD6651 /* .swiftlint.yml */; };
+		383579302471715F0007F2C1 /* SettingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3835792E2471715F0007F2C1 /* SettingItemTableViewCell.swift */; };
+		383579312471715F0007F2C1 /* SettingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3835792F2471715F0007F2C1 /* SettingItemTableViewCell.xib */; };
 		3859DDE0245D5EA400C799BF /* RankingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859DDDF245D5EA400C799BF /* RankingUseCase.swift */; };
 		3866D35D245B0EEE001F76A9 /* RankingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3866D35C245B0EEE001F76A9 /* RankingItemTableViewCell.swift */; };
 		387B127E245BF32D0095D58B /* MyRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B127C245BF32D0095D58B /* MyRankingTableViewCell.swift */; };
@@ -113,6 +115,8 @@
 		188237362457AE0E002C523E /* RankingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCoordinator.swift; sourceTree = "<group>"; };
 		18CB4FCC245AB81100FD6651 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		29D86E52A96C403CBA9C32B3 /* Pods-uso_iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_iosTests.debug.xcconfig"; path = "Target Support Files/Pods-uso_iosTests/Pods-uso_iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3835792E2471715F0007F2C1 /* SettingItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItemTableViewCell.swift; sourceTree = "<group>"; };
+		3835792F2471715F0007F2C1 /* SettingItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingItemTableViewCell.xib; sourceTree = "<group>"; };
 		3859DDDF245D5EA400C799BF /* RankingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingUseCase.swift; sourceTree = "<group>"; };
 		3866D35C245B0EEE001F76A9 /* RankingItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingItemTableViewCell.swift; sourceTree = "<group>"; };
 		387B127C245BF32D0095D58B /* MyRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRankingTableViewCell.swift; sourceTree = "<group>"; };
@@ -366,6 +370,8 @@
 				387B127D245BF32D0095D58B /* MyRankingTableViewCell.xib */,
 				3866D35C245B0EEE001F76A9 /* RankingItemTableViewCell.swift */,
 				387B1280245BF5A00095D58B /* RankingItemTableViewCell.xib */,
+				3835792E2471715F0007F2C1 /* SettingItemTableViewCell.swift */,
+				3835792F2471715F0007F2C1 /* SettingItemTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -486,6 +492,7 @@
 				387B127F245BF32D0095D58B /* MyRankingTableViewCell.xib in Resources */,
 				1882372124579B33002C523E /* MainTabViewController.storyboard in Resources */,
 				1882372F24579E23002C523E /* HabitListViewController.storyboard in Resources */,
+				383579312471715F0007F2C1 /* SettingItemTableViewCell.xib in Resources */,
 				1882373124579E8B002C523E /* SettingViewController.storyboard in Resources */,
 				182F46FC2449690400D1730B /* LaunchScreen.storyboard in Resources */,
 				182F46FA244968C300D1730B /* SignViewController.storyboard in Resources */,
@@ -648,6 +655,7 @@
 				1861430524583F49007151A0 /* RankingViewModel.swift in Sources */,
 				188237372457AE0E002C523E /* RankingCoordinator.swift in Sources */,
 				185D2A172446C27800A09E99 /* AppDelegate.swift in Sources */,
+				383579302471715F0007F2C1 /* SettingItemTableViewCell.swift in Sources */,
 				185D2A5F2446C7A900A09E99 /* ViewBindable.swift in Sources */,
 				185D2A5C2446C57100A09E99 /* UsoAPI.swift in Sources */,
 				185D2A542446C40000A09E99 /* Model.swift in Sources */,

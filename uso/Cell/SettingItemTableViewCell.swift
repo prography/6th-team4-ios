@@ -1,40 +1,31 @@
 //
-//  RankingItemTableViewCell.swift
+//  SettingItemTableViewCell.swift
 //  uso
 //
-//  Created by 서재훈 on 2020/04/30.
+//  Created by 서재훈 on 2020/05/17.
 //  Copyright © 2020 sooyong. All rights reserved.
 //
 
 import UIKit
 import RxSwift
 
-class RankingItemTableViewCell: UITableViewCell {
-    static let identifier = "RankingItemTableViewCell"
-    
-    @IBOutlet var rank: UILabel!
-    @IBOutlet var nickName: UILabel!
-    @IBOutlet var exp: UILabel!
-    @IBOutlet var achieve: UILabel!
-    @IBOutlet var crownImage: UIImageView!
+class SettingItemTableViewCell: UITableViewCell {
+    static let identifier = "SettingItemTableViewCell"
     
     private let cellBag = DisposeBag()
     
-    let onData: AnyObserver<RankingItem>
+    let onData: AnyObserver<String>
     var bag = DisposeBag()
     
     required init?(coder aDecoder: NSCoder) {
-        let data = PublishSubject<RankingItem>()
+        let data = PublishSubject<String>()
         onData = data.asObserver()
     
         super.init(coder: aDecoder)
 
         data.observeOn(MainScheduler.instance)
-            .subscribe(onNext: { [weak self] ranking in
-                self?.rank.text = "\(ranking.rank)"
-                self?.nickName.text = ranking.nickName
-                self?.exp.text = "\(ranking.exp)"
-                self?.achieve.text = "\(ranking.achieve)"
+            .subscribe(onNext: { [weak self] setting in
+                self?.textLabel?.text = setting
             })
             .disposed(by: cellBag)
     }
@@ -42,7 +33,6 @@ class RankingItemTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        layout()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -56,8 +46,4 @@ class RankingItemTableViewCell: UITableViewCell {
         bag = DisposeBag()
     }
     
-    func layout() {
-        crownImage.isHidden = true
-    }
-
 }
