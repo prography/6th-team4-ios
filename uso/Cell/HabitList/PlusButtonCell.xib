@@ -8,10 +8,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="tQc-Fs-EnK">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="tQc-Fs-EnK" customClass="PlusButtonCell" customModule="uso" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tQc-Fs-EnK" id="EZp-02-GSi">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PlusButtonCell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tQc-Fs-EnK" id="EZp-02-GSi" customClass="PlusButtonCell" customModule="uso" customModuleProvider="target">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -25,7 +25,10 @@
                     <constraint firstItem="Sc0-ZJ-syp" firstAttribute="centerY" secondItem="EZp-02-GSi" secondAttribute="centerY" id="wJ8-Aj-rf9"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-300" y="-22"/>
+            <connections>
+                <outlet property="plussButton" destination="Sc0-ZJ-syp" id="Tca-lo-uv5"/>
+            </connections>
+            <point key="canvasLocation" x="-300" y="-22.098214285714285"/>
         </tableViewCell>
     </objects>
 </document>

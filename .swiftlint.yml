@@ -6,4 +6,4 @@ included:
 excluded:
 - Pods
 - "uso/Protocol/Storyboarded.swift"
-- "uso/Cell/HabitList/PlusButton.swift"
+- "uso/Cell/HabitList/PlusButtonCell.swift"

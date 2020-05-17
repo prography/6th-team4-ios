@@ -9,6 +9,8 @@ target 'uso' do
   pod 'RxSwift','~>5.0'
   pod 'RxCocoa','~>5.0'
   pod 'RxDataSources', '~> 4.0'
+  pod 'Alamofire', '~> 5.1'
+  pod 'Moya/RxSwift', '~> 14.0'
   pod 'Then'
   pod 'SwiftLint'
   target 'usoTests' do

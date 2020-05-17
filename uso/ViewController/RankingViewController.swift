@@ -14,7 +14,7 @@ import RxCocoa
 class RankingViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
-    weak var coordinator: RankingCoordinator?
+    weak var coordinator: MainCoordinator?
     var viewModel: RankingViewBindable!
     let bag = DisposeBag()
 

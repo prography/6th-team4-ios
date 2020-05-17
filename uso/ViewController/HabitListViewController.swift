@@ -12,7 +12,8 @@ import RxCocoa
 import RxDataSources
 
 class HabitListViewController: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var tableView: UITableView!
+    weak var coordinator: MainCoordinator?
     var viewModel: HabitListViewBindable!
     let bag = DisposeBag()
     
@@ -20,6 +21,10 @@ class HabitListViewController: UIViewController {
         super.viewDidLoad()
         bindRX()
         layout()
+    }
+    
+    func navigate() {
+        coordinator?.presentHabitAddVC()
     }
     
     func bindRX() {
@@ -30,6 +35,7 @@ class HabitListViewController: UIViewController {
         items
             .bind(to: tableView.rx.items) { (tableView, row, item) -> UITableViewCell in
                 // 이거 마지막에 + 어떻게 나타낼지 고민해보자
+                let totalRows = tableView.numberOfRows(inSection: 0)
                 if row == 0 {
                     guard let cell = tableView.dequeueReusableCell(
                         withIdentifier: ProfileCell.identifier,
@@ -37,6 +43,18 @@ class HabitListViewController: UIViewController {
                         else { fatalError() }
                     
                     cell.onData.onNext(item as? Profile ?? Profile(description: "error"))
+                    return cell
+                } else if row  == totalRows - 1 {
+                    guard let cell = tableView.dequeueReusableCell(
+                        withIdentifier: PlusButtonCell.identifier,
+                        for : IndexPath.init(row: row, section: 0)) as? PlusButtonCell
+                        else { fatalError() }
+                    
+                    cell.plussButton.rx
+                        .tap
+                        .subscribe(onNext: { [weak self] in
+                            self?.coordinator?.presentHabitAddVC()
+                        }).disposed(by: cell.bag)
                     return cell
                 } else {
                     guard let cell = tableView.dequeueReusableCell(
@@ -61,8 +79,8 @@ extension HabitListViewController: Storyboarded, UITableViewDelegate {
         self.tableView.register(habitListCellNib, forCellReuseIdentifier: HabitListCell.identifier)
         let profileCellNib = UINib(nibName: "ProfileCell", bundle: nil)
         self.tableView.register(profileCellNib, forCellReuseIdentifier: ProfileCell.identifier)
-        let plusButtonView = PlusButton.instanceFromNib()
-        tableView.tableFooterView = plusButtonView
+        let plusButtonCellNib = UINib(nibName: "PlusButtonCell", bundle: nil)
+        self.tableView.register(plusButtonCellNib, forCellReuseIdentifier: PlusButtonCell.identifier)
         
     }
     
