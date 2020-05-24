@@ -8,6 +8,18 @@
 
 import Foundation
 
-struct Habit {
+struct ResonseHabitList: Decodable {
+    let habit           : [Habit]?
     
+    enum CodingKeys: String, CodingKey {
+        case habit = "Habit"
+    }
+}
+
+struct Habit: Decodable {
+    let habitID         : Int
+    let userID          : Int
+    let title           : String
+    let description     : String
+    let category        : String
 }

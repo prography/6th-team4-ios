@@ -19,7 +19,7 @@
 		185D2A542446C40000A09E99 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D2A532446C40000A09E99 /* Model.swift */; };
 		185D2A562446C49700A09E99 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D2A552446C49700A09E99 /* Repository.swift */; };
 		185D2A582446C50F00A09E99 /* UsoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D2A572446C50F00A09E99 /* UsoError.swift */; };
-		185D2A5A2446C54200A09E99 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D2A592446C54200A09E99 /* UIColor+Hex.swift */; };
+		185D2A5A2446C54200A09E99 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D2A592446C54200A09E99 /* UIColorExtension.swift */; };
 		185D2A5C2446C57100A09E99 /* UsoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D2A5B2446C57100A09E99 /* UsoAPI.swift */; };
 		185D2A5F2446C7A900A09E99 /* ViewBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D2A5E2446C7A900A09E99 /* ViewBindable.swift */; };
 		185D2A612446C84600A09E99 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D2A602446C84600A09E99 /* MainCoordinator.swift */; };
@@ -65,6 +65,9 @@
 		9C7B4B3124713A68007B21DA /* HabitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B4B3024713A68007B21DA /* HabitAPI.swift */; };
 		9C7B4B3424713B37007B21DA /* RankingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B4B3324713B37007B21DA /* RankingAPI.swift */; };
 		9C7B4B362471429E007B21DA /* Moya+Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B4B352471429E007B21DA /* Moya+Plugin.swift */; };
+		9CE11BD0247A290D00F6EAC1 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE11BCF247A290D00F6EAC1 /* IndicatorView.swift */; };
+		9CE11BD2247A296F00F6EAC1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE11BD1247A296F00F6EAC1 /* Constants.swift */; };
+		9CE11BD4247A2CC900F6EAC1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE11BD3247A2CC900F6EAC1 /* UIViewExtension.swift */; };
 		A69E93138987A0D7DEAE2895 /* Pods_uso_usoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6130EF413695622D9CFC22FC /* Pods_uso_usoUITests.framework */; };
 		BEC439BDE443C3FF959FD7A1 /* Pods_usoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD068E2CEB53ED9E4BCF8FFA /* Pods_usoTests.framework */; };
 		CB822D9F57CCA24C11C0A4AA /* Pods_uso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C62EB27D5D33E908EC01A5 /* Pods_uso.framework */; };
@@ -107,7 +110,7 @@
 		185D2A532446C40000A09E99 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		185D2A552446C49700A09E99 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		185D2A572446C50F00A09E99 /* UsoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsoError.swift; sourceTree = "<group>"; };
-		185D2A592446C54200A09E99 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		185D2A592446C54200A09E99 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		185D2A5B2446C57100A09E99 /* UsoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsoAPI.swift; sourceTree = "<group>"; };
 		185D2A5E2446C7A900A09E99 /* ViewBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBindable.swift; sourceTree = "<group>"; };
 		185D2A602446C84600A09E99 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
@@ -157,6 +160,9 @@
 		9C7B4B3024713A68007B21DA /* HabitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitAPI.swift; sourceTree = "<group>"; };
 		9C7B4B3324713B37007B21DA /* RankingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingAPI.swift; sourceTree = "<group>"; };
 		9C7B4B352471429E007B21DA /* Moya+Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Plugin.swift"; sourceTree = "<group>"; };
+		9CE11BCF247A290D00F6EAC1 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		9CE11BD1247A296F00F6EAC1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9CE11BD3247A2CC900F6EAC1 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		9CFF406D24703B6300EC0E66 /* uso.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uso.entitlements; sourceTree = "<group>"; };
 		A0E4AD2DC9E01C5553E8C141 /* Pods-usoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-usoTests.release.xcconfig"; path = "Target Support Files/Pods-usoTests/Pods-usoTests.release.xcconfig"; sourceTree = "<group>"; };
 		AFFD845E327E38B4BA336E7B /* Pods-uso_ios-uso_iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_ios-uso_iosUITests.release.xcconfig"; path = "Target Support Files/Pods-uso_ios-uso_iosUITests/Pods-uso_ios-uso_iosUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -279,7 +285,10 @@
 		185D2A472446C2B000A09E99 /* Extention */ = {
 			isa = PBXGroup;
 			children = (
-				185D2A592446C54200A09E99 /* UIColor+Hex.swift */,
+				185D2A592446C54200A09E99 /* UIColorExtension.swift */,
+				9CE11BCF247A290D00F6EAC1 /* IndicatorView.swift */,
+				9CE11BD1247A296F00F6EAC1 /* Constants.swift */,
+				9CE11BD3247A2CC900F6EAC1 /* UIViewExtension.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -721,6 +730,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE11BD0247A290D00F6EAC1 /* IndicatorView.swift in Sources */,
 				18404674245AD07E002C04C7 /* SignViewController.swift in Sources */,
 				185D2A562446C49700A09E99 /* Repository.swift in Sources */,
 				185D2A612446C84600A09E99 /* MainCoordinator.swift in Sources */,
@@ -730,7 +740,7 @@
 				185D2A582446C50F00A09E99 /* UsoError.swift in Sources */,
 				3859DDE0245D5EA400C799BF /* RankingUseCase.swift in Sources */,
 				1882372924579DEB002C523E /* SettingViewController.swift in Sources */,
-				185D2A5A2446C54200A09E99 /* UIColor+Hex.swift in Sources */,
+				185D2A5A2446C54200A09E99 /* UIColorExtension.swift in Sources */,
 				1861430524583F49007151A0 /* RankingViewModel.swift in Sources */,
 				1874820C24612BC0004A40DE /* PlusButtonCell.swift in Sources */,
 				18F6664224611D9200499CBC /* ProfileCell.swift in Sources */,
@@ -740,6 +750,7 @@
 				185D2A5C2446C57100A09E99 /* UsoAPI.swift in Sources */,
 				9C227601246FAD3400DF5911 /* HabitAddViewController.swift in Sources */,
 				9C2275FF246FAB3A00DF5911 /* HabitAddRepsitory.swift in Sources */,
+				9CE11BD2247A296F00F6EAC1 /* Constants.swift in Sources */,
 				9C7B4B362471429E007B21DA /* Moya+Plugin.swift in Sources */,
 				18748207246129E7004A40DE /* HabitItem.swift in Sources */,
 				185D2A542446C40000A09E99 /* Model.swift in Sources */,
@@ -749,6 +760,7 @@
 				185D2A652446C8B100A09E99 /* Storyboarded.swift in Sources */,
 				9C2275FD246FAAFC00DF5911 /* BakeryRepository.swift in Sources */,
 				1861430724583F54007151A0 /* SettingViewModel.swift in Sources */,
+				9CE11BD4247A2CC900F6EAC1 /* UIViewExtension.swift in Sources */,
 				9C227603246FAD4400DF5911 /* BakeryViewController.swift in Sources */,
 				18F666452461244400499CBC /* HabitListUseCase.swift in Sources */,
 				1874820524612803004A40DE /* ResponseStatus.swift in Sources */,

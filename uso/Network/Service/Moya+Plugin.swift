@@ -10,10 +10,10 @@ import Foundation
 import Alamofire
 import Moya
 
-class DefaultAlamofireManager: Alamofire.SessionManager {
+class DefaultAlamofireManager: Alamofire.Session {
     static let sharedManager: DefaultAlamofireManager = {
         let configuration = URLSessionConfiguration.default
-        configuration.httpAdditionalHeaders = Alamofire.SessionManager.defaultHTTPHeaders
+        configuration.headers = .default
         configuration.timeoutIntervalForRequest = 20 // as seconds, you can set your request timeout
         configuration.timeoutIntervalForResource = 20 // as seconds, you can set your resource timeout
         configuration.requestCachePolicy = .useProtocolCachePolicy
@@ -33,7 +33,8 @@ let activiyPlugIn = NetworkActivityPlugin { changeType, _ in
 
 class CompleteUrlLoggerPlugin: PluginType {
     func willSend(_ request: RequestType, target: TargetType) {
-        print(debug: request.request?.url?.absoluteString ?? "Something is wrong")
+        print(request.request?.url?.absoluteString ?? "Something is wrong")
     }
 }
+
 
