@@ -54,6 +54,7 @@ extension HabitAPI: TargetType {
             case .sendErrorLog                  : return "inspection-error-log" // 이거 어떻게해야할지 생각해보자
             }
         }
+        return path
     }
     
     /// post get set delete
@@ -71,23 +72,23 @@ extension HabitAPI: TargetType {
         }
         
     }
+}
+
+struct HabitService {
+    // provider 정의하는거랑 moya task 정리하는거 해줘야한다.
+    static let provider = MoyaProvider<HabitAPI>.init(session: DefaultAlamofireManager.sharedManager, plugins: [activiyPlugIn])
     
-    struct HabitService {
-        // provider 정의하는거랑 moya task 정리하는거 해줘야한다.
-        static let provider = MoyaProvider<HabitAPI>()
-        
-        static func getHabitList(_ comp: HabitID,
-                                 _ completion: @escaping (Habit) -> Void) {
-            provider.request(.getTotalHabit(comp)) { (response) in
-                // 여기 왜 안되지? 
-                switch response.result {
-                case .success(let value):
-                    if let data = try? value.map(ResonseHabitList.self) {
-                        completion(data)
-                    }
-                case .failure(let error):
-                    print("error")
+    static func getHabitList(_ comp: HabitID,
+                             _ completion: @escaping (ResonseHabitList) -> Void) {
+        provider.request(.getTotalHabit(comp)) { (response) in
+            // 여기 왜 안되지?
+            switch response {
+            case .success(let value):
+                if let data = try? value.map(ResonseHabitList.self) {
+                    completion(data)
                 }
+            case .failure(let error):
+                print("error")
             }
         }
     }

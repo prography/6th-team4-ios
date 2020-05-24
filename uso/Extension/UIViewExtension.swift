@@ -80,20 +80,6 @@ extension UIView {
         self.layer.addSublayer(border)
     }
     
-    //뷰 right에 선 생성
-    func addBorderRight(y: CGFloat, width: CGFloat, height: CGFloat, color: UIColor) {
-        let border = CALayer()
-        border.frame = CGRect(x: self.frame.width - width, y: y, width: width, height: height)
-        border.backgroundColor = color.cgColor
-        self.layer.addSublayer(border)
-    }
-    //뷰 left에 선 생성
-    func addBorderLeft(y: CGFloat, width: CGFloat, height: CGFloat, color: UIColor) {
-        let border = CALayer()
-        border.frame = CGRect(x: 0, y: y, width: width, height: height)
-        border.backgroundColor = color.cgColor
-        self.layer.addSublayer(border)
-    }
     
     func addColors(colors: [UIColor], withPercentage percentages: [Double]) {
         let gradientLayer = CAGradientLayer()

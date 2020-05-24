@@ -247,7 +247,7 @@
 				185D2A4A2446C2C600A09E99 /* ViewModel */,
 				185D2A492446C2BF00A09E99 /* ViewController */,
 				185D2A482446C2B700A09E99 /* Helper */,
-				185D2A472446C2B000A09E99 /* Extention */,
+				185D2A472446C2B000A09E99 /* Extension */,
 				185D2A462446C2A900A09E99 /* Service */,
 				185D2A162446C27800A09E99 /* AppDelegate.swift */,
 				185D2A1F2446C27D00A09E99 /* Assets.xcassets */,
@@ -282,7 +282,7 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		185D2A472446C2B000A09E99 /* Extention */ = {
+		185D2A472446C2B000A09E99 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				185D2A592446C54200A09E99 /* UIColorExtension.swift */,
@@ -290,7 +290,7 @@
 				9CE11BD1247A296F00F6EAC1 /* Constants.swift */,
 				9CE11BD3247A2CC900F6EAC1 /* UIViewExtension.swift */,
 			);
-			path = Extention;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		185D2A482446C2B700A09E99 /* Helper */ = {
