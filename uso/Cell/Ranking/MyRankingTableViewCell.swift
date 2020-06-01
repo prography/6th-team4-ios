@@ -1,24 +1,20 @@
 //
-//  RankingItemTableViewCell.swift
+//  MyRankingTableViewCell.swift
 //  uso
 //
-//  Created by 서재훈 on 2020/04/30.
+//  Created by 서재훈 on 2020/05/01.
 //  Copyright © 2020 sooyong. All rights reserved.
 //
 
 import UIKit
 import RxSwift
 
-class RankingItemTableViewCell: UITableViewCell {
-    static let identifier = "RankingItemTableViewCell"
+class MyRankingTableViewCell: UITableViewCell {
+    static let identifier = "MyRankingTableViewCell"
     
-    @IBOutlet var rank: UILabel!
-    @IBOutlet var nickName: UILabel!
-    @IBOutlet var exp: UILabel!
-    @IBOutlet var achieve: UILabel!
-    @IBOutlet var crownImage: UIImageView!
-    
-    private let cellBag = DisposeBag()
+    @IBOutlet var highRankLabel: UILabel!
+    @IBOutlet var totalLabel: UILabel!
+    @IBOutlet var rankLabel: UILabel!
     
     let onData: AnyObserver<RankingItem>
     var bag = DisposeBag()
@@ -31,12 +27,11 @@ class RankingItemTableViewCell: UITableViewCell {
 
         data.observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] ranking in
-                self?.rank.text = "\(ranking.rank)"
-                self?.nickName.text = ranking.nickName
-                self?.exp.text = "\(ranking.exp)"
-                self?.achieve.text = "\(ranking.achieve)"
+                self?.totalLabel.text = "\(100)"
+                self?.rankLabel.text = "\(ranking.rank)"
+                self?.highRankLabel.text = "\(ranking.rank*100/100)%"
             })
-            .disposed(by: cellBag)
+            .disposed(by: bag)
     }
 
     override func awakeFromNib() {
@@ -51,13 +46,8 @@ class RankingItemTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        bag = DisposeBag()
+    func layout() {
+        rankLabel.textColor = UIColor.green
     }
     
-    func layout() {
-        crownImage.isHidden = true
-    }
-
 }

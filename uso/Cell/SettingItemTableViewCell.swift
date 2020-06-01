@@ -12,8 +12,6 @@ import RxSwift
 class SettingItemTableViewCell: UITableViewCell {
     static let identifier = "SettingItemTableViewCell"
     
-    private let cellBag = DisposeBag()
-    
     let onData: AnyObserver<String>
     var bag = DisposeBag()
     
@@ -27,7 +25,7 @@ class SettingItemTableViewCell: UITableViewCell {
             .subscribe(onNext: { [weak self] setting in
                 self?.textLabel?.text = setting
             })
-            .disposed(by: cellBag)
+            .disposed(by: bag)
     }
 
     override func awakeFromNib() {

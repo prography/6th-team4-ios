@@ -363,13 +363,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		3866D359245B0E0A001F76A9 /* Cell */ = {
+		38279EC52485327100A4771E /* Ranking */ = {
 			isa = PBXGroup;
 			children = (
 				387B127C245BF32D0095D58B /* MyRankingTableViewCell.swift */,
 				387B127D245BF32D0095D58B /* MyRankingTableViewCell.xib */,
 				3866D35C245B0EEE001F76A9 /* RankingItemTableViewCell.swift */,
 				387B1280245BF5A00095D58B /* RankingItemTableViewCell.xib */,
+			);
+			path = Ranking;
+			sourceTree = "<group>";
+		};
+		3866D359245B0E0A001F76A9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				38279EC52485327100A4771E /* Ranking */,
 				3835792E2471715F0007F2C1 /* SettingItemTableViewCell.swift */,
 				3835792F2471715F0007F2C1 /* SettingItemTableViewCell.xib */,
 			);
