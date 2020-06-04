@@ -10,6 +10,8 @@ target 'uso' do
   pod 'RxCocoa','~>5.0'
   pod 'Then'
   pod 'SwiftLint'
+  pod 'Moya', '~> 14.0'
+
   target 'usoTests' do
     inherit! :search_paths
     # Pods for testing

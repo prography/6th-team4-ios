@@ -44,6 +44,7 @@
 		188237352457ADFD002C523E /* SettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188237342457ADFD002C523E /* SettingCoordinator.swift */; };
 		188237372457AE0E002C523E /* RankingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188237362457AE0E002C523E /* RankingCoordinator.swift */; };
 		18CB4FCD245AB81100FD6651 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 18CB4FCC245AB81100FD6651 /* .swiftlint.yml */; };
+		3822B1CE24868AF700385A59 /* MoyaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3822B1CD24868AF700385A59 /* MoyaAPI.swift */; };
 		383579302471715F0007F2C1 /* SettingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3835792E2471715F0007F2C1 /* SettingItemTableViewCell.swift */; };
 		383579312471715F0007F2C1 /* SettingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3835792F2471715F0007F2C1 /* SettingItemTableViewCell.xib */; };
 		3859DDE0245D5EA400C799BF /* RankingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859DDDF245D5EA400C799BF /* RankingUseCase.swift */; };
@@ -51,6 +52,7 @@
 		387B127E245BF32D0095D58B /* MyRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B127C245BF32D0095D58B /* MyRankingTableViewCell.swift */; };
 		387B127F245BF32D0095D58B /* MyRankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387B127D245BF32D0095D58B /* MyRankingTableViewCell.xib */; };
 		387B1281245BF5A00095D58B /* RankingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387B1280245BF5A00095D58B /* RankingItemTableViewCell.xib */; };
+		388EEC822487E13C0075E88E /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388EEC812487E13C0075E88E /* Ranking.swift */; };
 		A69E93138987A0D7DEAE2895 /* Pods_uso_usoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6130EF413695622D9CFC22FC /* Pods_uso_usoUITests.framework */; };
 		BEC439BDE443C3FF959FD7A1 /* Pods_usoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD068E2CEB53ED9E4BCF8FFA /* Pods_usoTests.framework */; };
 		CB822D9F57CCA24C11C0A4AA /* Pods_uso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C62EB27D5D33E908EC01A5 /* Pods_uso.framework */; };
@@ -115,6 +117,7 @@
 		188237362457AE0E002C523E /* RankingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCoordinator.swift; sourceTree = "<group>"; };
 		18CB4FCC245AB81100FD6651 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		29D86E52A96C403CBA9C32B3 /* Pods-uso_iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_iosTests.debug.xcconfig"; path = "Target Support Files/Pods-uso_iosTests/Pods-uso_iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3822B1CD24868AF700385A59 /* MoyaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaAPI.swift; sourceTree = "<group>"; };
 		3835792E2471715F0007F2C1 /* SettingItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItemTableViewCell.swift; sourceTree = "<group>"; };
 		3835792F2471715F0007F2C1 /* SettingItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingItemTableViewCell.xib; sourceTree = "<group>"; };
 		3859DDDF245D5EA400C799BF /* RankingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingUseCase.swift; sourceTree = "<group>"; };
@@ -122,6 +125,7 @@
 		387B127C245BF32D0095D58B /* MyRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRankingTableViewCell.swift; sourceTree = "<group>"; };
 		387B127D245BF32D0095D58B /* MyRankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyRankingTableViewCell.xib; sourceTree = "<group>"; };
 		387B1280245BF5A00095D58B /* RankingItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingItemTableViewCell.xib; sourceTree = "<group>"; };
+		388EEC812487E13C0075E88E /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
 		4A3AC7C8FD7C0F1A1EF65293 /* Pods-uso_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_ios.release.xcconfig"; path = "Target Support Files/Pods-uso_ios/Pods-uso_ios.release.xcconfig"; sourceTree = "<group>"; };
 		6130EF413695622D9CFC22FC /* Pods_uso_usoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uso_usoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE35225023FE32BBE83F9CF /* Pods-uso_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_ios.debug.xcconfig"; path = "Target Support Files/Pods-uso_ios/Pods-uso_ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -242,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				185D2A5B2446C57100A09E99 /* UsoAPI.swift */,
+				3822B1CD24868AF700385A59 /* MoyaAPI.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				185D2A532446C40000A09E99 /* Model.swift */,
+				388EEC812487E13C0075E88E /* Ranking.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -363,7 +369,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		38279EC52485327100A4771E /* Ranking */ = {
+		3822B1CC24868A5300385A59 /* SettingCell */ = {
+			isa = PBXGroup;
+			children = (
+				3835792E2471715F0007F2C1 /* SettingItemTableViewCell.swift */,
+				3835792F2471715F0007F2C1 /* SettingItemTableViewCell.xib */,
+			);
+			path = SettingCell;
+			sourceTree = "<group>";
+		};
+		38279EC52485327100A4771E /* RankingCell */ = {
 			isa = PBXGroup;
 			children = (
 				387B127C245BF32D0095D58B /* MyRankingTableViewCell.swift */,
@@ -371,15 +386,14 @@
 				3866D35C245B0EEE001F76A9 /* RankingItemTableViewCell.swift */,
 				387B1280245BF5A00095D58B /* RankingItemTableViewCell.xib */,
 			);
-			path = Ranking;
+			path = RankingCell;
 			sourceTree = "<group>";
 		};
 		3866D359245B0E0A001F76A9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				38279EC52485327100A4771E /* Ranking */,
-				3835792E2471715F0007F2C1 /* SettingItemTableViewCell.swift */,
-				3835792F2471715F0007F2C1 /* SettingItemTableViewCell.xib */,
+				38279EC52485327100A4771E /* RankingCell */,
+				3822B1CC24868A5300385A59 /* SettingCell */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -657,6 +671,7 @@
 				387B127E245BF32D0095D58B /* MyRankingTableViewCell.swift in Sources */,
 				185D2A522446C3EB00A09E99 /* RootUseCase.swift in Sources */,
 				185D2A582446C50F00A09E99 /* UsoError.swift in Sources */,
+				3822B1CE24868AF700385A59 /* MoyaAPI.swift in Sources */,
 				3859DDE0245D5EA400C799BF /* RankingUseCase.swift in Sources */,
 				1882372924579DEB002C523E /* SettingViewController.swift in Sources */,
 				185D2A5A2446C54200A09E99 /* UIColor+Hex.swift in Sources */,
@@ -676,6 +691,7 @@
 				1861430324583F3A007151A0 /* HabitListViewModel.swift in Sources */,
 				1882372524579CEE002C523E /* MainTabViewController.swift in Sources */,
 				1882372B24579DFA002C523E /* RankingViewController.swift in Sources */,
+				388EEC822487E13C0075E88E /* Ranking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
