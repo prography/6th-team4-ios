@@ -12,6 +12,7 @@ import RxCocoa
 
 protocol SettingViewBindable: ViewBindable {
     var allSettings: Observable<[String]> { get }
+    var userSubject: BehaviorSubject<UserItem> { get }
 }
 
 class SettingViewModel: SettingViewBindable {
@@ -20,10 +21,13 @@ class SettingViewModel: SettingViewBindable {
     let bag = DisposeBag()
     let allSettings: Observable<[String]>
     let settingMenus = ["개인 정보 변경", "문의하기", "계정 삭제", "로그아웃"]
+    let userSubject: BehaviorSubject<UserItem> = BehaviorSubject<UserItem>(value: UserItem(userId: 0, name: "", exp: 0, createdAt: "", updatedAt: ""))
     
     init() {
         let settings = BehaviorSubject<[String]>(value: settingMenus)
         allSettings = settings
+        
+        UserAPI.searchWithSwift(userSubject)
     }
     
     // Bind UseCase

@@ -48,6 +48,8 @@
 		18F6664224611D9200499CBC /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6664024611D9200499CBC /* ProfileCell.swift */; };
 		18F6664324611D9200499CBC /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F6664124611D9200499CBC /* ProfileCell.xib */; };
 		18F666452461244400499CBC /* HabitListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F666442461244400499CBC /* HabitListUseCase.swift */; };
+		3854F5C9248A440B00AD0DAF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3854F5C8248A440B00AD0DAF /* User.swift */; };
+		3854F5CB248A447D00AD0DAF /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3854F5CA248A447D00AD0DAF /* UserAPI.swift */; };
 		3859DDE0245D5EA400C799BF /* RankingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859DDDF245D5EA400C799BF /* RankingUseCase.swift */; };
 		387D124A248A1397005B0C05 /* SettingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1244248A1396005B0C05 /* SettingItemTableViewCell.swift */; };
 		387D124B248A1397005B0C05 /* MyRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1245248A1396005B0C05 /* MyRankingTableViewCell.swift */; };
@@ -145,6 +147,8 @@
 		18F6664124611D9200499CBC /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		18F666442461244400499CBC /* HabitListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListUseCase.swift; sourceTree = "<group>"; };
 		29D86E52A96C403CBA9C32B3 /* Pods-uso_iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_iosTests.debug.xcconfig"; path = "Target Support Files/Pods-uso_iosTests/Pods-uso_iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3854F5C8248A440B00AD0DAF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3854F5CA248A447D00AD0DAF /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		3859DDDF245D5EA400C799BF /* RankingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingUseCase.swift; sourceTree = "<group>"; };
 		387D1244248A1396005B0C05 /* SettingItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingItemTableViewCell.swift; sourceTree = "<group>"; };
 		387D1245248A1396005B0C05 /* MyRankingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRankingTableViewCell.swift; sourceTree = "<group>"; };
@@ -376,6 +380,7 @@
 				18748206246129E7004A40DE /* HabitItem.swift */,
 				18748208246129F0004A40DE /* Habit.swift */,
 				388F7AA0248A297C00A9E123 /* Ranking.swift */,
+				3854F5C8248A440B00AD0DAF /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -493,6 +498,7 @@
 				9C7B4B3324713B37007B21DA /* RankingAPI.swift */,
 				9C7B4B352471429E007B21DA /* Moya+Plugin.swift */,
 				388F7AA2248A29A100A9E123 /* MoyaAPI.swift */,
+				3854F5CA248A447D00AD0DAF /* UserAPI.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -795,6 +801,8 @@
 				185D2A5F2446C7A900A09E99 /* ViewBindable.swift in Sources */,
 				185D2A5C2446C57100A09E99 /* UsoAPI.swift in Sources */,
 				9C227601246FAD3400DF5911 /* HabitAddViewController.swift in Sources */,
+				3854F5CB248A447D00AD0DAF /* UserAPI.swift in Sources */,
+				3854F5C9248A440B00AD0DAF /* User.swift in Sources */,
 				9C2275FF246FAB3A00DF5911 /* HabitAddRepsitory.swift in Sources */,
 				9CA8AD312489F61A00859CA6 /* HabitDetailViewController.swift in Sources */,
 				9CE11BD2247A296F00F6EAC1 /* Constants.swift in Sources */,
