@@ -52,7 +52,7 @@ class MyRankingTableViewCell: UITableViewCell {
     }
     
     func layout() {
-        rankLabel.textColor = UIColor.green
+        rankLabel.textColor = UIColor(hex: 0x4C7A65)
     }
     
 }

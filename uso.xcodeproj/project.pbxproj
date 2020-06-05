@@ -57,7 +57,6 @@
 		387D124D248A1397005B0C05 /* MyRankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1247248A1396005B0C05 /* MyRankingTableViewCell.xib */; };
 		387D124E248A1397005B0C05 /* SettingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1248248A1397005B0C05 /* SettingItemTableViewCell.xib */; };
 		387D124F248A1397005B0C05 /* RankingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1249248A1397005B0C05 /* RankingItemTableViewCell.xib */; };
-		388F7A9D248A28DF00A9E123 /* SettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7A9C248A28DF00A9E123 /* SettingCoordinator.swift */; };
 		388F7A9F248A292E00A9E123 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7A9E248A292E00A9E123 /* SettingViewController.swift */; };
 		388F7AA1248A297C00A9E123 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7AA0248A297C00A9E123 /* Ranking.swift */; };
 		388F7AA3248A29A100A9E123 /* MoyaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7AA2248A29A100A9E123 /* MoyaAPI.swift */; };
@@ -157,7 +156,6 @@
 		387D1247248A1396005B0C05 /* MyRankingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyRankingTableViewCell.xib; sourceTree = "<group>"; };
 		387D1248248A1397005B0C05 /* SettingItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingItemTableViewCell.xib; sourceTree = "<group>"; };
 		387D1249248A1397005B0C05 /* RankingItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankingItemTableViewCell.xib; sourceTree = "<group>"; };
-		388F7A9C248A28DF00A9E123 /* SettingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCoordinator.swift; sourceTree = "<group>"; };
 		388F7A9E248A292E00A9E123 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		388F7AA0248A297C00A9E123 /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
 		388F7AA2248A29A100A9E123 /* MoyaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaAPI.swift; sourceTree = "<group>"; };
@@ -392,7 +390,6 @@
 			isa = PBXGroup;
 			children = (
 				185D2A602446C84600A09E99 /* MainCoordinator.swift */,
-				388F7A9C248A28DF00A9E123 /* SettingCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -821,7 +818,6 @@
 				185D2A652446C8B100A09E99 /* Storyboarded.swift in Sources */,
 				9C2275FD246FAAFC00DF5911 /* BakeryRepository.swift in Sources */,
 				1861430724583F54007151A0 /* SettingViewModel.swift in Sources */,
-				388F7A9D248A28DF00A9E123 /* SettingCoordinator.swift in Sources */,
 				388F7AA1248A297C00A9E123 /* Ranking.swift in Sources */,
 				9CE11BD4247A2CC900F6EAC1 /* UIViewExtension.swift in Sources */,
 				9C227603246FAD4400DF5911 /* BakeryViewController.swift in Sources */,
