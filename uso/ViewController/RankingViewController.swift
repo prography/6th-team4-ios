@@ -14,7 +14,7 @@ import RxCocoa
 class RankingViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
-    weak var coordinator: RankingCoordinator?
+    weak var coordinator: MainCoordinator?
     var viewModel: RankingViewBindable!
     let bag = DisposeBag()
     
@@ -47,7 +47,6 @@ class RankingViewController: UIViewController {
             }
             .disposed(by: bag)
     }
-
 }
 
 // MARK: Detail func definition of VC

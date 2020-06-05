@@ -14,7 +14,7 @@ protocol SettingViewBindable: ViewBindable {
     var allSettings: Observable<[String]> { get }
 }
 
-class SettingViewModel: HabitListViewBindable {
+class SettingViewModel: SettingViewBindable {
     // Abstraction of VC
     // ViewModel should be one for a VC in this project
     let bag = DisposeBag()

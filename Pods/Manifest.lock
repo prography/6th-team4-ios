@@ -1,34 +1,60 @@
 PODS:
+  - Alamofire (5.2.0)
+  - Differentiator (4.0.1)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
   - SwiftLint (0.39.2)
   - Then (2.6.0)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.1)
+  - Moya/RxSwift (~> 14.0)
   - RxCocoa (~> 5.0)
+  - RxDataSources (~> 4.0)
   - RxSwift (~> 5.0)
   - SwiftLint
   - Then
+  - Toast-Swift (~> 5.0.1)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - Differentiator
+    - Moya
     - RxCocoa
+    - RxDataSources
     - RxRelay
     - RxSwift
     - SwiftLint
     - Then
+    - Toast-Swift
 
 SPEC CHECKSUMS:
+  Alamofire: c1ca147559e730bfb2182c8c7aafbdd90a867987
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
   Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 1033e61df7853d5769cddd3b5133eb3dda926288
+PODFILE CHECKSUM: 2007ad31ba219bc7ded0a3f9d698c9260e45efc0
 
 COCOAPODS: 1.9.1
