@@ -10,7 +10,6 @@ import Foundation
 import Moya
 import Alamofire
 
-
 struct HabitID {
     let userID: String
     let habitID: String
@@ -93,4 +92,3 @@ struct HabitService {
         }
     }
 }
-

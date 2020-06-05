@@ -36,5 +36,3 @@ class CompleteUrlLoggerPlugin: PluginType {
         print(request.request?.url?.absoluteString ?? "Something is wrong")
     }
 }
-
-

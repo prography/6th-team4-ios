@@ -45,7 +45,6 @@ class MainCoordinator: Coordinator {
         // Create Tab two
         let tabTwo = RankingViewController.instantiate()
         let tabTwoBarItem2 = UITabBarItem(title: "Ranking", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
-        
         let rankingViewModel = RankingViewModel.init()
         rankingViewModel.bind(usecase: RankingUseCase())
         tabTwo.viewModel = rankingViewModel
@@ -56,6 +55,11 @@ class MainCoordinator: Coordinator {
         // Create Tab three
         let tabThree = SettingViewController.instantiate()
         let tabTwoBarItem3 = UITabBarItem(title: "Setting", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
+        //테스트
+        let settingViewModel = SettingViewModel.init()
+        settingViewModel.bind(usecase: RootUseCase())
+        tabThree.viewModel = settingViewModel
+        
         tabThree.modalPresentationStyle = .fullScreen
         tabThree.tabBarItem = tabTwoBarItem3
         

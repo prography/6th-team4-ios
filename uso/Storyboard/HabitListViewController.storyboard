@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,13 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nde-0r-K6B">
-                                <rect key="frame" x="0.0" y="44" width="414" height="60"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="o1P-Nl-qle"/>
-                                </constraints>
-                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e9W-OS-4JS">
                                 <rect key="frame" x="20" y="104" width="374" height="758"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -29,11 +22,8 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="H2U-ZK-rUQ" firstAttribute="trailing" secondItem="nde-0r-K6B" secondAttribute="trailing" id="8vd-Mx-UsD"/>
-                            <constraint firstItem="e9W-OS-4JS" firstAttribute="top" secondItem="nde-0r-K6B" secondAttribute="bottom" id="LHp-fN-Lel"/>
-                            <constraint firstItem="nde-0r-K6B" firstAttribute="leading" secondItem="H2U-ZK-rUQ" secondAttribute="leading" id="OPu-U8-txW"/>
+                            <constraint firstItem="e9W-OS-4JS" firstAttribute="top" secondItem="H2U-ZK-rUQ" secondAttribute="top" constant="60" id="2II-Qh-bmg"/>
                             <constraint firstItem="H2U-ZK-rUQ" firstAttribute="trailing" secondItem="e9W-OS-4JS" secondAttribute="trailing" constant="20" id="Puc-3e-OLm"/>
-                            <constraint firstItem="nde-0r-K6B" firstAttribute="top" secondItem="H2U-ZK-rUQ" secondAttribute="top" id="TEg-Io-oDh"/>
                             <constraint firstItem="H2U-ZK-rUQ" firstAttribute="bottom" secondItem="e9W-OS-4JS" secondAttribute="bottom" id="TSW-s2-Ewa"/>
                             <constraint firstItem="e9W-OS-4JS" firstAttribute="leading" secondItem="H2U-ZK-rUQ" secondAttribute="leading" constant="20" id="mrT-sK-zq5"/>
                         </constraints>

@@ -21,6 +21,7 @@ class HabitListViewController: UIViewController {
         super.viewDidLoad()
         bindRX()
         layout()
+        tableView.delegate = self
     }
     
     func navigate() {
@@ -47,7 +48,7 @@ class HabitListViewController: UIViewController {
                 } else if row  == totalRows - 1 {
                     guard let cell = tableView.dequeueReusableCell(
                         withIdentifier: PlusButtonCell.identifier,
-                        for : IndexPath.init(row: row, section: 0)) as? PlusButtonCell
+                        for: IndexPath.init(row: row, section: 0)) as? PlusButtonCell
                         else { fatalError() }
                     
                     cell.plussButton.rx

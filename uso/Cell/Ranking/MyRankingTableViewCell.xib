@@ -10,31 +10,67 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyRankingTableViewCell" customModule="uso" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oRx-FG-e9g">
+                        <rect key="frame" x="0.0" y="250" width="320" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="순위" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6m-jf-rN4">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9n-sj-G6z">
+                                <rect key="frame" x="80" y="0.0" width="80" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="경험치" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epr-Jm-lne">
+                                <rect key="frame" x="160" y="0.0" width="80" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="달성도" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RT5-xo-aki">
+                                <rect key="frame" x="240" y="0.0" width="80" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="A5d-4Q-x4w"/>
+                        </constraints>
+                    </stackView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDa-5Q-JJ6">
-                        <rect key="frame" x="40" y="55" width="240" height="240"/>
+                        <rect key="frame" x="20.5" y="33.5" width="279" height="193"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="240" id="Cev-RZ-3Hm"/>
-                            <constraint firstAttribute="height" constant="240" id="G4N-hd-PVW"/>
+                            <constraint firstAttribute="width" secondItem="cDa-5Q-JJ6" secondAttribute="height" multiplier="13:9" id="5fA-57-yFd"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="cDa-5Q-JJ6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JV0-yg-Tuv"/>
+                    <constraint firstItem="oRx-FG-e9g" firstAttribute="centerX" secondItem="cDa-5Q-JJ6" secondAttribute="centerX" id="Fqo-3w-ciI"/>
+                    <constraint firstItem="cDa-5Q-JJ6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-20" id="HkR-pE-dmP"/>
+                    <constraint firstItem="cDa-5Q-JJ6" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="27:29" id="JE0-Md-kK4"/>
                     <constraint firstItem="cDa-5Q-JJ6" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Ld0-HI-psS"/>
+                    <constraint firstAttribute="bottom" secondItem="oRx-FG-e9g" secondAttribute="bottom" id="QEo-y6-93g"/>
+                    <constraint firstItem="oRx-FG-e9g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="owI-CS-SlO"/>
+                    <constraint firstAttribute="trailing" secondItem="oRx-FG-e9g" secondAttribute="trailing" id="unl-zP-BzO"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="tempView" destination="cDa-5Q-JJ6" id="GfT-zH-So9"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="94.419642857142847"/>
+            <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
         </tableViewCell>
     </objects>
 </document>

@@ -80,7 +80,6 @@ extension UIView {
         self.layer.addSublayer(border)
     }
     
-    
     func addColors(colors: [UIColor], withPercentage percentages: [Double]) {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = self.bounds

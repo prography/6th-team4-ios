@@ -13,11 +13,10 @@ class RankingItemTableViewCell: UITableViewCell {
     static let identifier = "RankingItemTableViewCell"
     
     @IBOutlet var rank: UILabel!
-    @IBOutlet var charactor: UIImageView!
-    @IBOutlet var name: UILabel!
-    @IBOutlet var rate: UILabel!
-    @IBOutlet var hours: UILabel!
-    @IBOutlet var hashTag: UILabel!
+    @IBOutlet var nickName: UILabel!
+    @IBOutlet var exp: UILabel!
+    @IBOutlet var achieve: UILabel!
+    @IBOutlet var crownImage: UIImageView!
     
     private let cellBag = DisposeBag()
     
@@ -33,7 +32,9 @@ class RankingItemTableViewCell: UITableViewCell {
         data.observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] ranking in
                 self?.rank.text = "\(ranking.rank)"
-                self?.name.text = ranking.name
+                self?.nickName.text = ranking.nickName
+                self?.exp.text = "\(ranking.exp)"
+                self?.achieve.text = "\(ranking.achieve)"
             })
             .disposed(by: cellBag)
     }
@@ -56,9 +57,7 @@ class RankingItemTableViewCell: UITableViewCell {
     }
     
     func layout() {
-        hashTag.backgroundColor = UIColor.lightGray
-        hashTag.clipsToBounds = true
-        hashTag.layer.cornerRadius = 5
+        crownImage.isHidden = true
     }
 
 }

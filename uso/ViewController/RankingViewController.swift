@@ -17,18 +17,21 @@ class RankingViewController: UIViewController {
     weak var coordinator: MainCoordinator?
     var viewModel: RankingViewBindable!
     let bag = DisposeBag()
+    
+    var screenWidth = UIScreen.main.bounds.width
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.separatorColor = UIColor.clear
         let myRankingTableViewCellNib = UINib(nibName: "MyRankingTableViewCell", bundle: nil)
         tableView.register(myRankingTableViewCellNib, forCellReuseIdentifier: MyRankingTableViewCell.identifier)
         let rankingItemTableViewCellNib = UINib(nibName: "RankingItemTableViewCell", bundle: nil)
         tableView.register(rankingItemTableViewCellNib, forCellReuseIdentifier: RankingItemTableViewCell.identifier)
         
-        bind()
+        bindRX()
     }
     
-    private func bind() {
+    private func bindRX() {
         // 테이블뷰 아이템들
         viewModel.allRankings
             .bind(to: tableView.rx.items) { (tableView, row, item) -> UITableViewCell in
@@ -54,9 +57,9 @@ extension RankingViewController: Storyboarded {
 extension RankingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
-            return 350
+            return screenWidth*30/32
         } else {
-            return 100
+            return screenWidth*7/32
         }
     }
 }
