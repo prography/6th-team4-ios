@@ -1,8 +1,8 @@
 //
-//  UsoAPI.swift
-//  uso_ios
+//  UserAPI.swift
+//  uso
 //
-//  Created by Apple on 2020/04/15.
+//  Created by 서재훈 on 2020/06/05.
 //  Copyright © 2020 sooyong. All rights reserved.
 //
 
@@ -10,11 +10,11 @@ import Foundation
 import RxSwift
 import Moya
 
-protocol RankingAPIProtocol {
+protocol UserAPIProtocol {
     func getResponse(completion: @escaping (Error?) -> Void)
 }
 
-class RankingAPI: RankingAPIProtocol {
+class UserAPI: UserAPIProtocol {
     // API for getting data or posting data
     var bag = DisposeBag()
     
@@ -22,7 +22,7 @@ class RankingAPI: RankingAPIProtocol {
         completion(nil)
     }
     
-    static func searchWithSwift(_ subject: BehaviorSubject<[RankingItem]>) {
+    static func searchWithSwift(_ subject: BehaviorSubject<UserItem>) {
         let provider = MoyaProvider<MoyaAPI>()
         provider.request(.fetchRanking) { result in
             switch result {
@@ -34,13 +34,13 @@ class RankingAPI: RankingAPIProtocol {
         }
     }
     
-    static func handleSuccessResponse(_ response: Response, _ subject: BehaviorSubject<[RankingItem]>) {
+    static func handleSuccessResponse(_ response: Response, _ subject: BehaviorSubject<UserItem>) {
         do {
-            let searchResult = try JSONDecoder().decode(RankingItems.self, from: response.data)
-            subject.onNext(searchResult.items)
+            let searchResult = try JSONDecoder().decode(UserItem.self, from: response.data)
+            print(searchResult)
+            subject.onNext(searchResult)
         } catch {
             print(error.localizedDescription)
         }
     }
-    
 }
