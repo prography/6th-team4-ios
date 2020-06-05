@@ -48,6 +48,9 @@ class HabitListCell: UITableViewCell {
             .bind(onNext: { _ in
             self.parentVC?.coordinator?.presentHabitDetailVC()
         }).disposed(by: bag)
+        
+        //totalView.setRoundCorner(20)
+        totalView.setBorder(color: UIColor(red: 0.742, green: 0.722, blue: 0.668, alpha: 1), width: 1, cornerRadius: 20)
     }
     
     override func prepareForReuse() {
