@@ -14,7 +14,7 @@ import Moya
 protocol RankingViewBindable: ViewBindable {
     var fetchRankings: AnyObserver<Void> { get }
     var allRankings: Observable<[RankingItem]> { get }
-    var rankingSubject: BehaviorSubject<[Any]> { get }
+    var rankingSubject: BehaviorSubject<[RankingItem]> { get }
 }
 
 class RankingViewModel: RankingViewBindable {
@@ -24,7 +24,7 @@ class RankingViewModel: RankingViewBindable {
     
     let fetchRankings: AnyObserver<Void>
     let allRankings: Observable<[RankingItem]>
-    let rankingSubject: BehaviorSubject<[Any]> = BehaviorSubject<[Any]>(value: [])
+    let rankingSubject: BehaviorSubject<[RankingItem]> = BehaviorSubject<[RankingItem]>(value: [])
     
     init() {
         let fetching = PublishSubject<Void>()
@@ -40,7 +40,7 @@ class RankingViewModel: RankingViewBindable {
             RankingItem(rank: 200, nickName: "다", exp: 1205, achieve: 2500)])
 
         allRankings = rankings
-        RankingAPI.searchWithSwift(rankingSubject)
+//        RankingAPI.searchWithSwift(rankingSubject)
     }
     
     // Bind UseCase

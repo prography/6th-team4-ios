@@ -32,6 +32,15 @@ class SettingViewController: UIViewController {
     }
     
     private func bindRX() {
+        viewModel.userSubject
+            .subscribe(onNext: { [weak self] user in
+                self?.nicknameLabel.text = user.name
+                let exp = user.exp ?? 0
+                self?.expLabel.text = "\(exp)"
+                self?.numberOfBreadLabel.text = "\(exp/10 + 1)개"
+            })
+            .disposed(by: bag)
+        
         // 테이블뷰 아이템들
         viewModel.allSettings
             .bind(to: tableView.rx.items) { (tableView, row, item) -> UITableViewCell in
