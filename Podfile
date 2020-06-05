@@ -14,6 +14,8 @@ target 'uso' do
   pod 'Toast-Swift', '~>5.0.1'
   pod 'Then'
   pod 'SwiftLint'
+  pod 'FSCalendar'
+
   target 'usoTests' do
     inherit! :search_paths
     # Pods for testing

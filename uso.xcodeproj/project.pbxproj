@@ -68,6 +68,9 @@
 		9CA8AD292489D44600859CA6 /* MyRankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA8AD232489D44600859CA6 /* MyRankingTableViewCell.xib */; };
 		9CA8AD2A2489D44600859CA6 /* MyRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD242489D44600859CA6 /* MyRankingTableViewCell.swift */; };
 		9CA8AD2C2489D48200859CA6 /* SettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD2B2489D48200859CA6 /* SettingCoordinator.swift */; };
+		9CA8AD2E2489F55600859CA6 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD2D2489F55600859CA6 /* PopUp.swift */; };
+		9CA8AD312489F61A00859CA6 /* HabitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD302489F61900859CA6 /* HabitDetailViewController.swift */; };
+		9CA8AD332489F63E00859CA6 /* HabitDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA8AD322489F63E00859CA6 /* HabitDetailViewController.storyboard */; };
 		9CE11BD0247A290D00F6EAC1 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE11BCF247A290D00F6EAC1 /* IndicatorView.swift */; };
 		9CE11BD2247A296F00F6EAC1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE11BD1247A296F00F6EAC1 /* Constants.swift */; };
 		9CE11BD4247A2CC900F6EAC1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE11BD3247A2CC900F6EAC1 /* UIViewExtension.swift */; };
@@ -166,6 +169,9 @@
 		9CA8AD232489D44600859CA6 /* MyRankingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyRankingTableViewCell.xib; path = "../../../../Downloads/6th-team4-ios-develop/uso/Cell/MyRankingTableViewCell.xib"; sourceTree = "<group>"; };
 		9CA8AD242489D44600859CA6 /* MyRankingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyRankingTableViewCell.swift; path = "../../../../Downloads/6th-team4-ios-develop/uso/Cell/MyRankingTableViewCell.swift"; sourceTree = "<group>"; };
 		9CA8AD2B2489D48200859CA6 /* SettingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingCoordinator.swift; path = "../../../Downloads/6th-team4-ios-develop/uso/Coordinator/SettingCoordinator.swift"; sourceTree = "<group>"; };
+		9CA8AD2D2489F55600859CA6 /* PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
+		9CA8AD302489F61900859CA6 /* HabitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailViewController.swift; sourceTree = "<group>"; };
+		9CA8AD322489F63E00859CA6 /* HabitDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitDetailViewController.storyboard; sourceTree = "<group>"; };
 		9CE11BCF247A290D00F6EAC1 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 		9CE11BD1247A296F00F6EAC1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9CE11BD3247A2CC900F6EAC1 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -243,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				9CFF406D24703B6300EC0E66 /* uso.entitlements */,
+				9CA8AD2F2489F5B900859CA6 /* View */,
 				9C7B4B2F24713A20007B21DA /* Network */,
 				3866D359245B0E0A001F76A9 /* Cell */,
 				185D2A662446C9E400A09E99 /* Storyboard */,
@@ -295,6 +302,7 @@
 				9CE11BCF247A290D00F6EAC1 /* IndicatorView.swift */,
 				9CE11BD1247A296F00F6EAC1 /* Constants.swift */,
 				9CE11BD3247A2CC900F6EAC1 /* UIViewExtension.swift */,
+				9CA8AD2D2489F55600859CA6 /* PopUp.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -318,6 +326,7 @@
 				1882372824579DEB002C523E /* SettingViewController.swift */,
 				9C227600246FAD3400DF5911 /* HabitAddViewController.swift */,
 				9C227602246FAD4400DF5911 /* BakeryViewController.swift */,
+				9CA8AD302489F61900859CA6 /* HabitDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -393,6 +402,7 @@
 				1882373024579E8B002C523E /* SettingViewController.storyboard */,
 				9C227604246FAD5900DF5911 /* HabitAddViewController.storyboard */,
 				9C227606246FAD6A00DF5911 /* BakeryViewController.storyboard */,
+				9CA8AD322489F63E00859CA6 /* HabitDetailViewController.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -468,6 +478,13 @@
 				9C7B4B352471429E007B21DA /* Moya+Plugin.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		9CA8AD2F2489F5B900859CA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -584,6 +601,7 @@
 				1882372D24579E13002C523E /* RankingViewController.storyboard in Resources */,
 				18F6663F24611B5400499CBC /* HabitListCell.xib in Resources */,
 				9C07E6EC2467CFD400F87838 /* PlusButtonCell.xib in Resources */,
+				9CA8AD332489F63E00859CA6 /* HabitDetailViewController.storyboard in Resources */,
 				1882372124579B33002C523E /* MainTabViewController.storyboard in Resources */,
 				1882372F24579E23002C523E /* HabitListViewController.storyboard in Resources */,
 				1882373124579E8B002C523E /* SettingViewController.storyboard in Resources */,
@@ -760,6 +778,7 @@
 				185D2A5C2446C57100A09E99 /* UsoAPI.swift in Sources */,
 				9C227601246FAD3400DF5911 /* HabitAddViewController.swift in Sources */,
 				9C2275FF246FAB3A00DF5911 /* HabitAddRepsitory.swift in Sources */,
+				9CA8AD312489F61A00859CA6 /* HabitDetailViewController.swift in Sources */,
 				9CE11BD2247A296F00F6EAC1 /* Constants.swift in Sources */,
 				9C7B4B362471429E007B21DA /* Moya+Plugin.swift in Sources */,
 				18748207246129E7004A40DE /* HabitItem.swift in Sources */,
@@ -767,6 +786,7 @@
 				1882372724579DDA002C523E /* HabitListViewController.swift in Sources */,
 				18F6663E24611B5400499CBC /* HabitListCell.swift in Sources */,
 				185D2A502446C3E000A09E99 /* SignViewModel.swift in Sources */,
+				9CA8AD2E2489F55600859CA6 /* PopUp.swift in Sources */,
 				185D2A652446C8B100A09E99 /* Storyboarded.swift in Sources */,
 				9C2275FD246FAAFC00DF5911 /* BakeryRepository.swift in Sources */,
 				1861430724583F54007151A0 /* SettingViewModel.swift in Sources */,

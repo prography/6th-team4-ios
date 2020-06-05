@@ -31,8 +31,8 @@ class MainCoordinator: Coordinator {
     }
     
     func presentMainTabVC() {
+        navigationController.navigationBar.isHidden = true
         let viewController = MainTabViewController.instantiate()
-        
         // Create Tab one
         let tabOne = HabitListViewController.instantiate()
         let habitListViewModel = HabitListViewModel.init()
@@ -69,8 +69,6 @@ class MainCoordinator: Coordinator {
         
         navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController.navigationBar.shadowImage = UIImage()
-        navigationController.navigationBar.isTranslucent = true
-        navigationController.navigationBar.isHidden = false
         let backButton = UIBarButtonItem(title: "", style: .plain, target: navigationController, action: nil)
         navigationController.navigationItem.leftBarButtonItem = backButton
         

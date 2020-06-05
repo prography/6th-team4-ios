@@ -1,51 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ProfileCell" customModule="uso" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="ProfileCell" customModule="uso" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGA-HL-eLo">
-                        <rect key="frame" x="32" y="27" width="96" height="96"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cXM-sI-Rh7">
+                        <rect key="frame" x="20" y="46.5" width="121.5" height="47.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="빵 리스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4t-q8-boB">
+                                <rect key="frame" x="0.0" y="0.0" width="74" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당신의 미래는 깜깜하군요..!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GmL-Kw-6E9">
+                                <rect key="frame" x="0.0" y="34" width="121.5" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urY-9U-zdg">
+                        <rect key="frame" x="235" y="35" width="70" height="70"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="NGA-HL-eLo" secondAttribute="height" multiplier="1:1" id="xsY-uN-KXN"/>
+                            <constraint firstAttribute="height" constant="70" id="8Zn-L0-uiZ"/>
+                            <constraint firstAttribute="width" constant="70" id="SeS-vA-Aon"/>
                         </constraints>
-                    </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIS-5n-jst">
-                        <rect key="frame" x="148" y="27" width="128" height="96"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                        <nil key="textColor"/>
+                        <state key="normal" backgroundImage="breadButton"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="베이커리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hc-5U-FTt">
+                        <rect key="frame" x="254.5" y="115" width="31.5" height="11"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" red="0.62526017430000003" green="0.43553310629999997" blue="0.097882322970000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="pIS-5n-jst" firstAttribute="top" secondItem="NGA-HL-eLo" secondAttribute="top" id="9iA-SX-QHf"/>
-                    <constraint firstItem="NGA-HL-eLo" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.3" id="BE1-K8-iaK"/>
-                    <constraint firstItem="pIS-5n-jst" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.4" id="H64-bj-PWG"/>
-                    <constraint firstItem="NGA-HL-eLo" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.5" id="MCq-F0-wo8"/>
-                    <constraint firstItem="pIS-5n-jst" firstAttribute="height" secondItem="NGA-HL-eLo" secondAttribute="height" id="NaT-vU-QyV"/>
-                    <constraint firstItem="pIS-5n-jst" firstAttribute="leading" secondItem="NGA-HL-eLo" secondAttribute="trailing" constant="20" id="UIc-P3-JtI"/>
-                    <constraint firstItem="NGA-HL-eLo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rjW-I8-FCE"/>
+                    <constraint firstItem="cXM-sI-Rh7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5Dx-sH-5df"/>
+                    <constraint firstItem="4hc-5U-FTt" firstAttribute="centerX" secondItem="urY-9U-zdg" secondAttribute="centerX" id="BZy-oJ-vhE"/>
+                    <constraint firstItem="cXM-sI-Rh7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="LJy-x8-voO"/>
+                    <constraint firstItem="4hc-5U-FTt" firstAttribute="top" secondItem="urY-9U-zdg" secondAttribute="bottom" constant="10" id="NKe-lg-Gtj"/>
+                    <constraint firstItem="urY-9U-zdg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YWA-5d-3yq"/>
+                    <constraint firstAttribute="trailing" secondItem="urY-9U-zdg" secondAttribute="trailing" constant="15" id="jR1-Ff-qKr"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <connections>
-                <outlet property="descriptionLabel" destination="pIS-5n-jst" id="25s-Oj-rQT"/>
-                <outlet property="profileView" destination="NGA-HL-eLo" id="0Pu-wo-hY9"/>
-            </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+            <point key="canvasLocation" x="137.68115942028987" y="120.20089285714285"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="breadButton" width="249" height="249"/>
+    </resources>
 </document>

@@ -76,6 +76,10 @@ extension HabitListViewController: Storyboarded, UITableViewDelegate {
     func layout() {
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         // self.tableView.tableFooterView = PlusButtonCell()
+        tableView.allowsSelection = false
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 800
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         let habitListCellNib = UINib(nibName: "HabitListCell", bundle: nil)
         self.tableView.register(habitListCellNib, forCellReuseIdentifier: HabitListCell.identifier)
         let profileCellNib = UINib(nibName: "ProfileCell", bundle: nil)
@@ -85,15 +89,11 @@ extension HabitListViewController: Storyboarded, UITableViewDelegate {
         
     }
     
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 100
-    }
-    
+//    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+//        return 100
+//    }
+//    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 0 {
-            return 400
-        } else {
-            return 60
-        }
+            return 140
     }
 }

@@ -26,7 +26,7 @@ class ProfileCell: UITableViewCell {
         
         data.observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] item in
-                self?.descriptionLabel.text = item.description
+                //self?.descriptionLabel.text = item.description
             })
             .disposed(by: bag)
     }
