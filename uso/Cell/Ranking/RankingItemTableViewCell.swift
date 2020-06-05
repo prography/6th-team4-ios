@@ -18,8 +18,6 @@ class RankingItemTableViewCell: UITableViewCell {
     @IBOutlet var achieve: UILabel!
     @IBOutlet var crownImage: UIImageView!
     
-    private let cellBag = DisposeBag()
-    
     let onData: AnyObserver<RankingItem>
     var bag = DisposeBag()
     
@@ -36,7 +34,7 @@ class RankingItemTableViewCell: UITableViewCell {
                 self?.exp.text = "\(ranking.exp)"
                 self?.achieve.text = "\(ranking.achieve)"
             })
-            .disposed(by: cellBag)
+            .disposed(by: bag)
     }
 
     override func awakeFromNib() {

@@ -43,7 +43,6 @@
 		1882372B24579DFA002C523E /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882372A24579DFA002C523E /* RankingViewController.swift */; };
 		1882372D24579E13002C523E /* RankingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1882372C24579E13002C523E /* RankingViewController.storyboard */; };
 		1882372F24579E23002C523E /* HabitListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1882372E24579E23002C523E /* HabitListViewController.storyboard */; };
-		1882373124579E8B002C523E /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1882373024579E8B002C523E /* SettingViewController.storyboard */; };
 		18CB4FCD245AB81100FD6651 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 18CB4FCC245AB81100FD6651 /* .swiftlint.yml */; };
 		18F6663E24611B5400499CBC /* HabitListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6663C24611B5400499CBC /* HabitListCell.swift */; };
 		18F6663F24611B5400499CBC /* HabitListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F6663D24611B5400499CBC /* HabitListCell.xib */; };
@@ -51,6 +50,17 @@
 		18F6664324611D9200499CBC /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F6664124611D9200499CBC /* ProfileCell.xib */; };
 		18F666452461244400499CBC /* HabitListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F666442461244400499CBC /* HabitListUseCase.swift */; };
 		3859DDE0245D5EA400C799BF /* RankingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859DDDF245D5EA400C799BF /* RankingUseCase.swift */; };
+		387D124A248A1397005B0C05 /* SettingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1244248A1396005B0C05 /* SettingItemTableViewCell.swift */; };
+		387D124B248A1397005B0C05 /* MyRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1245248A1396005B0C05 /* MyRankingTableViewCell.swift */; };
+		387D124C248A1397005B0C05 /* RankingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1246248A1396005B0C05 /* RankingItemTableViewCell.swift */; };
+		387D124D248A1397005B0C05 /* MyRankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1247248A1396005B0C05 /* MyRankingTableViewCell.xib */; };
+		387D124E248A1397005B0C05 /* SettingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1248248A1397005B0C05 /* SettingItemTableViewCell.xib */; };
+		387D124F248A1397005B0C05 /* RankingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1249248A1397005B0C05 /* RankingItemTableViewCell.xib */; };
+		387D1251248A13E9005B0C05 /* SettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1250248A13E9005B0C05 /* SettingCoordinator.swift */; };
+		387D1253248A14BB005B0C05 /* CALayer+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1252248A14BB005B0C05 /* CALayer+Border.swift */; };
+		387D1255248A159F005B0C05 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387D1254248A159F005B0C05 /* SettingViewController.storyboard */; };
+		387D1257248A15F8005B0C05 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1256248A15F8005B0C05 /* Ranking.swift */; };
+		387D125A248A1638005B0C05 /* MoyaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1258248A1638005B0C05 /* MoyaAPI.swift */; };
 		9C07E6EC2467CFD400F87838 /* PlusButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C07E6EB2467CFD400F87838 /* PlusButtonCell.xib */; };
 		9C2275FD246FAAFC00DF5911 /* BakeryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2275FC246FAAFC00DF5911 /* BakeryRepository.swift */; };
 		9C2275FF246FAB3A00DF5911 /* HabitAddRepsitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2275FE246FAB3A00DF5911 /* HabitAddRepsitory.swift */; };
@@ -61,13 +71,6 @@
 		9C7B4B3124713A68007B21DA /* HabitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B4B3024713A68007B21DA /* HabitAPI.swift */; };
 		9C7B4B3424713B37007B21DA /* RankingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B4B3324713B37007B21DA /* RankingAPI.swift */; };
 		9C7B4B362471429E007B21DA /* Moya+Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B4B352471429E007B21DA /* Moya+Plugin.swift */; };
-		9CA8AD252489D44600859CA6 /* RankingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD1F2489D44600859CA6 /* RankingItemTableViewCell.swift */; };
-		9CA8AD262489D44600859CA6 /* RankingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA8AD202489D44600859CA6 /* RankingItemTableViewCell.xib */; };
-		9CA8AD272489D44600859CA6 /* SettingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD212489D44600859CA6 /* SettingItemTableViewCell.swift */; };
-		9CA8AD282489D44600859CA6 /* SettingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA8AD222489D44600859CA6 /* SettingItemTableViewCell.xib */; };
-		9CA8AD292489D44600859CA6 /* MyRankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA8AD232489D44600859CA6 /* MyRankingTableViewCell.xib */; };
-		9CA8AD2A2489D44600859CA6 /* MyRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD242489D44600859CA6 /* MyRankingTableViewCell.swift */; };
-		9CA8AD2C2489D48200859CA6 /* SettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD2B2489D48200859CA6 /* SettingCoordinator.swift */; };
 		9CA8AD2E2489F55600859CA6 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD2D2489F55600859CA6 /* PopUp.swift */; };
 		9CA8AD312489F61A00859CA6 /* HabitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD302489F61900859CA6 /* HabitDetailViewController.swift */; };
 		9CA8AD332489F63E00859CA6 /* HabitDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA8AD322489F63E00859CA6 /* HabitDetailViewController.storyboard */; };
@@ -136,7 +139,6 @@
 		1882372A24579DFA002C523E /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		1882372C24579E13002C523E /* RankingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RankingViewController.storyboard; sourceTree = "<group>"; };
 		1882372E24579E23002C523E /* HabitListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitListViewController.storyboard; sourceTree = "<group>"; };
-		1882373024579E8B002C523E /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
 		18CB4FCC245AB81100FD6651 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		18F6663C24611B5400499CBC /* HabitListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListCell.swift; sourceTree = "<group>"; };
 		18F6663D24611B5400499CBC /* HabitListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitListCell.xib; sourceTree = "<group>"; };
@@ -145,6 +147,17 @@
 		18F666442461244400499CBC /* HabitListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListUseCase.swift; sourceTree = "<group>"; };
 		29D86E52A96C403CBA9C32B3 /* Pods-uso_iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_iosTests.debug.xcconfig"; path = "Target Support Files/Pods-uso_iosTests/Pods-uso_iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3859DDDF245D5EA400C799BF /* RankingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingUseCase.swift; sourceTree = "<group>"; };
+		387D1244248A1396005B0C05 /* SettingItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingItemTableViewCell.swift; sourceTree = "<group>"; };
+		387D1245248A1396005B0C05 /* MyRankingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRankingTableViewCell.swift; sourceTree = "<group>"; };
+		387D1246248A1396005B0C05 /* RankingItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingItemTableViewCell.swift; sourceTree = "<group>"; };
+		387D1247248A1396005B0C05 /* MyRankingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyRankingTableViewCell.xib; sourceTree = "<group>"; };
+		387D1248248A1397005B0C05 /* SettingItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingItemTableViewCell.xib; sourceTree = "<group>"; };
+		387D1249248A1397005B0C05 /* RankingItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankingItemTableViewCell.xib; sourceTree = "<group>"; };
+		387D1250248A13E9005B0C05 /* SettingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingCoordinator.swift; path = ../../../../6th_team4_ios/uso/Coordinator/SettingCoordinator.swift; sourceTree = "<group>"; };
+		387D1252248A14BB005B0C05 /* CALayer+Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Border.swift"; path = "../../../../6th_team4_ios/uso/Extention/CALayer+Border.swift"; sourceTree = "<group>"; };
+		387D1254248A159F005B0C05 /* SettingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SettingViewController.storyboard; path = ../../../../6th_team4_ios/uso/Storyboard/SettingViewController.storyboard; sourceTree = "<group>"; };
+		387D1256248A15F8005B0C05 /* Ranking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ranking.swift; path = ../../../../../6th_team4_ios/uso/Model/Ranking.swift; sourceTree = "<group>"; };
+		387D1258248A1638005B0C05 /* MoyaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoyaAPI.swift; path = ../../../../../6th_team4_ios/uso/Service/MoyaAPI.swift; sourceTree = "<group>"; };
 		4A3AC7C8FD7C0F1A1EF65293 /* Pods-uso_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_ios.release.xcconfig"; path = "Target Support Files/Pods-uso_ios/Pods-uso_ios.release.xcconfig"; sourceTree = "<group>"; };
 		6130EF413695622D9CFC22FC /* Pods_uso_usoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uso_usoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE35225023FE32BBE83F9CF /* Pods-uso_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_ios.debug.xcconfig"; path = "Target Support Files/Pods-uso_ios/Pods-uso_ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,13 +175,6 @@
 		9C7B4B3024713A68007B21DA /* HabitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitAPI.swift; sourceTree = "<group>"; };
 		9C7B4B3324713B37007B21DA /* RankingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingAPI.swift; sourceTree = "<group>"; };
 		9C7B4B352471429E007B21DA /* Moya+Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Plugin.swift"; sourceTree = "<group>"; };
-		9CA8AD1F2489D44600859CA6 /* RankingItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RankingItemTableViewCell.swift; path = "../../../../Downloads/6th-team4-ios-develop/uso/Cell/RankingItemTableViewCell.swift"; sourceTree = "<group>"; };
-		9CA8AD202489D44600859CA6 /* RankingItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RankingItemTableViewCell.xib; path = "../../../../Downloads/6th-team4-ios-develop/uso/Cell/RankingItemTableViewCell.xib"; sourceTree = "<group>"; };
-		9CA8AD212489D44600859CA6 /* SettingItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingItemTableViewCell.swift; path = "../../../../Downloads/6th-team4-ios-develop/uso/Cell/SettingItemTableViewCell.swift"; sourceTree = "<group>"; };
-		9CA8AD222489D44600859CA6 /* SettingItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingItemTableViewCell.xib; path = "../../../../Downloads/6th-team4-ios-develop/uso/Cell/SettingItemTableViewCell.xib"; sourceTree = "<group>"; };
-		9CA8AD232489D44600859CA6 /* MyRankingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyRankingTableViewCell.xib; path = "../../../../Downloads/6th-team4-ios-develop/uso/Cell/MyRankingTableViewCell.xib"; sourceTree = "<group>"; };
-		9CA8AD242489D44600859CA6 /* MyRankingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyRankingTableViewCell.swift; path = "../../../../Downloads/6th-team4-ios-develop/uso/Cell/MyRankingTableViewCell.swift"; sourceTree = "<group>"; };
-		9CA8AD2B2489D48200859CA6 /* SettingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingCoordinator.swift; path = "../../../Downloads/6th-team4-ios-develop/uso/Coordinator/SettingCoordinator.swift"; sourceTree = "<group>"; };
 		9CA8AD2D2489F55600859CA6 /* PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
 		9CA8AD302489F61900859CA6 /* HabitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailViewController.swift; sourceTree = "<group>"; };
 		9CA8AD322489F63E00859CA6 /* HabitDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitDetailViewController.storyboard; sourceTree = "<group>"; };
@@ -298,6 +304,7 @@
 		185D2A472446C2B000A09E99 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				387D1252248A14BB005B0C05 /* CALayer+Border.swift */,
 				185D2A592446C54200A09E99 /* UIColorExtension.swift */,
 				9CE11BCF247A290D00F6EAC1 /* IndicatorView.swift */,
 				9CE11BD1247A296F00F6EAC1 /* Constants.swift */,
@@ -365,6 +372,7 @@
 		185D2A4D2446C31400A09E99 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				387D1256248A15F8005B0C05 /* Ranking.swift */,
 				185D2A532446C40000A09E99 /* Model.swift */,
 				18748206246129E7004A40DE /* HabitItem.swift */,
 				18748208246129F0004A40DE /* Habit.swift */,
@@ -375,8 +383,8 @@
 		185D2A4E2446C31800A09E99 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				387D1250248A13E9005B0C05 /* SettingCoordinator.swift */,
 				185D2A602446C84600A09E99 /* MainCoordinator.swift */,
-				9CA8AD2B2489D48200859CA6 /* SettingCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -394,12 +402,12 @@
 		185D2A662446C9E400A09E99 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				387D1254248A159F005B0C05 /* SettingViewController.storyboard */,
 				182F46F9244968C300D1730B /* SignViewController.storyboard */,
 				182F46FB2449690400D1730B /* LaunchScreen.storyboard */,
 				1882372024579B33002C523E /* MainTabViewController.storyboard */,
 				1882372C24579E13002C523E /* RankingViewController.storyboard */,
 				1882372E24579E23002C523E /* HabitListViewController.storyboard */,
-				1882373024579E8B002C523E /* SettingViewController.storyboard */,
 				9C227604246FAD5900DF5911 /* HabitAddViewController.storyboard */,
 				9C227606246FAD6A00DF5911 /* BakeryViewController.storyboard */,
 				9CA8AD322489F63E00859CA6 /* HabitDetailViewController.storyboard */,
@@ -410,12 +418,10 @@
 		18F6663A24611AB900499CBC /* Ranking */ = {
 			isa = PBXGroup;
 			children = (
-				9CA8AD242489D44600859CA6 /* MyRankingTableViewCell.swift */,
-				9CA8AD232489D44600859CA6 /* MyRankingTableViewCell.xib */,
-				9CA8AD1F2489D44600859CA6 /* RankingItemTableViewCell.swift */,
-				9CA8AD202489D44600859CA6 /* RankingItemTableViewCell.xib */,
-				9CA8AD212489D44600859CA6 /* SettingItemTableViewCell.swift */,
-				9CA8AD222489D44600859CA6 /* SettingItemTableViewCell.xib */,
+				387D1245248A1396005B0C05 /* MyRankingTableViewCell.swift */,
+				387D1247248A1396005B0C05 /* MyRankingTableViewCell.xib */,
+				387D1246248A1396005B0C05 /* RankingItemTableViewCell.swift */,
+				387D1249248A1397005B0C05 /* RankingItemTableViewCell.xib */,
 			);
 			path = Ranking;
 			sourceTree = "<group>";
@@ -457,8 +463,18 @@
 			children = (
 				18F6663B24611ADE00499CBC /* HabitList */,
 				18F6663A24611AB900499CBC /* Ranking */,
+				38A85091248A187300102E09 /* Setting */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		38A85091248A187300102E09 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				387D1244248A1396005B0C05 /* SettingItemTableViewCell.swift */,
+				387D1248248A1397005B0C05 /* SettingItemTableViewCell.xib */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		9C7B4B2F24713A20007B21DA /* Network */ = {
@@ -473,6 +489,7 @@
 		9C7B4B3224713A6B007B21DA /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				387D1258248A1638005B0C05 /* MoyaAPI.swift */,
 				9C7B4B3024713A68007B21DA /* HabitAPI.swift */,
 				9C7B4B3324713B37007B21DA /* RankingAPI.swift */,
 				9C7B4B352471429E007B21DA /* Moya+Plugin.swift */,
@@ -556,7 +573,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = sooyong;
 				TargetAttributes = {
 					185D2A122446C27800A09E99 = {
@@ -604,16 +621,16 @@
 				9CA8AD332489F63E00859CA6 /* HabitDetailViewController.storyboard in Resources */,
 				1882372124579B33002C523E /* MainTabViewController.storyboard in Resources */,
 				1882372F24579E23002C523E /* HabitListViewController.storyboard in Resources */,
-				1882373124579E8B002C523E /* SettingViewController.storyboard in Resources */,
 				182F46FC2449690400D1730B /* LaunchScreen.storyboard in Resources */,
+				387D1255248A159F005B0C05 /* SettingViewController.storyboard in Resources */,
 				9C227605246FAD5900DF5911 /* HabitAddViewController.storyboard in Resources */,
-				9CA8AD262489D44600859CA6 /* RankingItemTableViewCell.xib in Resources */,
+				387D124F248A1397005B0C05 /* RankingItemTableViewCell.xib in Resources */,
 				18F6664324611D9200499CBC /* ProfileCell.xib in Resources */,
-				9CA8AD282489D44600859CA6 /* SettingItemTableViewCell.xib in Resources */,
 				9C227607246FAD6A00DF5911 /* BakeryViewController.storyboard in Resources */,
 				182F46FA244968C300D1730B /* SignViewController.storyboard in Resources */,
-				9CA8AD292489D44600859CA6 /* MyRankingTableViewCell.xib in Resources */,
+				387D124E248A1397005B0C05 /* SettingItemTableViewCell.xib in Resources */,
 				185D2A202446C27D00A09E99 /* Assets.xcassets in Resources */,
+				387D124D248A1397005B0C05 /* MyRankingTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,10 +776,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CE11BD0247A290D00F6EAC1 /* IndicatorView.swift in Sources */,
-				9CA8AD272489D44600859CA6 /* SettingItemTableViewCell.swift in Sources */,
 				18404674245AD07E002C04C7 /* SignViewController.swift in Sources */,
 				185D2A562446C49700A09E99 /* Repository.swift in Sources */,
+				387D124A248A1397005B0C05 /* SettingItemTableViewCell.swift in Sources */,
 				185D2A612446C84600A09E99 /* MainCoordinator.swift in Sources */,
+				387D1251248A13E9005B0C05 /* SettingCoordinator.swift in Sources */,
 				185D2A632446C86F00A09E99 /* Coordinator.swift in Sources */,
 				185D2A522446C3EB00A09E99 /* RootUseCase.swift in Sources */,
 				185D2A582446C50F00A09E99 /* UsoError.swift in Sources */,
@@ -771,7 +789,10 @@
 				185D2A5A2446C54200A09E99 /* UIColorExtension.swift in Sources */,
 				1861430524583F49007151A0 /* RankingViewModel.swift in Sources */,
 				1874820C24612BC0004A40DE /* PlusButtonCell.swift in Sources */,
+				387D125A248A1638005B0C05 /* MoyaAPI.swift in Sources */,
+				387D1257248A15F8005B0C05 /* Ranking.swift in Sources */,
 				18F6664224611D9200499CBC /* ProfileCell.swift in Sources */,
+				387D124B248A1397005B0C05 /* MyRankingTableViewCell.swift in Sources */,
 				18748209246129F0004A40DE /* Habit.swift in Sources */,
 				185D2A172446C27800A09E99 /* AppDelegate.swift in Sources */,
 				185D2A5F2446C7A900A09E99 /* ViewBindable.swift in Sources */,
@@ -790,17 +811,16 @@
 				185D2A652446C8B100A09E99 /* Storyboarded.swift in Sources */,
 				9C2275FD246FAAFC00DF5911 /* BakeryRepository.swift in Sources */,
 				1861430724583F54007151A0 /* SettingViewModel.swift in Sources */,
-				9CA8AD2A2489D44600859CA6 /* MyRankingTableViewCell.swift in Sources */,
-				9CA8AD2C2489D48200859CA6 /* SettingCoordinator.swift in Sources */,
-				9CA8AD252489D44600859CA6 /* RankingItemTableViewCell.swift in Sources */,
 				9CE11BD4247A2CC900F6EAC1 /* UIViewExtension.swift in Sources */,
 				9C227603246FAD4400DF5911 /* BakeryViewController.swift in Sources */,
 				18F666452461244400499CBC /* HabitListUseCase.swift in Sources */,
 				1874820524612803004A40DE /* ResponseStatus.swift in Sources */,
 				9C7B4B3124713A68007B21DA /* HabitAPI.swift in Sources */,
 				1861430324583F3A007151A0 /* HabitListViewModel.swift in Sources */,
+				387D1253248A14BB005B0C05 /* CALayer+Border.swift in Sources */,
 				1882372524579CEE002C523E /* MainTabViewController.swift in Sources */,
 				1882372B24579DFA002C523E /* RankingViewController.swift in Sources */,
+				387D124C248A1397005B0C05 /* RankingItemTableViewCell.swift in Sources */,
 				9C7B4B3424713B37007B21DA /* RankingAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

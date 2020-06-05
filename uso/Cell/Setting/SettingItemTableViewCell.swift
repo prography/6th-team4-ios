@@ -1,35 +1,31 @@
 //
-//  MyRankingTableViewCell.swift
+//  SettingItemTableViewCell.swift
 //  uso
 //
-//  Created by 서재훈 on 2020/05/01.
+//  Created by 서재훈 on 2020/05/17.
 //  Copyright © 2020 sooyong. All rights reserved.
 //
 
 import UIKit
 import RxSwift
 
-class MyRankingTableViewCell: UITableViewCell {
-    static let identifier = "MyRankingTableViewCell"
+class SettingItemTableViewCell: UITableViewCell {
+    static let identifier = "SettingItemTableViewCell"
     
-    @IBOutlet var highRankLabel: UILabel!
-    @IBOutlet var totalLabel: UILabel!
-    @IBOutlet var rankLabel: UILabel!
+    @IBOutlet var label: UILabel!
     
-    let onData: AnyObserver<RankingItem>
+    let onData: AnyObserver<String>
     var bag = DisposeBag()
     
     required init?(coder aDecoder: NSCoder) {
-        let data = PublishSubject<RankingItem>()
+        let data = PublishSubject<String>()
         onData = data.asObserver()
     
         super.init(coder: aDecoder)
 
         data.observeOn(MainScheduler.instance)
-            .subscribe(onNext: { [weak self] ranking in
-                self?.totalLabel.text = "\(100)"
-                self?.rankLabel.text = "\(ranking.rank)"
-                self?.highRankLabel.text = "\(ranking.rank*100/100)%"
+            .subscribe(onNext: { [weak self] setting in
+                self?.label?.text = setting
             })
             .disposed(by: bag)
     }
@@ -37,7 +33,6 @@ class MyRankingTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        layout()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -49,10 +44,6 @@ class MyRankingTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         bag = DisposeBag()
-    }
-    
-    func layout() {
-        rankLabel.textColor = UIColor.green
     }
     
 }
