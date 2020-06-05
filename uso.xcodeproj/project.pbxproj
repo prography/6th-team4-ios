@@ -47,6 +47,7 @@
 		3822B1CE24868AF700385A59 /* MoyaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3822B1CD24868AF700385A59 /* MoyaAPI.swift */; };
 		383579302471715F0007F2C1 /* SettingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3835792E2471715F0007F2C1 /* SettingItemTableViewCell.swift */; };
 		383579312471715F0007F2C1 /* SettingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3835792F2471715F0007F2C1 /* SettingItemTableViewCell.xib */; };
+		38394A8E24892D8F0024CB17 /* CALayer+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38394A8D24892D8F0024CB17 /* CALayer+Border.swift */; };
 		3859DDE0245D5EA400C799BF /* RankingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859DDDF245D5EA400C799BF /* RankingUseCase.swift */; };
 		3866D35D245B0EEE001F76A9 /* RankingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3866D35C245B0EEE001F76A9 /* RankingItemTableViewCell.swift */; };
 		387B127E245BF32D0095D58B /* MyRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B127C245BF32D0095D58B /* MyRankingTableViewCell.swift */; };
@@ -120,6 +121,7 @@
 		3822B1CD24868AF700385A59 /* MoyaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaAPI.swift; sourceTree = "<group>"; };
 		3835792E2471715F0007F2C1 /* SettingItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItemTableViewCell.swift; sourceTree = "<group>"; };
 		3835792F2471715F0007F2C1 /* SettingItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingItemTableViewCell.xib; sourceTree = "<group>"; };
+		38394A8D24892D8F0024CB17 /* CALayer+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Border.swift"; sourceTree = "<group>"; };
 		3859DDDF245D5EA400C799BF /* RankingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingUseCase.swift; sourceTree = "<group>"; };
 		3866D35C245B0EEE001F76A9 /* RankingItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingItemTableViewCell.swift; sourceTree = "<group>"; };
 		387B127C245BF32D0095D58B /* MyRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRankingTableViewCell.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				185D2A592446C54200A09E99 /* UIColor+Hex.swift */,
+				38394A8D24892D8F0024CB17 /* CALayer+Border.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -688,6 +691,7 @@
 				1861430724583F54007151A0 /* SettingViewModel.swift in Sources */,
 				3866D35D245B0EEE001F76A9 /* RankingItemTableViewCell.swift in Sources */,
 				188237352457ADFD002C523E /* SettingCoordinator.swift in Sources */,
+				38394A8E24892D8F0024CB17 /* CALayer+Border.swift in Sources */,
 				1861430324583F3A007151A0 /* HabitListViewModel.swift in Sources */,
 				1882372524579CEE002C523E /* MainTabViewController.swift in Sources */,
 				1882372B24579DFA002C523E /* RankingViewController.swift in Sources */,

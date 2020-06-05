@@ -39,3 +39,11 @@ extension RankingItem: Equatable {
     }
 }
 
+//임시 테스트 용
+struct UserItem: Decodable {
+    var userId: Int?
+    var name: String?
+    var exp: Int?
+    var createdAt: String?
+    var updatedAt: String?
+}

@@ -10,7 +10,7 @@ import Foundation
 import Moya
 
 //임시 토큰
-let token = "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTU5MTE4OTU1Nn0.0XYW9G064vwwUDTkkFaLe6ol9GTPvWSX5rz4aa5Kk9d0Qul1pm-lfwsrFjGZj1oS"
+let token = "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTU5MTI3MDY5OH0.MbIVXMzgjLlPAuJYMs4bQX6vKx7AAQmVS94t0btd4lGO3WqudB4fPsedN9ynLbxk"
 
 enum MoyaAPI {
     case getHabits(query: Int)

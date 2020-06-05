@@ -12,6 +12,8 @@ import RxSwift
 class SettingItemTableViewCell: UITableViewCell {
     static let identifier = "SettingItemTableViewCell"
     
+    @IBOutlet var label: UILabel!
+    
     let onData: AnyObserver<String>
     var bag = DisposeBag()
     
@@ -23,7 +25,7 @@ class SettingItemTableViewCell: UITableViewCell {
 
         data.observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] setting in
-                self?.textLabel?.text = setting
+                self?.label?.text = setting
             })
             .disposed(by: bag)
     }
@@ -31,6 +33,7 @@ class SettingItemTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+//        layout()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -42,6 +45,10 @@ class SettingItemTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         bag = DisposeBag()
+    }
+    
+    func layout() {
+        self.layer.addBorder([.top, .bottom], color: UIColor.gray, width: 1.0)
     }
     
 }
