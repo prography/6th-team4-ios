@@ -37,7 +37,7 @@ class RankingViewModel: RankingViewBindable {
             RankingItem(rank: 17, nickName: "Uso", exp: 0, achieve: 0),
             RankingItem(rank: 1, nickName: "가", exp: 2500, achieve: 2500),
             RankingItem(rank: 2, nickName: "나", exp: 2140, achieve: 2500),
-            RankingItem(rank: 200, nickName: "다", exp: 1205, achieve: 2500)])
+            RankingItem(rank: 100, nickName: "다", exp: 1205, achieve: 2500)])
 
         allRankings = rankings
 //        RankingAPI.searchWithSwift(rankingSubject)

@@ -20,26 +20,26 @@
                         <rect key="frame" x="0.0" y="260" width="320" height="40"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="순위" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6m-jf-rN4">
-                                <rect key="frame" x="0.0" y="26.5" width="80" height="13.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <rect key="frame" x="0.0" y="24" width="80" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9n-sj-G6z">
-                                <rect key="frame" x="80" y="26.5" width="80" height="13.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <rect key="frame" x="80" y="24" width="80" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="경험치" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epr-Jm-lne">
-                                <rect key="frame" x="160" y="26.5" width="80" height="13.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <rect key="frame" x="160" y="24" width="80" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="달성도" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RT5-xo-aki">
-                                <rect key="frame" x="240" y="26.5" width="80" height="13.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <rect key="frame" x="240" y="24" width="80" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -62,50 +62,50 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나는 지금" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bzk-qg-foV">
-                        <rect key="frame" x="42" y="138.5" width="70.5" height="23"/>
-                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="19"/>
+                        <rect key="frame" x="42" y="137.5" width="77.5" height="25.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="21"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상위" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1T-h3-oKc">
-                        <rect key="frame" x="175" y="141" width="26" height="18"/>
-                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                        <rect key="frame" x="173.5" y="140" width="29.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvP-Z6-f6M">
-                        <rect key="frame" x="211" y="132" width="59.5" height="36"/>
+                        <rect key="frame" x="213" y="132" width="59.5" height="36"/>
                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당신은 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dq-qj-5t0">
-                        <rect key="frame" x="52" y="191.5" width="48.5" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                        <rect key="frame" x="52" y="193" width="51" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuQ-X9-PdN">
-                        <rect key="frame" x="100.5" y="191.5" width="37.5" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="103" y="193" width="39.5" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="명 중에 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pr2-z6-Atd">
-                        <rect key="frame" x="138" y="191.5" width="52.5" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                        <rect key="frame" x="142.5" y="193" width="55.5" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltR-D8-Rf5">
-                        <rect key="frame" x="190.5" y="191.5" width="38.5" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="198" y="193" width="43.5" height="21.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="등 입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYM-kn-4r1">
-                        <rect key="frame" x="229" y="191.5" width="67.5" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                        <rect key="frame" x="241.5" y="193" width="71.5" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>

@@ -57,7 +57,7 @@ extension RankingViewController: Storyboarded {
 extension RankingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
-            return screenWidth*30/32
+            return screenWidth*28/32
         } else {
             return screenWidth*7/32
         }

@@ -44,23 +44,20 @@ class MainCoordinator: Coordinator {
         
         // Create Tab two
         let tabTwo = RankingViewController.instantiate()
-        let tabTwoBarItem2 = UITabBarItem(title: "Ranking", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
         let rankingViewModel = RankingViewModel.init()
-        rankingViewModel.bind(usecase: RankingUseCase())
-        tabTwo.viewModel = rankingViewModel
-        tabTwo.coordinator = self
+        let tabTwoBarItem2 = UITabBarItem(title: "Ranking", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
         tabTwo.modalPresentationStyle = .fullScreen
+        tabTwo.coordinator = self
+        tabTwo.viewModel = rankingViewModel
         tabTwo.tabBarItem = tabTwoBarItem2
         
         // Create Tab three
         let tabThree = SettingViewController.instantiate()
-        let tabTwoBarItem3 = UITabBarItem(title: "Setting", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
-        //테스트
         let settingViewModel = SettingViewModel.init()
-        settingViewModel.bind(usecase: RootUseCase())
-        tabThree.viewModel = settingViewModel
-        
+        let tabTwoBarItem3 = UITabBarItem(title: "Setting", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
         tabThree.modalPresentationStyle = .fullScreen
+        tabThree.coordinator = self
+        tabThree.viewModel = settingViewModel
         tabThree.tabBarItem = tabTwoBarItem3
         
         viewController.viewControllers = [tabOne, tabTwo, tabThree]
@@ -75,12 +72,13 @@ class MainCoordinator: Coordinator {
         navigationController.popViewController(animated: false)
         navigationController.pushViewController(viewController, animated: true)
     }
+    
     func presentHabitAddVC() {
         let viewController = HabitAddViewController.instantiate()
         viewController.coordinator = self
         // Consider animation for modal push
         navigationController.navigationBar.isHidden = true
-        navigationController.pushViewController(viewController, animated: true)
+        navigationController.present(viewController, animated: true)
     }
     
     func presentHabitDetailVC() {

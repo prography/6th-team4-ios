@@ -18,7 +18,7 @@ class SettingViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var notiView: UIView!
     
-    weak var coordinator: SettingCoordinator?
+    weak var coordinator: MainCoordinator?
     var viewModel: SettingViewModel!
     let bag = DisposeBag()
     
