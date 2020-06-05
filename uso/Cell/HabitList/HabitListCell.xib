@@ -62,6 +62,7 @@
             <connections>
                 <outlet property="habitTitleLabel" destination="HUg-tv-pFB" id="GvV-uo-HCy"/>
                 <outlet property="ratioLabel" destination="WAY-vk-aMn" id="rPI-Ep-e7t"/>
+                <outlet property="totalView" destination="PA7-Su-aqg" id="XvF-c2-Cml"/>
             </connections>
             <point key="canvasLocation" x="-72.463768115942031" y="83.705357142857139"/>
         </tableViewCell>

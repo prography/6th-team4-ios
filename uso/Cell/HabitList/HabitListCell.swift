@@ -12,9 +12,10 @@ import RxCocoa
 
 class HabitListCell: UITableViewCell {
     static let identifier = "HabitListCell"
-    
+    var parentVC: HabitListViewController?
     @IBOutlet weak var habitTitleLabel: UILabel!
     @IBOutlet weak var ratioLabel: UILabel!
+    @IBOutlet weak var totalView: UIView!
     
     let onData: AnyObserver<HabitItem>
     private var bag = DisposeBag()
@@ -36,16 +37,20 @@ class HabitListCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         layout()
-        // Initialization code
-    }
-    
-    func layout() {
         
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
+    func layout() {
+        let tapGesture = UITapGestureRecognizer()
+        totalView.addGestureRecognizer(tapGesture)
+        tapGesture.rx
+            .event
+            .bind(onNext: { _ in
+            self.parentVC?.coordinator?.presentHabitDetailVC()
+        }).disposed(by: bag)
+        
+        //totalView.setRoundCorner(20)
+        totalView.setBorder(color: UIColor(red: 0.742, green: 0.722, blue: 0.668, alpha: 1), width: 1, cornerRadius: 20)
     }
     
     override func prepareForReuse() {

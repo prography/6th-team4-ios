@@ -32,9 +32,8 @@
                                     <constraint firstItem="ML2-zC-UIT" firstAttribute="centerY" secondItem="qGZ-fS-F2F" secondAttribute="centerY" id="RCS-Pf-cQQ"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="659-hX-3JT">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="659-hX-3JT" customClass="FSCalendar">
                                 <rect key="frame" x="20" y="254" width="374" height="400"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="g6K-Fj-au0"/>
                                 </constraints>
@@ -113,6 +112,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7I8-Ke-Ze8"/>
                     </view>
+                    <connections>
+                        <outlet property="calendar" destination="659-hX-3JT" id="sGc-7c-UQt"/>
+                        <outlet property="commitButton" destination="qGZ-fS-F2F" id="2au-WT-P4t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5CU-xn-E2Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
