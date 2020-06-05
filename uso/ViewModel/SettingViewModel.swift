@@ -31,4 +31,3 @@ class SettingViewModel: SettingViewBindable {
     func bind(usecase: RootUseCaseProtocol) {
     }
 }
-

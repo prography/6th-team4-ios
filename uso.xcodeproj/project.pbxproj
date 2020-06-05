@@ -39,7 +39,6 @@
 		1882372124579B33002C523E /* MainTabViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1882372024579B33002C523E /* MainTabViewController.storyboard */; };
 		1882372524579CEE002C523E /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882372424579CEE002C523E /* MainTabViewController.swift */; };
 		1882372724579DDA002C523E /* HabitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882372624579DDA002C523E /* HabitListViewController.swift */; };
-		1882372924579DEB002C523E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882372824579DEB002C523E /* SettingViewController.swift */; };
 		1882372B24579DFA002C523E /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882372A24579DFA002C523E /* RankingViewController.swift */; };
 		1882372D24579E13002C523E /* RankingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1882372C24579E13002C523E /* RankingViewController.storyboard */; };
 		1882372F24579E23002C523E /* HabitListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1882372E24579E23002C523E /* HabitListViewController.storyboard */; };
@@ -56,11 +55,12 @@
 		387D124D248A1397005B0C05 /* MyRankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1247248A1396005B0C05 /* MyRankingTableViewCell.xib */; };
 		387D124E248A1397005B0C05 /* SettingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1248248A1397005B0C05 /* SettingItemTableViewCell.xib */; };
 		387D124F248A1397005B0C05 /* RankingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1249248A1397005B0C05 /* RankingItemTableViewCell.xib */; };
-		387D1251248A13E9005B0C05 /* SettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1250248A13E9005B0C05 /* SettingCoordinator.swift */; };
-		387D1253248A14BB005B0C05 /* CALayer+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1252248A14BB005B0C05 /* CALayer+Border.swift */; };
-		387D1255248A159F005B0C05 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387D1254248A159F005B0C05 /* SettingViewController.storyboard */; };
-		387D1257248A15F8005B0C05 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1256248A15F8005B0C05 /* Ranking.swift */; };
-		387D125A248A1638005B0C05 /* MoyaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1258248A1638005B0C05 /* MoyaAPI.swift */; };
+		388F7A9D248A28DF00A9E123 /* SettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7A9C248A28DF00A9E123 /* SettingCoordinator.swift */; };
+		388F7A9F248A292E00A9E123 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7A9E248A292E00A9E123 /* SettingViewController.swift */; };
+		388F7AA1248A297C00A9E123 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7AA0248A297C00A9E123 /* Ranking.swift */; };
+		388F7AA3248A29A100A9E123 /* MoyaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7AA2248A29A100A9E123 /* MoyaAPI.swift */; };
+		388F7AA5248A2A6600A9E123 /* CALayer+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7AA4248A2A6600A9E123 /* CALayer+Border.swift */; };
+		388F7AAD248A322C00A9E123 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 388F7AAC248A322C00A9E123 /* SettingViewController.storyboard */; };
 		9C07E6EC2467CFD400F87838 /* PlusButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C07E6EB2467CFD400F87838 /* PlusButtonCell.xib */; };
 		9C2275FD246FAAFC00DF5911 /* BakeryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2275FC246FAAFC00DF5911 /* BakeryRepository.swift */; };
 		9C2275FF246FAB3A00DF5911 /* HabitAddRepsitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2275FE246FAB3A00DF5911 /* HabitAddRepsitory.swift */; };
@@ -135,7 +135,6 @@
 		1882372024579B33002C523E /* MainTabViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabViewController.storyboard; sourceTree = "<group>"; };
 		1882372424579CEE002C523E /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		1882372624579DDA002C523E /* HabitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListViewController.swift; sourceTree = "<group>"; };
-		1882372824579DEB002C523E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		1882372A24579DFA002C523E /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		1882372C24579E13002C523E /* RankingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RankingViewController.storyboard; sourceTree = "<group>"; };
 		1882372E24579E23002C523E /* HabitListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitListViewController.storyboard; sourceTree = "<group>"; };
@@ -153,11 +152,12 @@
 		387D1247248A1396005B0C05 /* MyRankingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyRankingTableViewCell.xib; sourceTree = "<group>"; };
 		387D1248248A1397005B0C05 /* SettingItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingItemTableViewCell.xib; sourceTree = "<group>"; };
 		387D1249248A1397005B0C05 /* RankingItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankingItemTableViewCell.xib; sourceTree = "<group>"; };
-		387D1250248A13E9005B0C05 /* SettingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingCoordinator.swift; path = ../../../../6th_team4_ios/uso/Coordinator/SettingCoordinator.swift; sourceTree = "<group>"; };
-		387D1252248A14BB005B0C05 /* CALayer+Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Border.swift"; path = "../../../../6th_team4_ios/uso/Extention/CALayer+Border.swift"; sourceTree = "<group>"; };
-		387D1254248A159F005B0C05 /* SettingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SettingViewController.storyboard; path = ../../../../6th_team4_ios/uso/Storyboard/SettingViewController.storyboard; sourceTree = "<group>"; };
-		387D1256248A15F8005B0C05 /* Ranking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ranking.swift; path = ../../../../../6th_team4_ios/uso/Model/Ranking.swift; sourceTree = "<group>"; };
-		387D1258248A1638005B0C05 /* MoyaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoyaAPI.swift; path = ../../../../../6th_team4_ios/uso/Service/MoyaAPI.swift; sourceTree = "<group>"; };
+		388F7A9C248A28DF00A9E123 /* SettingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCoordinator.swift; sourceTree = "<group>"; };
+		388F7A9E248A292E00A9E123 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		388F7AA0248A297C00A9E123 /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
+		388F7AA2248A29A100A9E123 /* MoyaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaAPI.swift; sourceTree = "<group>"; };
+		388F7AA4248A2A6600A9E123 /* CALayer+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Border.swift"; sourceTree = "<group>"; };
+		388F7AAC248A322C00A9E123 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
 		4A3AC7C8FD7C0F1A1EF65293 /* Pods-uso_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_ios.release.xcconfig"; path = "Target Support Files/Pods-uso_ios/Pods-uso_ios.release.xcconfig"; sourceTree = "<group>"; };
 		6130EF413695622D9CFC22FC /* Pods_uso_usoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uso_usoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE35225023FE32BBE83F9CF /* Pods-uso_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_ios.debug.xcconfig"; path = "Target Support Files/Pods-uso_ios/Pods-uso_ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -304,12 +304,12 @@
 		185D2A472446C2B000A09E99 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				387D1252248A14BB005B0C05 /* CALayer+Border.swift */,
 				185D2A592446C54200A09E99 /* UIColorExtension.swift */,
 				9CE11BCF247A290D00F6EAC1 /* IndicatorView.swift */,
 				9CE11BD1247A296F00F6EAC1 /* Constants.swift */,
 				9CE11BD3247A2CC900F6EAC1 /* UIViewExtension.swift */,
 				9CA8AD2D2489F55600859CA6 /* PopUp.swift */,
+				388F7AA4248A2A6600A9E123 /* CALayer+Border.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -330,10 +330,10 @@
 				1882372A24579DFA002C523E /* RankingViewController.swift */,
 				1882372424579CEE002C523E /* MainTabViewController.swift */,
 				1882372624579DDA002C523E /* HabitListViewController.swift */,
-				1882372824579DEB002C523E /* SettingViewController.swift */,
 				9C227600246FAD3400DF5911 /* HabitAddViewController.swift */,
 				9C227602246FAD4400DF5911 /* BakeryViewController.swift */,
 				9CA8AD302489F61900859CA6 /* HabitDetailViewController.swift */,
+				388F7A9E248A292E00A9E123 /* SettingViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -372,10 +372,10 @@
 		185D2A4D2446C31400A09E99 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				387D1256248A15F8005B0C05 /* Ranking.swift */,
 				185D2A532446C40000A09E99 /* Model.swift */,
 				18748206246129E7004A40DE /* HabitItem.swift */,
 				18748208246129F0004A40DE /* Habit.swift */,
+				388F7AA0248A297C00A9E123 /* Ranking.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -383,8 +383,8 @@
 		185D2A4E2446C31800A09E99 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				387D1250248A13E9005B0C05 /* SettingCoordinator.swift */,
 				185D2A602446C84600A09E99 /* MainCoordinator.swift */,
+				388F7A9C248A28DF00A9E123 /* SettingCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -402,7 +402,6 @@
 		185D2A662446C9E400A09E99 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				387D1254248A159F005B0C05 /* SettingViewController.storyboard */,
 				182F46F9244968C300D1730B /* SignViewController.storyboard */,
 				182F46FB2449690400D1730B /* LaunchScreen.storyboard */,
 				1882372024579B33002C523E /* MainTabViewController.storyboard */,
@@ -411,6 +410,7 @@
 				9C227604246FAD5900DF5911 /* HabitAddViewController.storyboard */,
 				9C227606246FAD6A00DF5911 /* BakeryViewController.storyboard */,
 				9CA8AD322489F63E00859CA6 /* HabitDetailViewController.storyboard */,
+				388F7AAC248A322C00A9E123 /* SettingViewController.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -489,10 +489,10 @@
 		9C7B4B3224713A6B007B21DA /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				387D1258248A1638005B0C05 /* MoyaAPI.swift */,
 				9C7B4B3024713A68007B21DA /* HabitAPI.swift */,
 				9C7B4B3324713B37007B21DA /* RankingAPI.swift */,
 				9C7B4B352471429E007B21DA /* Moya+Plugin.swift */,
+				388F7AA2248A29A100A9E123 /* MoyaAPI.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -622,7 +622,7 @@
 				1882372124579B33002C523E /* MainTabViewController.storyboard in Resources */,
 				1882372F24579E23002C523E /* HabitListViewController.storyboard in Resources */,
 				182F46FC2449690400D1730B /* LaunchScreen.storyboard in Resources */,
-				387D1255248A159F005B0C05 /* SettingViewController.storyboard in Resources */,
+				388F7AAD248A322C00A9E123 /* SettingViewController.storyboard in Resources */,
 				9C227605246FAD5900DF5911 /* HabitAddViewController.storyboard in Resources */,
 				387D124F248A1397005B0C05 /* RankingItemTableViewCell.xib in Resources */,
 				18F6664324611D9200499CBC /* ProfileCell.xib in Resources */,
@@ -780,17 +780,14 @@
 				185D2A562446C49700A09E99 /* Repository.swift in Sources */,
 				387D124A248A1397005B0C05 /* SettingItemTableViewCell.swift in Sources */,
 				185D2A612446C84600A09E99 /* MainCoordinator.swift in Sources */,
-				387D1251248A13E9005B0C05 /* SettingCoordinator.swift in Sources */,
 				185D2A632446C86F00A09E99 /* Coordinator.swift in Sources */,
 				185D2A522446C3EB00A09E99 /* RootUseCase.swift in Sources */,
 				185D2A582446C50F00A09E99 /* UsoError.swift in Sources */,
 				3859DDE0245D5EA400C799BF /* RankingUseCase.swift in Sources */,
-				1882372924579DEB002C523E /* SettingViewController.swift in Sources */,
 				185D2A5A2446C54200A09E99 /* UIColorExtension.swift in Sources */,
 				1861430524583F49007151A0 /* RankingViewModel.swift in Sources */,
 				1874820C24612BC0004A40DE /* PlusButtonCell.swift in Sources */,
-				387D125A248A1638005B0C05 /* MoyaAPI.swift in Sources */,
-				387D1257248A15F8005B0C05 /* Ranking.swift in Sources */,
+				388F7AA3248A29A100A9E123 /* MoyaAPI.swift in Sources */,
 				18F6664224611D9200499CBC /* ProfileCell.swift in Sources */,
 				387D124B248A1397005B0C05 /* MyRankingTableViewCell.swift in Sources */,
 				18748209246129F0004A40DE /* Habit.swift in Sources */,
@@ -802,6 +799,7 @@
 				9CA8AD312489F61A00859CA6 /* HabitDetailViewController.swift in Sources */,
 				9CE11BD2247A296F00F6EAC1 /* Constants.swift in Sources */,
 				9C7B4B362471429E007B21DA /* Moya+Plugin.swift in Sources */,
+				388F7A9F248A292E00A9E123 /* SettingViewController.swift in Sources */,
 				18748207246129E7004A40DE /* HabitItem.swift in Sources */,
 				185D2A542446C40000A09E99 /* Model.swift in Sources */,
 				1882372724579DDA002C523E /* HabitListViewController.swift in Sources */,
@@ -811,17 +809,19 @@
 				185D2A652446C8B100A09E99 /* Storyboarded.swift in Sources */,
 				9C2275FD246FAAFC00DF5911 /* BakeryRepository.swift in Sources */,
 				1861430724583F54007151A0 /* SettingViewModel.swift in Sources */,
+				388F7A9D248A28DF00A9E123 /* SettingCoordinator.swift in Sources */,
+				388F7AA1248A297C00A9E123 /* Ranking.swift in Sources */,
 				9CE11BD4247A2CC900F6EAC1 /* UIViewExtension.swift in Sources */,
 				9C227603246FAD4400DF5911 /* BakeryViewController.swift in Sources */,
 				18F666452461244400499CBC /* HabitListUseCase.swift in Sources */,
 				1874820524612803004A40DE /* ResponseStatus.swift in Sources */,
 				9C7B4B3124713A68007B21DA /* HabitAPI.swift in Sources */,
 				1861430324583F3A007151A0 /* HabitListViewModel.swift in Sources */,
-				387D1253248A14BB005B0C05 /* CALayer+Border.swift in Sources */,
 				1882372524579CEE002C523E /* MainTabViewController.swift in Sources */,
 				1882372B24579DFA002C523E /* RankingViewController.swift in Sources */,
 				387D124C248A1397005B0C05 /* RankingItemTableViewCell.swift in Sources */,
 				9C7B4B3424713B37007B21DA /* RankingAPI.swift in Sources */,
+				388F7AA5248A2A6600A9E123 /* CALayer+Border.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

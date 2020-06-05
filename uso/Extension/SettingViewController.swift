@@ -1,8 +1,8 @@
 //
 //  SettingViewController.swift
-//  uso
+//  uso_ios
 //
-//  Created by 서재훈 on 2020/06/05.
+//  Created by Apple on 2020/04/28.
 //  Copyright © 2020 sooyong. All rights reserved.
 //
 
