@@ -113,6 +113,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7I8-Ke-Ze8"/>
                     </view>
+                    <connections>
+                        <outlet property="calendar" destination="659-hX-3JT" id="XAg-Tm-TeL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5CU-xn-E2Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

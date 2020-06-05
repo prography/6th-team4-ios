@@ -58,6 +58,7 @@
 		9C227603246FAD4400DF5911 /* BakeryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C227602246FAD4400DF5911 /* BakeryViewController.swift */; };
 		9C227605246FAD5900DF5911 /* HabitAddViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C227604246FAD5900DF5911 /* HabitAddViewController.storyboard */; };
 		9C227607246FAD6A00DF5911 /* BakeryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C227606246FAD6A00DF5911 /* BakeryViewController.storyboard */; };
+		9C2489D8248A18C8005B70ED /* HabitDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2489D7248A18C8005B70ED /* HabitDetailViewModel.swift */; };
 		9C7B4B3124713A68007B21DA /* HabitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B4B3024713A68007B21DA /* HabitAPI.swift */; };
 		9C7B4B3424713B37007B21DA /* RankingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B4B3324713B37007B21DA /* RankingAPI.swift */; };
 		9C7B4B362471429E007B21DA /* Moya+Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B4B352471429E007B21DA /* Moya+Plugin.swift */; };
@@ -159,6 +160,7 @@
 		9C227602246FAD4400DF5911 /* BakeryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryViewController.swift; sourceTree = "<group>"; };
 		9C227604246FAD5900DF5911 /* HabitAddViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitAddViewController.storyboard; sourceTree = "<group>"; };
 		9C227606246FAD6A00DF5911 /* BakeryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BakeryViewController.storyboard; sourceTree = "<group>"; };
+		9C2489D7248A18C8005B70ED /* HabitDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailViewModel.swift; sourceTree = "<group>"; };
 		9C7B4B3024713A68007B21DA /* HabitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitAPI.swift; sourceTree = "<group>"; };
 		9C7B4B3324713B37007B21DA /* RankingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingAPI.swift; sourceTree = "<group>"; };
 		9C7B4B352471429E007B21DA /* Moya+Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Plugin.swift"; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 				1861430224583F3A007151A0 /* HabitListViewModel.swift */,
 				1861430424583F49007151A0 /* RankingViewModel.swift */,
 				1861430624583F54007151A0 /* SettingViewModel.swift */,
+				9C2489D7248A18C8005B70ED /* HabitDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -771,6 +774,7 @@
 				185D2A5A2446C54200A09E99 /* UIColorExtension.swift in Sources */,
 				1861430524583F49007151A0 /* RankingViewModel.swift in Sources */,
 				1874820C24612BC0004A40DE /* PlusButtonCell.swift in Sources */,
+				9C2489D8248A18C8005B70ED /* HabitDetailViewModel.swift in Sources */,
 				18F6664224611D9200499CBC /* ProfileCell.swift in Sources */,
 				18748209246129F0004A40DE /* Habit.swift in Sources */,
 				185D2A172446C27800A09E99 /* AppDelegate.swift in Sources */,

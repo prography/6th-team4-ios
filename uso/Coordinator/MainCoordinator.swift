@@ -84,6 +84,14 @@ class MainCoordinator: Coordinator {
         navigationController.pushViewController(viewController, animated: true)
     }
     
+    func presentHabitDetailVC() {
+        let viewController = HabitDetailViewController.instantiate()
+        viewController.coordinator = self
+        // Consider animation for modal push
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    
     func presentBakeryVC() {
         let viewController = BakeryViewController.instantiate()
         viewController.coordinator = self

@@ -7,24 +7,22 @@
 //
 
 import UIKit
+import FSCalendar
 
-class HabitDetailViewController: UIViewController {
-
+class HabitDetailViewController: UIViewController, Storyboarded {
+    var coordinator : Coordinator?
+    
+    @IBOutlet weak var calendar: FSCalendar!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setCalendar()
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension HabitDetailViewController: FSCalendarDelegate, FSCalendarDataSource {
+    func setCalendar() {
+        calendar.allowsMultipleSelection = true
+        calendar.delegate = self
+        calendar.dataSource = self
     }
-    */
-
 }

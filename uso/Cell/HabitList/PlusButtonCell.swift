@@ -14,7 +14,7 @@ class PlusButtonCell: UITableViewCell {
     static let identifier = "PlussButtonCell"
     weak var coordinator: MainCoordinator?
     
-    @IBOutlet weak var plussButton: UIButton!
+    @IBOutlet weak var plusButton: UIButton!
     var bag = DisposeBag()
     
     

@@ -51,7 +51,7 @@ class HabitListViewController: UIViewController {
                         for: IndexPath.init(row: row, section: 0)) as? PlusButtonCell
                         else { fatalError() }
                     
-                    cell.plussButton.rx
+                    cell.plusButton.rx
                         .tap
                         .subscribe(onNext: { [weak self] in
                             self?.coordinator?.presentHabitAddVC()
@@ -62,11 +62,24 @@ class HabitListViewController: UIViewController {
                         withIdentifier: HabitListCell.identifier,
                         for: IndexPath.init(row: row, section: 0)) as? HabitListCell
                         else { fatalError() }
-                    
+                    cell.parentVC = self
                     cell.onData.onNext((item as? HabitItem ?? HabitItem(name: "error", ratio: 0, contributions: [])))
                     return cell
                 }
         }.disposed(by: bag)
+        
+        tableView.rx
+            .itemSelected
+            .subscribe(onNext: { [weak self] indexPath in
+                print("isSelected from rx")
+                if indexPath.row == 0 || indexPath.row == (self?.tableView.numberOfRows(inSection: 0))! - 1 {
+                    print("entered exception")
+                    return
+                }
+                print("tapped")
+                self!.coordinator?.presentHabitDetailVC()
+                // coordinator?. Coordinator
+            }).disposed(by: bag)
     }
 }
 
@@ -75,7 +88,6 @@ extension HabitListViewController: Storyboarded, UITableViewDelegate {
     
     func layout() {
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
-        // self.tableView.tableFooterView = PlusButtonCell()
         tableView.allowsSelection = false
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 800
@@ -89,11 +101,7 @@ extension HabitListViewController: Storyboarded, UITableViewDelegate {
         
     }
     
-//    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-//        return 100
-//    }
-//    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 140
+        return 140
     }
 }
