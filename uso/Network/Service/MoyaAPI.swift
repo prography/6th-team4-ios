@@ -8,13 +8,17 @@
 
 import Foundation
 import Moya
+import RxSwift
 
 //임시 토큰
-let token = "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsImlhdCI6MTU5MTI3MDY5OH0.MbIVXMzgjLlPAuJYMs4bQX6vKx7AAQmVS94t0btd4lGO3WqudB4fPsedN9ynLbxk"
+let token = "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsImlhdCI6MTU5MTg4MDg3NX0.43cddF2LE7YmhNYAC5uWCNKUgE28RaZ49ZTm9erXhsO_s41cXkHaKUP1OU78jbcn"
+
+let moyaProvider = MoyaProvider<MoyaAPI>()
 
 enum MoyaAPI {
     case getHabits(query: Int)
     case fetchRanking
+    case fetchSetting
 }
 
 extension MoyaAPI: TargetType {
@@ -27,8 +31,9 @@ extension MoyaAPI: TargetType {
         case .getHabits(let query):
             return "/users/\(query)/habits"
         case .fetchRanking:
+            return "/ranking"
+        case .fetchSetting:
             return "/users"
-            //return "/ranking"
         }
     }
     
@@ -44,9 +49,11 @@ extension MoyaAPI: TargetType {
         switch self {
         case .getHabits:
             return .requestPlain
+            //            return .requestParameters(parameters: ["q" : query], encoding: URLEncoding.default)
         case .fetchRanking:
             return .requestPlain
-//            return .requestParameters(parameters: ["q" : query], encoding: URLEncoding.default)
+        case .fetchSetting:
+            return .requestPlain
         }
     }
     

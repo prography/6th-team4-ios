@@ -495,9 +495,9 @@
 			isa = PBXGroup;
 			children = (
 				9C7B4B3024713A68007B21DA /* HabitAPI.swift */,
-				9C7B4B3324713B37007B21DA /* RankingAPI.swift */,
 				9C7B4B352471429E007B21DA /* Moya+Plugin.swift */,
 				388F7AA2248A29A100A9E123 /* MoyaAPI.swift */,
+				9C7B4B3324713B37007B21DA /* RankingAPI.swift */,
 				3854F5CA248A447D00AD0DAF /* UserAPI.swift */,
 			);
 			path = Service;

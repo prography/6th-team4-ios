@@ -33,7 +33,7 @@ class RankingViewController: UIViewController {
     
     private func bindRX() {
         // 테이블뷰 아이템들
-        viewModel.allRankings
+        viewModel.rankingSubject
             .bind(to: tableView.rx.items) { (tableView, row, item) -> UITableViewCell in
                 if row == 0 {
                     guard let cell = tableView.dequeueReusableCell(withIdentifier: MyRankingTableViewCell.identifier, for: IndexPath.init(row: row, section: 0)) as? MyRankingTableViewCell else { fatalError() }

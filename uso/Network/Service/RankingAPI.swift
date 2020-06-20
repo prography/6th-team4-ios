@@ -10,21 +10,13 @@ import Foundation
 import RxSwift
 import Moya
 
-protocol RankingAPIProtocol {
-    func getResponse(completion: @escaping (Error?) -> Void)
-}
-
-class RankingAPI: RankingAPIProtocol {
-    // API for getting data or posting data
-    var bag = DisposeBag()
-    
+class RankingAPI {
     func getResponse(completion: @escaping (Error?) -> Void) {
         completion(nil)
     }
     
     static func searchWithSwift(_ subject: BehaviorSubject<[RankingItem]>) {
-        let provider = MoyaProvider<MoyaAPI>()
-        provider.request(.fetchRanking) { result in
+        moyaProvider.request(.fetchRanking) { result in
             switch result {
             case .success(let response):
                 handleSuccessResponse(response, subject)
@@ -37,7 +29,12 @@ class RankingAPI: RankingAPIProtocol {
     static func handleSuccessResponse(_ response: Response, _ subject: BehaviorSubject<[RankingItem]>) {
         do {
             let searchResult = try JSONDecoder().decode(RankingItems.self, from: response.data)
-            subject.onNext(searchResult.items)
+            print(searchResult)
+            guard var user = searchResult.user else { return }
+            user.achievement = searchResult.userTotalCount
+            var rankings = searchResult.rankings
+            rankings.insert(user, at: 0)
+            subject.onNext(rankings)
         } catch {
             print(error.localizedDescription)
         }

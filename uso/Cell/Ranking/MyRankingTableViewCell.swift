@@ -27,9 +27,9 @@ class MyRankingTableViewCell: UITableViewCell {
 
         data.observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] ranking in
-                self?.totalLabel.text = "\(100)"
-                self?.rankLabel.text = "\(ranking.rank)"
-                self?.highRankLabel.text = "\(ranking.rank*100/100)%"
+                self?.totalLabel.text = "\(ranking.achievement)"
+                self?.rankLabel.text = ranking.rank
+                self?.highRankLabel.text = "\(Int(ranking.rank)!*100/ranking.achievement)%"
             })
             .disposed(by: bag)
     }

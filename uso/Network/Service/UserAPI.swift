@@ -10,21 +10,13 @@ import Foundation
 import RxSwift
 import Moya
 
-protocol UserAPIProtocol {
-    func getResponse(completion: @escaping (Error?) -> Void)
-}
-
-class UserAPI: UserAPIProtocol {
-    // API for getting data or posting data
-    var bag = DisposeBag()
-    
+class UserAPI {
     func getResponse(completion: @escaping (Error?) -> Void) {
         completion(nil)
     }
     
     static func searchWithSwift(_ subject: BehaviorSubject<UserItem>) {
-        let provider = MoyaProvider<MoyaAPI>()
-        provider.request(.fetchRanking) { result in
+        moyaProvider.request(.fetchSetting) { result in
             switch result {
             case .success(let response):
                 handleSuccessResponse(response, subject)

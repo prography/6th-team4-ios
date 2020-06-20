@@ -9,32 +9,37 @@
 import Foundation
 
 struct RankingItems: Decodable {
-    let items: [RankingItem]
+    let user: RankingItem?
+    let userTotalCount: Int
+    let rankings: [RankingItem]
 }
 
 struct RankingItem: Decodable {
-    var rank: Int
-    var nickName: String
+    var userId: Int
+    var userName: String
     var exp: Int
-    var achieve: Int
+    var achievement: Int
+    var rank: String
 
     init(_ item: Model) {
-        rank = 0
-        nickName = item.data ?? "nickName"
+        userId = 0
+        userName = item.data ?? "nickName"
         exp = 0
-        achieve = 0
+        achievement = 0
+        rank = "0"
     }
 
-    init(rank: Int, nickName: String, exp: Int, achieve: Int) {
-        self.rank = rank
-        self.nickName = nickName
+    init(userId: Int, userName: String, exp: Int, achievement: Int, rank: String) {
+        self.userId = userId
+        self.userName = userName
         self.exp = exp
-        self.achieve = achieve
+        self.achievement = achievement
+        self.rank = rank
     }
 }
 
 extension RankingItem: Equatable {
     static func == (lhs: RankingItem, rhs: RankingItem) -> Bool {
-        return lhs.rank == rhs.rank && lhs.nickName == rhs.nickName
+        return lhs.rank == rhs.rank && lhs.userName == rhs.userName
     }
 }

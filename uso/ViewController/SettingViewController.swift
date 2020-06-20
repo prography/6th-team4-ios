@@ -55,6 +55,8 @@ class SettingViewController: UIViewController {
         tableView.layer.addBorder([.top], color: UIColor.lightGray, width: 0.6)
         notiView.backgroundColor = UIColor.white
         notiView.layer.addBorder([.top], color: UIColor.lightGray, width: 0.6)
+        progressView.frame = CGRect(origin: .zero, size: CGSize(width: 0, height: 4))
+        progressView.backgroundColor = .black
     }
 
 }
