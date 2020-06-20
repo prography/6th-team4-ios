@@ -29,7 +29,6 @@ class UserAPI {
     static func handleSuccessResponse(_ response: Response, _ subject: BehaviorSubject<UserItem>) {
         do {
             let searchResult = try JSONDecoder().decode(UserItem.self, from: response.data)
-            print(searchResult)
             subject.onNext(searchResult)
         } catch {
             print(error.localizedDescription)

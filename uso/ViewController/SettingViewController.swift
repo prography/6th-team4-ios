@@ -24,11 +24,8 @@ class SettingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let settingItemTableViewCellNib = UINib(nibName: "SettingItemTableViewCell", bundle: nil)
-        tableView.register(settingItemTableViewCellNib, forCellReuseIdentifier: SettingItemTableViewCell.identifier)
-        
-        layout()
         bindRX()
+        layout()
     }
     
     private func bindRX() {
@@ -41,7 +38,6 @@ class SettingViewController: UIViewController {
             })
             .disposed(by: bag)
         
-        // 테이블뷰 아이템들
         viewModel.allSettings
             .bind(to: tableView.rx.items) { (tableView, row, item) -> UITableViewCell in
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: SettingItemTableViewCell.identifier, for: IndexPath.init(row: row, section: 0)) as? SettingItemTableViewCell else { fatalError() }
@@ -50,17 +46,17 @@ class SettingViewController: UIViewController {
             }
             .disposed(by: bag)
     }
-    
-    private func layout() {
+}
+
+// MARK: Detail func definition of VC
+extension SettingViewController: Storyboarded {
+    func layout() {
         tableView.layer.addBorder([.top], color: UIColor.lightGray, width: 0.6)
         notiView.backgroundColor = UIColor.white
         notiView.layer.addBorder([.top], color: UIColor.lightGray, width: 0.6)
         progressView.frame = CGRect(origin: .zero, size: CGSize(width: 0, height: 4))
         progressView.backgroundColor = .black
+        let settingItemTableViewCellNib = UINib(nibName: "SettingItemTableViewCell", bundle: nil)
+        tableView.register(settingItemTableViewCellNib, forCellReuseIdentifier: SettingItemTableViewCell.identifier)
     }
-
-}
-
-// MARK: Detail func definition of VC
-extension SettingViewController: Storyboarded {
 }

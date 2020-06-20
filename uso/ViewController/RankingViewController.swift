@@ -22,17 +22,12 @@ class RankingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.separatorColor = UIColor.clear
-        let myRankingTableViewCellNib = UINib(nibName: "MyRankingTableViewCell", bundle: nil)
-        tableView.register(myRankingTableViewCellNib, forCellReuseIdentifier: MyRankingTableViewCell.identifier)
-        let rankingItemTableViewCellNib = UINib(nibName: "RankingItemTableViewCell", bundle: nil)
-        tableView.register(rankingItemTableViewCellNib, forCellReuseIdentifier: RankingItemTableViewCell.identifier)
-        
         bindRX()
+        layout()
+        tableView.delegate = self
     }
     
     private func bindRX() {
-        // 테이블뷰 아이템들
         viewModel.rankingSubject
             .bind(to: tableView.rx.items) { (tableView, row, item) -> UITableViewCell in
                 if row == 0 {
@@ -49,12 +44,20 @@ class RankingViewController: UIViewController {
     }
 }
 
-// MARK: Detail func definition of VC
-extension RankingViewController: Storyboarded {
-}
-
-// MARK: UITableView
-extension RankingViewController: UITableViewDelegate {
+// MARK: Detail func definition of VC, UITableView
+extension RankingViewController: Storyboarded, UITableViewDelegate {
+    func layout() {
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        tableView.allowsSelection = false
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 110
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        let myRankingTableViewCellNib = UINib(nibName: "MyRankingTableViewCell", bundle: nil)
+        tableView.register(myRankingTableViewCellNib, forCellReuseIdentifier: MyRankingTableViewCell.identifier)
+        let rankingItemTableViewCellNib = UINib(nibName: "RankingItemTableViewCell", bundle: nil)
+        tableView.register(rankingItemTableViewCellNib, forCellReuseIdentifier: RankingItemTableViewCell.identifier)
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
             return screenWidth*25/32

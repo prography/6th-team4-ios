@@ -29,7 +29,6 @@ class RankingAPI {
     static func handleSuccessResponse(_ response: Response, _ subject: BehaviorSubject<[RankingItem]>) {
         do {
             let searchResult = try JSONDecoder().decode(RankingItems.self, from: response.data)
-            print(searchResult)
             guard var user = searchResult.user else { return }
             user.achievement = searchResult.userTotalCount
             var rankings = searchResult.rankings
