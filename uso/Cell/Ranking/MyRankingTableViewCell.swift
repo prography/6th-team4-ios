@@ -15,6 +15,7 @@ class MyRankingTableViewCell: UITableViewCell {
     @IBOutlet var highRankLabel: UILabel!
     @IBOutlet var totalLabel: UILabel!
     @IBOutlet var rankLabel: UILabel!
+    @IBOutlet var blankView: UIView!
     
     let onData: AnyObserver<RankingItem>
     var bag = DisposeBag()
@@ -29,7 +30,7 @@ class MyRankingTableViewCell: UITableViewCell {
             .subscribe(onNext: { [weak self] ranking in
                 self?.totalLabel.text = "\(ranking.achievement)"
                 self?.rankLabel.text = ranking.rank
-                self?.highRankLabel.text = "\(Int(ranking.rank)!*100/ranking.achievement)%"
+                self?.highRankLabel.text = "\(Int(ranking.rank)!*100/ranking.achievement) %"
             })
             .disposed(by: bag)
     }
@@ -52,6 +53,8 @@ class MyRankingTableViewCell: UITableViewCell {
     }
     
     func layout() {
+        blankView.backgroundColor = UIColor.systemBackground
+        blankView.setRoundCorners(corners: [.layerMinXMinYCorner, .layerMaxXMinYCorner], radius: 28)
         rankLabel.textColor = UIColor(hex: 0x4C7A65)
     }
     

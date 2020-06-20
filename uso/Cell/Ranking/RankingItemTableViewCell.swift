@@ -32,7 +32,7 @@ class RankingItemTableViewCell: UITableViewCell {
                 self?.rank.text = "\(ranking.rank)"
                 self?.nickName.text = ranking.userName
                 self?.exp.text = "\(ranking.exp)"
-                self?.achieve.text = "\(ranking.achievement)"
+                self?.achieve.text = "\(ranking.achievement)%"
             })
             .disposed(by: bag)
     }
