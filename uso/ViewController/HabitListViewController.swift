@@ -17,11 +17,13 @@ class HabitListViewController: UIViewController {
     var viewModel: HabitListViewBindable!
     let bag = DisposeBag()
     
+    @IBOutlet weak var bakeryView: UIView!
+    @IBOutlet weak var todayMessageTitle: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bindRX()
         layout()
-        tableView.delegate = self
     }
     
     func navigate() {
@@ -39,11 +41,11 @@ class HabitListViewController: UIViewController {
                 let totalRows = tableView.numberOfRows(inSection: 0)
                 if row == 0 {
                     guard let cell = tableView.dequeueReusableCell(
-                        withIdentifier: ProfileCell.identifier,
-                        for: IndexPath.init(row: row, section: 0)) as? ProfileCell
+                        withIdentifier: HabitListCell.identifier,
+                        for: IndexPath.init(row: row, section: 0)) as? HabitListCell
                         else { fatalError() }
                     
-                    cell.onData.onNext(item as? Profile ?? Profile(description: "error"))
+                    cell.onData.onNext((item as? HabitItem ?? HabitItem(name: "error", ratio: 0, contributions: [])))
                     return cell
                 } else if row  == totalRows - 1 {
                     guard let cell = tableView.dequeueReusableCell(
@@ -51,12 +53,13 @@ class HabitListViewController: UIViewController {
                         for: IndexPath.init(row: row, section: 0)) as? PlusButtonCell
                         else { fatalError() }
                     
-                    cell.plussButton.rx
-                        .tap
-                        .subscribe(onNext: { [weak self] in
-                            self?.coordinator?.presentHabitAddVC()
-                        }).disposed(by: cell.bag)
+                    //                    cell.plussButton.rx
+                    //                        .tap
+                    //                        .subscribe(onNext: { [weak self] in
+                    //                            self?.coordinator?.presentHabitAddVC()
+                    //                        }).disposed(by: cell.bag)
                     return cell
+                    
                 } else {
                     guard let cell = tableView.dequeueReusableCell(
                         withIdentifier: HabitListCell.identifier,
@@ -67,6 +70,12 @@ class HabitListViewController: UIViewController {
                     return cell
                 }
         }.disposed(by: bag)
+        tableView.rx
+            .itemSelected.subscribe(onNext: { indexPath in
+                print("item \(indexPath.row) selected")
+                
+            })
+            .disposed(by: self.bag)
     }
 }
 
@@ -74,11 +83,14 @@ class HabitListViewController: UIViewController {
 extension HabitListViewController: Storyboarded, UITableViewDelegate {
     
     func layout() {
+        tableView.rx
+            .setDelegate(self)
+            .disposed(by: self.bag)
+        
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
-        // self.tableView.tableFooterView = PlusButtonCell()
-        tableView.allowsSelection = false
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 800
+        
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         let habitListCellNib = UINib(nibName: "HabitListCell", bundle: nil)
         self.tableView.register(habitListCellNib, forCellReuseIdentifier: HabitListCell.identifier)
@@ -86,14 +98,13 @@ extension HabitListViewController: Storyboarded, UITableViewDelegate {
         self.tableView.register(profileCellNib, forCellReuseIdentifier: ProfileCell.identifier)
         let plusButtonCellNib = UINib(nibName: "PlusButtonCell", bundle: nil)
         self.tableView.register(plusButtonCellNib, forCellReuseIdentifier: PlusButtonCell.identifier)
-        
     }
     
-//    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-//        return 100
-//    }
-//    
+    //    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    //        return 100
+    //    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 140
+        return 143
     }
 }

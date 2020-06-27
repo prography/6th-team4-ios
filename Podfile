@@ -15,6 +15,7 @@ target 'uso' do
   pod 'Then'
   pod 'SwiftLint'
   pod 'FSCalendar'
+  pod 'GoogleSignIn', '~>5.0.0'
 
   target 'usoTests' do
     inherit! :search_paths

@@ -7,16 +7,24 @@
 //
 
 import UIKit
+import FSCalendar
 
-class HabitDetailViewController: UIViewController {
+class HabitDetailViewController: UIViewController, Storyboarded {
 
+    @IBOutlet weak var commitButtonView: UIView!
+    @IBOutlet weak var habitTitleLabl: UILabel!
+    @IBOutlet weak var habitCalendar: FSCalendar!
+    @IBOutlet weak var habitDescriptionLabel: UILabel!
+    @IBOutlet weak var continousCountLabel: UILabel!
+    @IBOutlet weak var totalCountLabel: UILabel!
+    @IBOutlet weak var suggestionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
     /*
     // MARK: - Navigation
 

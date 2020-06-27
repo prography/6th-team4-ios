@@ -11,31 +11,69 @@
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="140" id="tQc-Fs-EnK" customClass="PlusButtonCell" customModule="uso" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PlusButtonCell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tQc-Fs-EnK" id="EZp-02-GSi" customClass="PlusButtonCell" customModule="uso" customModuleProvider="target">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" restorationIdentifier="PlusButtonCell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tQc-Fs-EnK" translatesAutoresizingMaskIntoConstraints="NO" id="EZp-02-GSi" customClass="PlusButtonCell" customModule="uso" customModuleProvider="target">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
-                <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sc0-ZJ-syp">
-                        <rect key="frame" x="100" y="20" width="40" height="40"/>
+                    <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="JlF-qh-SQd">
+                        <rect key="frame" x="10" y="10" width="394" height="120"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1J-88-GWf">
+                                <rect key="frame" x="20" y="10" width="35" height="35"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcM-FK-sJD">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                        <color key="backgroundColor" red="0.76078431372549016" green="0.74117647058823533" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="lcM-FK-sJD" secondAttribute="trailing" id="55f-1i-Z4M"/>
+                                    <constraint firstAttribute="height" constant="35" id="II2-Mn-S2B"/>
+                                    <constraint firstAttribute="bottom" secondItem="lcM-FK-sJD" secondAttribute="bottom" id="Kap-Ea-dmp"/>
+                                    <constraint firstAttribute="width" constant="35" id="d1T-Yx-aIk"/>
+                                    <constraint firstItem="lcM-FK-sJD" firstAttribute="top" secondItem="f1J-88-GWf" secondAttribute="top" id="hT9-O5-jeD"/>
+                                    <constraint firstItem="lcM-FK-sJD" firstAttribute="leading" secondItem="f1J-88-GWf" secondAttribute="leading" id="qrR-jG-6KQ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="습관 생성하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLc-hY-pZv">
+                                <rect key="frame" x="10" y="73" width="120" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.28627450980392155" green="0.24313725490196078" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82352941176470584" green="0.80784313725490198" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="40" id="ClY-6O-aj8"/>
-                            <constraint firstAttribute="width" constant="40" id="okz-KF-aab"/>
+                            <constraint firstAttribute="bottom" secondItem="uLc-hY-pZv" secondAttribute="bottom" constant="20" id="Hrc-1U-3Du"/>
+                            <constraint firstItem="f1J-88-GWf" firstAttribute="top" secondItem="JlF-qh-SQd" secondAttribute="top" constant="10" id="KwF-MR-XM5"/>
+                            <constraint firstItem="f1J-88-GWf" firstAttribute="leading" secondItem="JlF-qh-SQd" secondAttribute="leading" constant="20" id="Mc2-5P-6l7"/>
+                            <constraint firstItem="uLc-hY-pZv" firstAttribute="leading" secondItem="JlF-qh-SQd" secondAttribute="leading" constant="10" id="evH-Wn-t9N"/>
                         </constraints>
-                        <state key="normal" backgroundImage="plusbutton"/>
-                    </button>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Sc0-ZJ-syp" firstAttribute="leading" secondItem="EZp-02-GSi" secondAttribute="leading" constant="100" id="6aU-bu-aTK"/>
-                    <constraint firstItem="Sc0-ZJ-syp" firstAttribute="top" secondItem="EZp-02-GSi" secondAttribute="top" constant="20" id="ERD-bZ-4g6"/>
+                    <constraint firstItem="JlF-qh-SQd" firstAttribute="top" secondItem="EZp-02-GSi" secondAttribute="top" constant="10" id="D95-nH-W2H"/>
+                    <constraint firstAttribute="trailing" secondItem="JlF-qh-SQd" secondAttribute="trailing" constant="10" id="J3o-qc-acz"/>
+                    <constraint firstAttribute="bottom" secondItem="JlF-qh-SQd" secondAttribute="bottom" constant="10" id="Xkp-LD-gh9"/>
+                    <constraint firstItem="JlF-qh-SQd" firstAttribute="leading" secondItem="EZp-02-GSi" secondAttribute="leading" constant="10" id="pnS-IE-P2t"/>
                 </constraints>
             </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="EZp-02-GSi" firstAttribute="leading" secondItem="tQc-Fs-EnK" secondAttribute="leading" id="JNJ-ob-5gS"/>
+                <constraint firstAttribute="trailing" secondItem="EZp-02-GSi" secondAttribute="trailing" id="UMu-jy-Tp6"/>
+                <constraint firstItem="EZp-02-GSi" firstAttribute="top" secondItem="tQc-Fs-EnK" secondAttribute="top" id="Vye-fQ-f8Y"/>
+                <constraint firstAttribute="bottom" secondItem="EZp-02-GSi" secondAttribute="bottom" id="ebr-Jb-La7"/>
+            </constraints>
             <connections>
-                <outlet property="plussButton" destination="Sc0-ZJ-syp" id="Tca-lo-uv5"/>
+                <outlet property="backgroundView" destination="JlF-qh-SQd" id="kZ4-Fn-Cfa"/>
+                <outlet property="cardView" destination="JlF-qh-SQd" id="xJ8-S5-QyJ"/>
+                <outlet property="plusButtonView" destination="f1J-88-GWf" id="T9G-cv-aBu"/>
             </connections>
             <point key="canvasLocation" x="-300" y="-22.098214285714285"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="plusbutton" width="141" height="138"/>
-    </resources>
 </document>

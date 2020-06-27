@@ -51,6 +51,8 @@
 		18F6664324611D9200499CBC /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F6664124611D9200499CBC /* ProfileCell.xib */; };
 		18F666452461244400499CBC /* HabitListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F666442461244400499CBC /* HabitListUseCase.swift */; };
 		3859DDE0245D5EA400C799BF /* RankingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859DDDF245D5EA400C799BF /* RankingUseCase.swift */; };
+		9C00806424A72E6C002968D2 /* HabitDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00806324A72E6C002968D2 /* HabitDetailViewModel.swift */; };
+		9C00806624A767FA002968D2 /* client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C00806524A767F9002968D2 /* client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist */; };
 		9C07E6EC2467CFD400F87838 /* PlusButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C07E6EB2467CFD400F87838 /* PlusButtonCell.xib */; };
 		9C2275FD246FAAFC00DF5911 /* BakeryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2275FC246FAAFC00DF5911 /* BakeryRepository.swift */; };
 		9C2275FF246FAB3A00DF5911 /* HabitAddRepsitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2275FE246FAB3A00DF5911 /* HabitAddRepsitory.swift */; };
@@ -61,6 +63,8 @@
 		9C7B4B3124713A68007B21DA /* HabitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B4B3024713A68007B21DA /* HabitAPI.swift */; };
 		9C7B4B3424713B37007B21DA /* RankingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B4B3324713B37007B21DA /* RankingAPI.swift */; };
 		9C7B4B362471429E007B21DA /* Moya+Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B4B352471429E007B21DA /* Moya+Plugin.swift */; };
+		9C910CB024A704780018E16B /* AddHabitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C910CAE24A704780018E16B /* AddHabitCell.swift */; };
+		9C910CB124A704780018E16B /* AddHabitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C910CAF24A704780018E16B /* AddHabitCell.xib */; };
 		9CA8AD252489D44600859CA6 /* RankingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD1F2489D44600859CA6 /* RankingItemTableViewCell.swift */; };
 		9CA8AD262489D44600859CA6 /* RankingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA8AD202489D44600859CA6 /* RankingItemTableViewCell.xib */; };
 		9CA8AD272489D44600859CA6 /* SettingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD212489D44600859CA6 /* SettingItemTableViewCell.swift */; };
@@ -152,6 +156,8 @@
 		7440281B8358D1DB3A274291 /* Pods-uso-usoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso-usoUITests.debug.xcconfig"; path = "Target Support Files/Pods-uso-usoUITests/Pods-uso-usoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8811C256C820F8643C061922 /* Pods-usoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-usoTests.debug.xcconfig"; path = "Target Support Files/Pods-usoTests/Pods-usoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D473F0558E305B2D24B9D05 /* Pods-uso-usoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso-usoUITests.release.xcconfig"; path = "Target Support Files/Pods-uso-usoUITests/Pods-uso-usoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9C00806324A72E6C002968D2 /* HabitDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailViewModel.swift; sourceTree = "<group>"; };
+		9C00806524A767F9002968D2 /* client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist"; path = "../../6th-team4-ios/uso/client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
 		9C07E6EB2467CFD400F87838 /* PlusButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlusButtonCell.xib; sourceTree = "<group>"; };
 		9C2275FC246FAAFC00DF5911 /* BakeryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryRepository.swift; sourceTree = "<group>"; };
 		9C2275FE246FAB3A00DF5911 /* HabitAddRepsitory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitAddRepsitory.swift; sourceTree = "<group>"; };
@@ -162,6 +168,8 @@
 		9C7B4B3024713A68007B21DA /* HabitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitAPI.swift; sourceTree = "<group>"; };
 		9C7B4B3324713B37007B21DA /* RankingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingAPI.swift; sourceTree = "<group>"; };
 		9C7B4B352471429E007B21DA /* Moya+Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Plugin.swift"; sourceTree = "<group>"; };
+		9C910CAE24A704780018E16B /* AddHabitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitCell.swift; sourceTree = "<group>"; };
+		9C910CAF24A704780018E16B /* AddHabitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddHabitCell.xib; sourceTree = "<group>"; };
 		9CA8AD1F2489D44600859CA6 /* RankingItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RankingItemTableViewCell.swift; path = "../../../../Downloads/6th-team4-ios-develop/uso/Cell/RankingItemTableViewCell.swift"; sourceTree = "<group>"; };
 		9CA8AD202489D44600859CA6 /* RankingItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RankingItemTableViewCell.xib; path = "../../../../Downloads/6th-team4-ios-develop/uso/Cell/RankingItemTableViewCell.xib"; sourceTree = "<group>"; };
 		9CA8AD212489D44600859CA6 /* SettingItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingItemTableViewCell.swift; path = "../../../../Downloads/6th-team4-ios-develop/uso/Cell/SettingItemTableViewCell.swift"; sourceTree = "<group>"; };
@@ -265,6 +273,7 @@
 				185D2A162446C27800A09E99 /* AppDelegate.swift */,
 				185D2A1F2446C27D00A09E99 /* Assets.xcassets */,
 				185D2A242446C27D00A09E99 /* Info.plist */,
+				9C00806524A767F9002968D2 /* client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist */,
 			);
 			path = uso;
 			sourceTree = "<group>";
@@ -338,6 +347,7 @@
 				1861430224583F3A007151A0 /* HabitListViewModel.swift */,
 				1861430424583F49007151A0 /* RankingViewModel.swift */,
 				1861430624583F54007151A0 /* SettingViewModel.swift */,
+				9C00806324A72E6C002968D2 /* HabitDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -429,6 +439,8 @@
 				18F6664124611D9200499CBC /* ProfileCell.xib */,
 				1874820A24612BC0004A40DE /* PlusButtonCell.swift */,
 				9C07E6EB2467CFD400F87838 /* PlusButtonCell.xib */,
+				9C910CAE24A704780018E16B /* AddHabitCell.swift */,
+				9C910CAF24A704780018E16B /* AddHabitCell.xib */,
 			);
 			path = HabitList;
 			sourceTree = "<group>";
@@ -500,6 +512,7 @@
 				185D2A112446C27800A09E99 /* Resources */,
 				35483A738AD1760939F28312 /* [CP] Embed Pods Frameworks */,
 				18CB4FC7245AB62E00FD6651 /* ShellScript */,
+				F458A014193271AF9D400C41 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -538,6 +551,7 @@
 				185D2A312446C27E00A09E99 /* Frameworks */,
 				185D2A322446C27E00A09E99 /* Resources */,
 				3172FF1142D6A9E1A214D98B /* [CP] Embed Pods Frameworks */,
+				A7F547DAEF4FE74CB12BD9CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -600,6 +614,7 @@
 				18CB4FCD245AB81100FD6651 /* .swiftlint.yml in Resources */,
 				1882372D24579E13002C523E /* RankingViewController.storyboard in Resources */,
 				18F6663F24611B5400499CBC /* HabitListCell.xib in Resources */,
+				9C00806624A767FA002968D2 /* client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist in Resources */,
 				9C07E6EC2467CFD400F87838 /* PlusButtonCell.xib in Resources */,
 				9CA8AD332489F63E00859CA6 /* HabitDetailViewController.storyboard in Resources */,
 				1882372124579B33002C523E /* MainTabViewController.storyboard in Resources */,
@@ -607,6 +622,7 @@
 				1882373124579E8B002C523E /* SettingViewController.storyboard in Resources */,
 				182F46FC2449690400D1730B /* LaunchScreen.storyboard in Resources */,
 				9C227605246FAD5900DF5911 /* HabitAddViewController.storyboard in Resources */,
+				9C910CB124A704780018E16B /* AddHabitCell.xib in Resources */,
 				9CA8AD262489D44600859CA6 /* RankingItemTableViewCell.xib in Resources */,
 				18F6664324611D9200499CBC /* ProfileCell.xib in Resources */,
 				9CA8AD282489D44600859CA6 /* SettingItemTableViewCell.xib in Resources */,
@@ -729,6 +745,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A7F547DAEF4FE74CB12BD9CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uso-usoUITests/Pods-uso-usoUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uso-usoUITests/Pods-uso-usoUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uso-usoUITests/Pods-uso-usoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F458A014193271AF9D400C41 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uso/Pods-uso-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uso/Pods-uso-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uso/Pods-uso-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F68E1492CEB2F8AE850BC986 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -787,10 +837,12 @@
 				18F6663E24611B5400499CBC /* HabitListCell.swift in Sources */,
 				185D2A502446C3E000A09E99 /* SignViewModel.swift in Sources */,
 				9CA8AD2E2489F55600859CA6 /* PopUp.swift in Sources */,
+				9C910CB024A704780018E16B /* AddHabitCell.swift in Sources */,
 				185D2A652446C8B100A09E99 /* Storyboarded.swift in Sources */,
 				9C2275FD246FAAFC00DF5911 /* BakeryRepository.swift in Sources */,
 				1861430724583F54007151A0 /* SettingViewModel.swift in Sources */,
 				9CA8AD2A2489D44600859CA6 /* MyRankingTableViewCell.swift in Sources */,
+				9C00806424A72E6C002968D2 /* HabitDetailViewModel.swift in Sources */,
 				9CA8AD2C2489D48200859CA6 /* SettingCoordinator.swift in Sources */,
 				9CA8AD252489D44600859CA6 /* RankingItemTableViewCell.swift in Sources */,
 				9CE11BD4247A2CC900F6EAC1 /* UIViewExtension.swift in Sources */,
