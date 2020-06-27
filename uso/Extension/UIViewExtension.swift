@@ -110,11 +110,6 @@ extension UIView {
         self.layer.addSublayer(gradientLayer)
     }
     
-    func setRoundCorner(_ radius: CGFloat) {
-        self.layer.cornerRadius = radius
-        self.clipsToBounds = true
-    }
-    
     static func loadFromXib<T>(withOwner: Any? = nil, options: [UINib.OptionsKey: Any]? = nil) -> T where T: UIView {
         let bundle = Bundle(for: self)
         let nib = UINib(nibName: "\(self)", bundle: bundle)
@@ -123,5 +118,11 @@ extension UIView {
             fatalError("Could not load view from nib file.")
         }
         return view
+    }
+    
+    func setRoundCorners(corners: CACornerMask, radius: CGFloat) {
+        clipsToBounds = true
+        layer.cornerRadius = radius
+        layer.maskedCorners = corners
     }
 }

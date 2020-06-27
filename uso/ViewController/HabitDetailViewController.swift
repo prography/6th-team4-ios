@@ -26,7 +26,7 @@ class HabitDetailViewController: UIViewController, Storyboarded {
     }
     
     func layout() {
-        commitButton.setRoundCorner(8)
+        commitButton.layer.cornerRadius = 8
         commitButton.setShadow(color: UIColor(red: 0, green: 0, blue: 0, alpha: 0.25), opacity: 1, size: CGSize(width: 0, height: 2))
     }
 }
