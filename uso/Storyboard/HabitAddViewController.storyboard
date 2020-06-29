@@ -63,7 +63,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3H-Ex-i2L">
+                            <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3H-Ex-i2L" customClass="UIButton">
                                 <rect key="frame" x="44" y="414" width="44" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYQ-tg-x7a">
@@ -73,15 +73,17 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.51764705879999995" green="0.48627450979999998" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="96Y-bF-sRy"/>
                                     <constraint firstAttribute="width" constant="44" id="BEG-7L-tnE"/>
                                     <constraint firstItem="BYQ-tg-x7a" firstAttribute="centerX" secondItem="Q3H-Ex-i2L" secondAttribute="centerX" id="nu0-2X-x0O"/>
                                     <constraint firstItem="BYQ-tg-x7a" firstAttribute="centerY" secondItem="Q3H-Ex-i2L" secondAttribute="centerY" id="pMF-Rk-mlb"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="tapDay:" destination="wHi-1G-kiJ" eventType="touchUpInside" id="NiP-uh-7gT"/>
+                                </connections>
                             </view>
-                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PxH-Gt-M6j">
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PxH-Gt-M6j" customClass="UIButton">
                                 <rect key="frame" x="91" y="414" width="44" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJd-fO-IGc">
@@ -99,8 +101,11 @@
                                     <constraint firstItem="oJd-fO-IGc" firstAttribute="centerY" secondItem="PxH-Gt-M6j" secondAttribute="centerY" id="Jp5-4y-vIj"/>
                                     <constraint firstItem="oJd-fO-IGc" firstAttribute="centerX" secondItem="PxH-Gt-M6j" secondAttribute="centerX" id="gfu-kc-9i9"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="tapDay:" destination="wHi-1G-kiJ" eventType="touchUpInside" id="a8T-pP-1cb"/>
+                                </connections>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCR-Pq-fkL">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCR-Pq-fkL" customClass="UIButton">
                                 <rect key="frame" x="138" y="414" width="44" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TUE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDr-ve-1Oq">
@@ -114,8 +119,11 @@
                                     <constraint firstItem="PDr-ve-1Oq" firstAttribute="centerX" secondItem="PCR-Pq-fkL" secondAttribute="centerX" id="9jv-8f-wNo"/>
                                     <constraint firstItem="PDr-ve-1Oq" firstAttribute="centerY" secondItem="PCR-Pq-fkL" secondAttribute="centerY" id="qht-PH-yVa"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="tapDay:" destination="wHi-1G-kiJ" eventType="touchUpInside" id="gz4-Ru-tRy"/>
+                                </connections>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEs-k2-6Um">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEs-k2-6Um" customClass="UIButton">
                                 <rect key="frame" x="185" y="414" width="44" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1Z-D9-IbA">
@@ -129,8 +137,11 @@
                                     <constraint firstItem="R1Z-D9-IbA" firstAttribute="centerX" secondItem="YEs-k2-6Um" secondAttribute="centerX" id="D9y-bs-Qas"/>
                                     <constraint firstItem="R1Z-D9-IbA" firstAttribute="centerY" secondItem="YEs-k2-6Um" secondAttribute="centerY" id="Mat-HK-L2B"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="tapDay:" destination="wHi-1G-kiJ" eventType="touchUpInside" id="Ug3-gZ-gmg"/>
+                                </connections>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zm-mc-yVB">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zm-mc-yVB" customClass="UIButton">
                                 <rect key="frame" x="232" y="414" width="44" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJ1-F2-xrh">
@@ -144,8 +155,11 @@
                                     <constraint firstItem="gJ1-F2-xrh" firstAttribute="centerY" secondItem="7zm-mc-yVB" secondAttribute="centerY" id="UgT-KE-1RF"/>
                                     <constraint firstItem="gJ1-F2-xrh" firstAttribute="centerX" secondItem="7zm-mc-yVB" secondAttribute="centerX" id="YcC-Xf-Nfy"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="tapDay:" destination="wHi-1G-kiJ" eventType="touchUpInside" id="And-JE-W4j"/>
+                                </connections>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JqT-sf-C6n">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JqT-sf-C6n" customClass="UIButton">
                                 <rect key="frame" x="279" y="414" width="44" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJK-hm-fYk">
@@ -159,8 +173,11 @@
                                     <constraint firstItem="MJK-hm-fYk" firstAttribute="centerY" secondItem="JqT-sf-C6n" secondAttribute="centerY" id="Chh-14-cPz"/>
                                     <constraint firstItem="MJK-hm-fYk" firstAttribute="centerX" secondItem="JqT-sf-C6n" secondAttribute="centerX" id="phd-HK-B4X"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="tapDay:" destination="wHi-1G-kiJ" eventType="touchUpInside" id="b1j-4o-q41"/>
+                                </connections>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJW-5Q-cZX">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJW-5Q-cZX" customClass="UIButton">
                                 <rect key="frame" x="326" y="414" width="44" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rck-w7-fC7">
@@ -174,6 +191,9 @@
                                     <constraint firstItem="Rck-w7-fC7" firstAttribute="centerX" secondItem="jJW-5Q-cZX" secondAttribute="centerX" id="qGk-4G-BM4"/>
                                     <constraint firstItem="Rck-w7-fC7" firstAttribute="centerY" secondItem="jJW-5Q-cZX" secondAttribute="centerY" id="zVG-IC-V4E"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="tapDay:" destination="wHi-1G-kiJ" eventType="touchUpInside" id="RLa-7I-g11"/>
+                                </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알람" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZP-Bm-Sqn">
                                 <rect key="frame" x="44" y="510" width="36.5" height="25"/>
@@ -254,15 +274,17 @@
                     <connections>
                         <outlet property="alarmSwitch" destination="Phx-FB-xAl" id="ajm-8l-WjH"/>
                         <outlet property="breadNameField" destination="N9K-WO-7sA" id="MIC-fv-O29"/>
+                        <outlet property="cancelButton" destination="I4c-Bx-NXL" id="ZXv-Nc-Xc7"/>
                         <outlet property="descriptionField" destination="LXh-R6-3ZT" id="VAr-F0-CGl"/>
-                        <outlet property="friView" destination="JqT-sf-C6n" id="hov-9J-Zd6"/>
-                        <outlet property="monView" destination="PxH-Gt-M6j" id="Evr-Ec-2bS"/>
-                        <outlet property="satView" destination="jJW-5Q-cZX" id="4A4-oN-cq3"/>
-                        <outlet property="sunView" destination="Q3H-Ex-i2L" id="6eq-B9-D77"/>
-                        <outlet property="thrView" destination="7zm-mc-yVB" id="H5l-yz-krW"/>
+                        <outlet property="doneButton" destination="lUb-Jr-Sa1" id="2eM-jg-fGR"/>
+                        <outlet property="friView" destination="JqT-sf-C6n" id="XTU-Pp-z35"/>
+                        <outlet property="monView" destination="PxH-Gt-M6j" id="EkL-Xu-3DV"/>
+                        <outlet property="satView" destination="jJW-5Q-cZX" id="pAT-rX-U8D"/>
+                        <outlet property="sunView" destination="Q3H-Ex-i2L" id="pjK-C5-X2d"/>
+                        <outlet property="thrView" destination="7zm-mc-yVB" id="M8A-ga-27N"/>
                         <outlet property="timePicker" destination="7Xs-cl-UbM" id="hle-Is-a3c"/>
-                        <outlet property="tueView" destination="PCR-Pq-fkL" id="7eE-aX-VpE"/>
-                        <outlet property="wedView" destination="YEs-k2-6Um" id="9kD-rA-cCE"/>
+                        <outlet property="tueView" destination="PCR-Pq-fkL" id="hBh-zZ-brc"/>
+                        <outlet property="wedView" destination="YEs-k2-6Um" id="1IX-pg-cHS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HX4-hG-wrc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

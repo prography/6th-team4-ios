@@ -53,6 +53,7 @@ class MyRankingTableViewCell: UITableViewCell {
     }
     
     func layout() {
+        self.contentView.backgroundColor = UIColor(hex: 0xF5F4F1)
         blankView.backgroundColor = UIColor.systemBackground
         blankView.setRoundCorners(corners: [.layerMinXMinYCorner, .layerMaxXMinYCorner], radius: 28)
         rankLabel.textColor = UIColor(hex: 0x4C7A65)

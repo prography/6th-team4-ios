@@ -22,8 +22,7 @@ class RankingViewModel: ViewModelType {
             .subscribe(onNext: { state in
 //                switch state {
 //                case .trigger:
-//                    rankingRepo.fetchRepository(completion: (Error?) -> Void)
-//                    RankingAPI.searchWithSwift(rankingItemOutput)
+//                    rankingRepo.fetchRepository(completion: RankingAPI.searchWithSwift(rankingItemOutput))
 //                }
         }).disposed(by: self.bag)
         
