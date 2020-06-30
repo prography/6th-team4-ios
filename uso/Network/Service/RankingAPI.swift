@@ -15,7 +15,7 @@ class RankingAPI {
         completion(nil)
     }
     
-    static func searchWithSwift(_ subject: BehaviorSubject<[RankingItem]>) {
+    static func searchWithSwift(_ subject: PublishSubject<[RankingItem]>) {
         moyaProvider.request(.fetchRanking) { result in
             switch result {
             case .success(let response):
@@ -26,7 +26,7 @@ class RankingAPI {
         }
     }
     
-    static func handleSuccessResponse(_ response: Response, _ subject: BehaviorSubject<[RankingItem]>) {
+    static func handleSuccessResponse(_ response: Response, _ subject: PublishSubject<[RankingItem]>) {
         do {
             let searchResult = try JSONDecoder().decode(RankingItems.self, from: response.data)
             guard var user = searchResult.user else { return }

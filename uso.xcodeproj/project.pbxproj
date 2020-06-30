@@ -62,6 +62,8 @@
 		388F7AA3248A29A100A9E123 /* MoyaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7AA2248A29A100A9E123 /* MoyaAPI.swift */; };
 		388F7AA5248A2A6600A9E123 /* CALayer+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7AA4248A2A6600A9E123 /* CALayer+Border.swift */; };
 		388F7AAD248A322C00A9E123 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 388F7AAC248A322C00A9E123 /* SettingViewController.storyboard */; };
+		38A3E86224A731480097E7FA /* RankingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3E86124A731480097E7FA /* RankingRepository.swift */; };
+		38A3E86424A731A30097E7FA /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3E86324A731A30097E7FA /* ViewModelType.swift */; };
 		9C07E6EC2467CFD400F87838 /* PlusButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C07E6EB2467CFD400F87838 /* PlusButtonCell.xib */; };
 		9C2275FD246FAAFC00DF5911 /* BakeryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2275FC246FAAFC00DF5911 /* BakeryRepository.swift */; };
 		9C2275FF246FAB3A00DF5911 /* HabitAddRepsitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2275FE246FAB3A00DF5911 /* HabitAddRepsitory.swift */; };
@@ -161,6 +163,8 @@
 		388F7AA2248A29A100A9E123 /* MoyaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaAPI.swift; sourceTree = "<group>"; };
 		388F7AA4248A2A6600A9E123 /* CALayer+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Border.swift"; sourceTree = "<group>"; };
 		388F7AAC248A322C00A9E123 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
+		38A3E86124A731480097E7FA /* RankingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingRepository.swift; sourceTree = "<group>"; };
+		38A3E86324A731A30097E7FA /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		4A3AC7C8FD7C0F1A1EF65293 /* Pods-uso_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_ios.release.xcconfig"; path = "Target Support Files/Pods-uso_ios/Pods-uso_ios.release.xcconfig"; sourceTree = "<group>"; };
 		6130EF413695622D9CFC22FC /* Pods_uso_usoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uso_usoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE35225023FE32BBE83F9CF /* Pods-uso_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_ios.debug.xcconfig"; path = "Target Support Files/Pods-uso_ios/Pods-uso_ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -314,6 +318,7 @@
 				9CE11BD3247A2CC900F6EAC1 /* UIViewExtension.swift */,
 				9CA8AD2D2489F55600859CA6 /* PopUp.swift */,
 				388F7AA4248A2A6600A9E123 /* CALayer+Border.swift */,
+				38A3E86324A731A30097E7FA /* ViewModelType.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 				185D2A552446C49700A09E99 /* Repository.swift */,
 				9C2275FC246FAAFC00DF5911 /* BakeryRepository.swift */,
 				9C2275FE246FAB3A00DF5911 /* HabitAddRepsitory.swift */,
+				38A3E86124A731480097E7FA /* RankingRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -809,6 +815,7 @@
 				9CE11BD2247A296F00F6EAC1 /* Constants.swift in Sources */,
 				9C7B4B362471429E007B21DA /* Moya+Plugin.swift in Sources */,
 				388F7A9F248A292E00A9E123 /* SettingViewController.swift in Sources */,
+				38A3E86224A731480097E7FA /* RankingRepository.swift in Sources */,
 				18748207246129E7004A40DE /* HabitItem.swift in Sources */,
 				185D2A542446C40000A09E99 /* Model.swift in Sources */,
 				1882372724579DDA002C523E /* HabitListViewController.swift in Sources */,
@@ -824,6 +831,7 @@
 				18F666452461244400499CBC /* HabitListUseCase.swift in Sources */,
 				1874820524612803004A40DE /* ResponseStatus.swift in Sources */,
 				9C7B4B3124713A68007B21DA /* HabitAPI.swift in Sources */,
+				38A3E86424A731A30097E7FA /* ViewModelType.swift in Sources */,
 				1861430324583F3A007151A0 /* HabitListViewModel.swift in Sources */,
 				1882372524579CEE002C523E /* MainTabViewController.swift in Sources */,
 				1882372B24579DFA002C523E /* RankingViewController.swift in Sources */,

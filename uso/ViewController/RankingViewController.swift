@@ -15,9 +15,10 @@ class RankingViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     weak var coordinator: MainCoordinator?
-    var viewModel: RankingViewBindable!
     let bag = DisposeBag()
-    
+    var viewModel = RankingViewModel()
+    lazy var input = RankingViewModel.Input(viewModelExecuted: .init())
+    lazy var output = viewModel.transform(input: input)
     var screenWidth = UIScreen.main.bounds.width
 
     override func viewDidLoad() {
@@ -28,7 +29,9 @@ class RankingViewController: UIViewController {
     }
     
     private func bindRX() {
-        viewModel.rankingSubject
+//        input.viewModelExecuted
+        
+        output.rankingItemOutput
             .bind(to: tableView.rx.items) { (tableView, row, item) -> UITableViewCell in
                 if row == 0 {
                     guard let cell = tableView.dequeueReusableCell(withIdentifier: MyRankingTableViewCell.identifier, for: IndexPath.init(row: row, section: 0)) as? MyRankingTableViewCell else { fatalError() }
