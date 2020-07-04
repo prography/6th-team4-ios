@@ -10,10 +10,13 @@ import UIKit
 import RxSwift
 
 class SettingViewController: UIViewController {
+    @IBOutlet var imageView: UIImageView!
     @IBOutlet var nicknameLabel: UILabel!
     @IBOutlet var expLabel: UILabel!
     @IBOutlet var numberOfBreadLabel: UILabel!
+    @IBOutlet var numberOfBreadLabel2: UILabel!
     @IBOutlet var progressView: UIProgressView!
+    
     @IBOutlet var notiOnOffSwitch: UISwitch!
     @IBOutlet var tableView: UITableView!
     @IBOutlet var notiView: UIView!
@@ -34,7 +37,8 @@ class SettingViewController: UIViewController {
                 self?.nicknameLabel.text = user.name
                 let exp = user.exp ?? 0
                 self?.expLabel.text = "\(exp)"
-                self?.numberOfBreadLabel.text = "\(exp/10 + 1)개"
+                self?.numberOfBreadLabel.text = "\(exp/10 + 1)"
+                self?.numberOfBreadLabel2.text = "현재 \(exp/10 + 1)개"
             })
             .disposed(by: bag)
         
@@ -52,8 +56,9 @@ class SettingViewController: UIViewController {
 extension SettingViewController: Storyboarded {
     func layout() {
         tableView.layer.addBorder([.top], color: UIColor.lightGray, width: 0.6)
-        notiView.backgroundColor = UIColor.white
+        notiView.backgroundColor = UIColor.clear
         notiView.layer.addBorder([.top], color: UIColor.lightGray, width: 0.6)
+        notiOnOffSwitch.onTintColor = UIColor(hex: 0xAD9C82)
         progressView.frame = CGRect(origin: .zero, size: CGSize(width: 0, height: 4))
         progressView.backgroundColor = .black
         let settingItemTableViewCellNib = UINib(nibName: "SettingItemTableViewCell", bundle: nil)
