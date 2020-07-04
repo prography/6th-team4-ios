@@ -36,9 +36,11 @@ class SettingViewController: UIViewController {
             .subscribe(onNext: { [weak self] user in
                 self?.nicknameLabel.text = user.name
                 let exp = user.exp ?? 0
+                let level = user.level ?? 0
                 self?.expLabel.text = "\(exp)"
-                self?.numberOfBreadLabel.text = "\(exp/10 + 1)"
-                self?.numberOfBreadLabel2.text = "현재 \(exp/10 + 1)개"
+                self?.numberOfBreadLabel.text = "\(level-1)"
+                self?.numberOfBreadLabel2.text = "현재 \(level-1)개"
+                self?.progressView.progress = Float(user.levelPercent ?? 0)
             })
             .disposed(by: bag)
         
@@ -59,8 +61,8 @@ extension SettingViewController: Storyboarded {
         notiView.backgroundColor = UIColor.clear
         notiView.layer.addBorder([.top], color: UIColor.lightGray, width: 0.6)
         notiOnOffSwitch.onTintColor = UIColor(hex: 0xAD9C82)
-        progressView.frame = CGRect(origin: .zero, size: CGSize(width: 0, height: 4))
-        progressView.backgroundColor = .black
+//        progressView.frame = CGRect(origin: .zero, size: CGSize(width: 0, height: 4))
+//        progressView.backgroundColor = .black
         let settingItemTableViewCellNib = UINib(nibName: "SettingItemTableViewCell", bundle: nil)
         tableView.register(settingItemTableViewCellNib, forCellReuseIdentifier: SettingItemTableViewCell.identifier)
     }
