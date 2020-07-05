@@ -10,16 +10,29 @@ import UIKit
 import FSCalendar
 
 class HabitDetailViewController: UIViewController, Storyboarded {
-    var coordinator : Coordinator?
+
+    @IBOutlet weak var commitButtonView: UIView!
+    @IBOutlet weak var habitTitleLabl: UILabel!
+    @IBOutlet weak var habitCalendar: FSCalendar!
+    @IBOutlet weak var habitDescriptionLabel: UILabel!
+    @IBOutlet weak var continousCountLabel: UILabel!
+    @IBOutlet weak var totalCountLabel: UILabel!
+    @IBOutlet weak var suggestionLabel: UILabel!
     
-    @IBOutlet weak var commitButton: UIView!
-    @IBOutlet weak var calendar: FSCalendar!
+    var coordinator: Coordinator?
     override func viewDidLoad() {
         super.viewDidLoad()
         setCalendar()
         layout()
     }
     
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillAppear(animated)
         coordinator?.navigationController.navigationBar.isHidden = true

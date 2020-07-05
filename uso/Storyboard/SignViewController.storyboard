@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wiK-yW-77S">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wiK-yW-77S">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,6 +33,14 @@
                                 <rect key="frame" x="171.5" y="702" width="71" height="30"/>
                                 <state key="normal" title="navigation"/>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I12-We-04s">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vig-OT-F8d" customClass="GIDSignInButton" customModule="uso" customModuleProvider="target">
+                                <rect key="frame" x="87" y="205" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -42,18 +50,28 @@
                             <constraint firstItem="UhJ-JJ-UdA" firstAttribute="centerY" secondItem="MKC-vG-8vG" secondAttribute="centerY" id="B09-YO-ghm"/>
                             <constraint firstItem="XLI-nu-uUj" firstAttribute="centerY" secondItem="MKC-vG-8vG" secondAttribute="centerY" multiplier="0.3" id="BJb-Dw-aKk"/>
                             <constraint firstItem="UhJ-JJ-UdA" firstAttribute="centerX" secondItem="MKC-vG-8vG" secondAttribute="centerX" id="CTE-Vu-82l"/>
+                            <constraint firstItem="I12-We-04s" firstAttribute="width" secondItem="MKC-vG-8vG" secondAttribute="width" multiplier="0.57971" id="Cwz-uQ-gVS"/>
                             <constraint firstItem="XLI-nu-uUj" firstAttribute="width" secondItem="MKC-vG-8vG" secondAttribute="width" multiplier="0.2" id="E85-uO-lzM"/>
                             <constraint firstItem="UhJ-JJ-UdA" firstAttribute="height" secondItem="MKC-vG-8vG" secondAttribute="height" multiplier="0.05" id="Lhf-Vv-2ca"/>
+                            <constraint firstItem="I12-We-04s" firstAttribute="centerX" secondItem="MKC-vG-8vG" secondAttribute="centerX" id="MPX-pr-f32"/>
+                            <constraint firstItem="vig-OT-F8d" firstAttribute="height" secondItem="MKC-vG-8vG" secondAttribute="height" multiplier="0.142857" id="MPj-r5-7mn"/>
                             <constraint firstItem="SLk-ou-AOi" firstAttribute="width" secondItem="MKC-vG-8vG" secondAttribute="width" multiplier="0.2" id="Vsi-Tb-Ftb"/>
+                            <constraint firstItem="vig-OT-F8d" firstAttribute="width" secondItem="MKC-vG-8vG" secondAttribute="width" multiplier="0.57971" id="Zwy-Ef-7IJ"/>
                             <constraint firstItem="SLk-ou-AOi" firstAttribute="centerX" secondItem="MKC-vG-8vG" secondAttribute="centerX" id="aDI-Ql-Ig0"/>
+                            <constraint firstItem="vig-OT-F8d" firstAttribute="centerX" secondItem="MKC-vG-8vG" secondAttribute="centerX" id="h65-56-iVS"/>
                             <constraint firstItem="EQ9-pD-mqT" firstAttribute="centerX" secondItem="MKC-vG-8vG" secondAttribute="centerX" id="iDv-MD-odm"/>
                             <constraint firstItem="XLI-nu-uUj" firstAttribute="centerX" secondItem="MKC-vG-8vG" secondAttribute="centerX" id="nVW-Kd-726"/>
+                            <constraint firstItem="I12-We-04s" firstAttribute="centerY" secondItem="MKC-vG-8vG" secondAttribute="centerY" id="qEE-kr-Ef3"/>
+                            <constraint firstItem="I12-We-04s" firstAttribute="height" secondItem="MKC-vG-8vG" secondAttribute="height" multiplier="0.142857" id="sGb-vM-Q65"/>
                             <constraint firstItem="SLk-ou-AOi" firstAttribute="height" secondItem="MKC-vG-8vG" secondAttribute="height" multiplier="0.05" id="v0j-0j-yxN"/>
+                            <constraint firstItem="vig-OT-F8d" firstAttribute="centerY" secondItem="MKC-vG-8vG" secondAttribute="centerY" multiplier="0.6" id="why-63-qO1"/>
                             <constraint firstItem="EQ9-pD-mqT" firstAttribute="centerY" secondItem="MKC-vG-8vG" secondAttribute="centerY" multiplier="1.6" id="zvS-LN-FIf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="snx-03-YQc"/>
                     </view>
                     <connections>
+                        <outlet property="appleLoginView" destination="I12-We-04s" id="NhD-ei-4Pf"/>
+                        <outlet property="googleLoginButtonView" destination="vig-OT-F8d" id="35a-Gu-EZA"/>
                         <outlet property="minusButton" destination="SLk-ou-AOi" id="Piy-Gb-aBZ"/>
                         <outlet property="navigateButton" destination="EQ9-pD-mqT" id="Xg0-ar-qon"/>
                         <outlet property="numberLabel" destination="XLI-nu-uUj" id="AWA-mF-rF0"/>

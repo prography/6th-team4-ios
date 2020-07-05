@@ -33,35 +33,6 @@ class MainCoordinator: Coordinator {
     func presentMainTabVC() {
         navigationController.navigationBar.isHidden = true
         let viewController = MainTabViewController.instantiate()
-        // Create Tab one
-        let tabOne = HabitListViewController.instantiate()
-        let habitListViewModel = HabitListViewModel.init()
-        let tabOneBarItem1 = UITabBarItem(title: "Habit", image: UIImage(named: "defaultImage.png"), selectedImage: UIImage(named: "selectedImage.png"))
-        tabOne.modalPresentationStyle = .fullScreen
-        tabOne.coordinator = self
-        tabOne.viewModel = habitListViewModel
-        tabOne.tabBarItem = tabOneBarItem1
-        
-        // Create Tab two
-        let tabTwo = RankingViewController.instantiate()
-        let rankingViewModel = RankingViewModel.init()
-        let tabTwoBarItem2 = UITabBarItem(title: "Ranking", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
-        tabTwo.modalPresentationStyle = .fullScreen
-        tabTwo.coordinator = self
-        tabTwo.viewModel = rankingViewModel
-        tabTwo.tabBarItem = tabTwoBarItem2
-        
-        // Create Tab three
-        let tabThree = SettingViewController.instantiate()
-        let settingViewModel = SettingViewModel.init()
-        let tabTwoBarItem3 = UITabBarItem(title: "Setting", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
-        tabThree.modalPresentationStyle = .fullScreen
-        tabThree.coordinator = self
-        tabThree.viewModel = settingViewModel
-        tabThree.tabBarItem = tabTwoBarItem3
-        
-        viewController.viewControllers = [tabOne, tabTwo, tabThree]
-        viewController.selectedIndex = 0
         viewController.coordinator = self
         
         navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -94,7 +65,13 @@ class MainCoordinator: Coordinator {
     func presentBakeryVC() {
         let viewController = BakeryViewController.instantiate()
         viewController.coordinator = self
-        // Consider animation for modal push
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    func presentHabitDetailVC() {
+        let viewController = HabitDetailViewController.instantiate()
+        viewController.coordinator = self
+        navigationController.navigationBar.isHidden = false
         navigationController.pushViewController(viewController, animated: true)
     }
 }
