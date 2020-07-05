@@ -9,7 +9,6 @@
 import UIKit
 import GoogleSignIn
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     var coordinator: MainCoordinator?
@@ -22,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         let navController = UINavigationController()
         navController.navigationBar.isHidden = true
         // Set coordinator  before wrapping UIWindow
-        
         
         coordinator = MainCoordinator(navigationController: navController)
         coordinator?.start()

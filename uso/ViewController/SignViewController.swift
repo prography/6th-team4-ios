@@ -104,7 +104,6 @@ class SignViewController: UIViewController {
         let authController = ASAuthorizationController(authorizationRequests: request)
         authController.delegate = self
         authController.performRequests()
-        
     }
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
@@ -113,7 +112,8 @@ class SignViewController: UIViewController {
         // ...
         return
       }
-
+        
+        
       guard let authentication = user.authentication else { return }
     }
 

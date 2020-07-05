@@ -19,6 +19,7 @@ class HabitDetailViewController: UIViewController, Storyboarded {
     @IBOutlet weak var totalCountLabel: UILabel!
     @IBOutlet weak var suggestionLabel: UILabel!
     
+    var coordinator: Coordinator?
     override func viewDidLoad() {
         super.viewDidLoad()
 

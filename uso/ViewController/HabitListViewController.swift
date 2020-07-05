@@ -26,8 +26,9 @@ class HabitListViewController: UIViewController {
         layout()
     }
     
-    func navigate() {
-        coordinator?.presentHabitAddVC()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        coordinator?.navigationController.navigationBar.isHidden = true
     }
     
     func bindRX() {
@@ -70,10 +71,14 @@ class HabitListViewController: UIViewController {
                     return cell
                 }
         }.disposed(by: bag)
+        
         tableView.rx
             .itemSelected.subscribe(onNext: { indexPath in
-                print("item \(indexPath.row) selected")
-                
+                if indexPath.row == indexPath.count {
+                    self.coordinator?.presentHabitAddVC()
+                } else {
+                    self.coordinator?.presentHabitDetailVC()
+                }
             })
             .disposed(by: self.bag)
     }
@@ -87,7 +92,7 @@ extension HabitListViewController: Storyboarded, UITableViewDelegate {
             .setDelegate(self)
             .disposed(by: self.bag)
         
-        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 800
         
@@ -99,10 +104,6 @@ extension HabitListViewController: Storyboarded, UITableViewDelegate {
         let plusButtonCellNib = UINib(nibName: "PlusButtonCell", bundle: nil)
         self.tableView.register(plusButtonCellNib, forCellReuseIdentifier: PlusButtonCell.identifier)
     }
-    
-    //    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-    //        return 100
-    //    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 143
