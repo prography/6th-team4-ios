@@ -20,10 +20,12 @@ class RankingViewModel: ViewModelType {
         
         input.viewModelExecuted
             .subscribe(onNext: { state in
-//                switch state {
-//                case .trigger:
-//                    rankingRepo.fetchRepository(completion: RankingAPI.searchWithSwift(rankingItemOutput))
-//                }
+                switch state {
+                case .trigger:
+                    self.rankingRepo.fetchRepository { _ in
+                        RankingAPI.searchWithSwift(rankingItemOutput)
+                    }
+                }
         }).disposed(by: self.bag)
         
         return Output(rankingItemOutput: rankingItemOutput)
@@ -32,7 +34,7 @@ class RankingViewModel: ViewModelType {
 
 extension RankingViewModel {
     struct Input {
-        var viewModelExecuted: PublishSubject<ViewModelExecution>
+        var viewModelExecuted: BehaviorSubject<ViewModelExecution>
     }
     
     struct Output {

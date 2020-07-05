@@ -60,7 +60,8 @@
 		388F7AAD248A322C00A9E123 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 388F7AAC248A322C00A9E123 /* SettingViewController.storyboard */; };
 		38A3E86224A731480097E7FA /* RankingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3E86124A731480097E7FA /* RankingRepository.swift */; };
 		38A3E86424A731A30097E7FA /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3E86324A731A30097E7FA /* ViewModelType.swift */; };
-		9C00806624A767FA002968D2 /* client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C00806524A767F9002968D2 /* client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist */; };
+		38E70E0924B2108100C1721D /* RankingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1249248A1397005B0C05 /* RankingItemTableViewCell.xib */; };
+		38E70E0A24B2108400C1721D /* MyRankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1247248A1396005B0C05 /* MyRankingTableViewCell.xib */; };
 		9C07E6EC2467CFD400F87838 /* PlusButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C07E6EB2467CFD400F87838 /* PlusButtonCell.xib */; };
 		9C2275FD246FAAFC00DF5911 /* BakeryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2275FC246FAAFC00DF5911 /* BakeryRepository.swift */; };
 		9C2275FF246FAB3A00DF5911 /* HabitAddRepsitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2275FE246FAB3A00DF5911 /* HabitAddRepsitory.swift */; };
@@ -173,7 +174,6 @@
 		7440281B8358D1DB3A274291 /* Pods-uso-usoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso-usoUITests.debug.xcconfig"; path = "Target Support Files/Pods-uso-usoUITests/Pods-uso-usoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8811C256C820F8643C061922 /* Pods-usoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-usoTests.debug.xcconfig"; path = "Target Support Files/Pods-usoTests/Pods-usoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D473F0558E305B2D24B9D05 /* Pods-uso-usoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso-usoUITests.release.xcconfig"; path = "Target Support Files/Pods-uso-usoUITests/Pods-uso-usoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		9C00806524A767F9002968D2 /* client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist"; path = "../../6th-team4-ios/uso/client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
 		9C07E6EB2467CFD400F87838 /* PlusButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlusButtonCell.xib; sourceTree = "<group>"; };
 		9C2275FC246FAAFC00DF5911 /* BakeryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryRepository.swift; sourceTree = "<group>"; };
 		9C2275FE246FAB3A00DF5911 /* HabitAddRepsitory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitAddRepsitory.swift; sourceTree = "<group>"; };
@@ -288,7 +288,6 @@
 				185D2A162446C27800A09E99 /* AppDelegate.swift */,
 				185D2A1F2446C27D00A09E99 /* Assets.xcassets */,
 				185D2A242446C27D00A09E99 /* Info.plist */,
-				9C00806524A767F9002968D2 /* client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist */,
 			);
 			path = uso;
 			sourceTree = "<group>";
@@ -653,8 +652,8 @@
 			files = (
 				18CB4FCD245AB81100FD6651 /* .swiftlint.yml in Resources */,
 				1882372D24579E13002C523E /* RankingViewController.storyboard in Resources */,
+				38E70E0A24B2108400C1721D /* MyRankingTableViewCell.xib in Resources */,
 				18F6663F24611B5400499CBC /* HabitListCell.xib in Resources */,
-				9C00806624A767FA002968D2 /* client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist in Resources */,
 				9C07E6EC2467CFD400F87838 /* PlusButtonCell.xib in Resources */,
 				9CA8AD332489F63E00859CA6 /* HabitDetailViewController.storyboard in Resources */,
 				1882372124579B33002C523E /* MainTabViewController.storyboard in Resources */,
@@ -662,6 +661,7 @@
 				182F46FC2449690400D1730B /* LaunchScreen.storyboard in Resources */,
 				388F7AAD248A322C00A9E123 /* SettingViewController.storyboard in Resources */,
 				9C227605246FAD5900DF5911 /* HabitAddViewController.storyboard in Resources */,
+				38E70E0924B2108100C1721D /* RankingItemTableViewCell.xib in Resources */,
 				9C910CB124A704780018E16B /* AddHabitCell.xib in Resources */,
 				18F6664324611D9200499CBC /* ProfileCell.xib in Resources */,
 				9C227607246FAD6A00DF5911 /* BakeryViewController.storyboard in Resources */,
