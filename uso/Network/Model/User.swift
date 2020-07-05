@@ -14,4 +14,16 @@ struct UserItem: Decodable {
     var exp: Int?
     var createdAt: String?
     var updatedAt: String?
+    var itemTotalCount: Int?
+    var percent: Int?
+    
+    init() {
+        userId = 0
+        name = "name"
+        exp = 0
+        createdAt = ""
+        updatedAt = ""
+        itemTotalCount = 0
+        percent = 0
+    }
 }
