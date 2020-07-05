@@ -87,7 +87,7 @@ struct HabitService {
                     completion(data)
                 }
             case .failure(let error):
-                print("error")
+                print(error)
             }
         }
     }

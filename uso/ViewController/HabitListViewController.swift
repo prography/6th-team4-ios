@@ -54,11 +54,6 @@ class HabitListViewController: UIViewController {
                         for: IndexPath.init(row: row, section: 0)) as? PlusButtonCell
                         else { fatalError() }
                     
-                    //                    cell.plussButton.rx
-                    //                        .tap
-                    //                        .subscribe(onNext: { [weak self] in
-                    //                            self?.coordinator?.presentHabitAddVC()
-                    //                        }).disposed(by: cell.bag)
                     return cell
                     
                 } else {
@@ -66,7 +61,7 @@ class HabitListViewController: UIViewController {
                         withIdentifier: HabitListCell.identifier,
                         for: IndexPath.init(row: row, section: 0)) as? HabitListCell
                         else { fatalError() }
-                    
+                    cell.parentVC = self
                     cell.onData.onNext((item as? HabitItem ?? HabitItem(name: "error", ratio: 0, contributions: [])))
                     return cell
                 }

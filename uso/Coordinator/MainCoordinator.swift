@@ -49,7 +49,17 @@ class MainCoordinator: Coordinator {
         viewController.coordinator = self
         // Consider animation for modal push
         navigationController.navigationBar.isHidden = true
+        navigationController.present(viewController, animated: true)
+    }
+    
+    func presentHabitDetailVC() {
+        navigationController.navigationBar.isHidden = false
+        navigationController.navigationBar.topItem?.title = "Work Out!"
+        let viewController = HabitDetailViewController.instantiate()
+        viewController.coordinator = self
         navigationController.pushViewController(viewController, animated: true)
+        
+        // pop일때 navigation bar hidden정의를 어떻게 해줘야 하지
     }
     
     func presentBakeryVC() {

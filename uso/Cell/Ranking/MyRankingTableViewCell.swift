@@ -12,9 +12,10 @@ import RxSwift
 class MyRankingTableViewCell: UITableViewCell {
     static let identifier = "MyRankingTableViewCell"
     
-    @IBOutlet weak var tempView: UIView!
-    
-    private let cellBag = DisposeBag()
+    @IBOutlet var highRankLabel: UILabel!
+    @IBOutlet var totalLabel: UILabel!
+    @IBOutlet var rankLabel: UILabel!
+    @IBOutlet var blankView: UIView!
     
     let onData: AnyObserver<RankingItem>
     var bag = DisposeBag()
@@ -27,9 +28,11 @@ class MyRankingTableViewCell: UITableViewCell {
 
         data.observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] ranking in
-                //implementation
+                self?.totalLabel.text = "\(ranking.achievement)"
+                self?.rankLabel.text = ranking.rank
+                self?.highRankLabel.text = "\(Int(ranking.rank)!*100/ranking.achievement) %"
             })
-            .disposed(by: cellBag)
+            .disposed(by: bag)
     }
 
     override func awakeFromNib() {
@@ -44,9 +47,16 @@ class MyRankingTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        bag = DisposeBag()
+    }
+    
     func layout() {
-        tempView.backgroundColor = UIColor.systemIndigo
-        tempView.layer.cornerRadius = 5
+        self.contentView.backgroundColor = UIColor(hex: 0xF5F4F1)
+        blankView.backgroundColor = UIColor.systemBackground
+        blankView.setRoundCorners(corners: [.layerMinXMinYCorner, .layerMaxXMinYCorner], radius: 28)
+        rankLabel.textColor = UIColor(hex: 0x4C7A65)
     }
     
 }

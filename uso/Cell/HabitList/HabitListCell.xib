@@ -101,6 +101,9 @@
             <connections>
                 <outlet property="habitTitleLabel" destination="PAK-eo-dZO" id="Sat-a3-JKc"/>
                 <outlet property="ratioLabel" destination="OPg-xu-S04" id="oXK-9e-45T"/>
+                <outlet property="habitTitleLabel" destination="HUg-tv-pFB" id="GvV-uo-HCy"/>
+                <outlet property="ratioLabel" destination="WAY-vk-aMn" id="rPI-Ep-e7t"/>
+                <outlet property="totalView" destination="PA7-Su-aqg" id="XvF-c2-Cml"/>
             </connections>
             <point key="canvasLocation" x="-74.637681159420296" y="95.089285714285708"/>
         </tableViewCell>

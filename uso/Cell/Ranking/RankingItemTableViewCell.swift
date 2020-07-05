@@ -18,8 +18,6 @@ class RankingItemTableViewCell: UITableViewCell {
     @IBOutlet var achieve: UILabel!
     @IBOutlet var crownImage: UIImageView!
     
-    private let cellBag = DisposeBag()
-    
     let onData: AnyObserver<RankingItem>
     var bag = DisposeBag()
     
@@ -32,11 +30,11 @@ class RankingItemTableViewCell: UITableViewCell {
         data.observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] ranking in
                 self?.rank.text = "\(ranking.rank)"
-                self?.nickName.text = ranking.nickName
+                self?.nickName.text = ranking.userName
                 self?.exp.text = "\(ranking.exp)"
-                self?.achieve.text = "\(ranking.achieve)"
+                self?.achieve.text = "\(ranking.achievement)%"
             })
-            .disposed(by: cellBag)
+            .disposed(by: bag)
     }
 
     override func awakeFromNib() {

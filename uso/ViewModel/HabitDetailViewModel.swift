@@ -17,4 +17,3 @@ protocol HabitDetailViewModelBindable : ViewBindable {
 class HabitDetailViewModel: HabitDetailViewModelBindable {
     
 }
-
