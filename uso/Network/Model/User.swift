@@ -14,8 +14,8 @@ struct UserItem: Decodable {
     var exp: Int?
     var createdAt: String?
     var updatedAt: String?
-    var level: Int?
-    var levelPercent: Int?
+    var itemTotalCount: Int?
+    var percent: Int?
     
     init() {
         userId = 0
@@ -23,7 +23,7 @@ struct UserItem: Decodable {
         exp = 0
         createdAt = ""
         updatedAt = ""
-        level = 0
-        levelPercent = 0
+        itemTotalCount = 0
+        percent = 0
     }
 }

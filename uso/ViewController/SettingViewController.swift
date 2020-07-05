@@ -36,11 +36,11 @@ class SettingViewController: UIViewController {
             .subscribe(onNext: { [weak self] user in
                 self?.nicknameLabel.text = user.name
                 let exp = user.exp ?? 0
-                let level = user.level ?? 0
+                let itemTotalCount = user.itemTotalCount ?? 0
                 self?.expLabel.text = "\(exp)"
-                self?.numberOfBreadLabel.text = "\(level-1)"
-                self?.numberOfBreadLabel2.text = "현재 \(level-1)개"
-                self?.progressView.progress = Float(user.levelPercent ?? 0)
+                self?.numberOfBreadLabel.text = "\(itemTotalCount)"
+                self?.numberOfBreadLabel2.text = "현재 \(itemTotalCount)개"
+                self?.progressView.progress = Float(user.percent ?? 0)
             })
             .disposed(by: bag)
         
