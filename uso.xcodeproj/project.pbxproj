@@ -51,14 +51,8 @@
 		3854F5C9248A440B00AD0DAF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3854F5C8248A440B00AD0DAF /* User.swift */; };
 		3854F5CB248A447D00AD0DAF /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3854F5CA248A447D00AD0DAF /* UserAPI.swift */; };
 		3859DDE0245D5EA400C799BF /* RankingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859DDDF245D5EA400C799BF /* RankingUseCase.swift */; };
-		9C00806424A72E6C002968D2 /* HabitDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00806324A72E6C002968D2 /* HabitDetailViewModel.swift */; };
-		9C00806624A767FA002968D2 /* client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C00806524A767F9002968D2 /* client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist */; };
 		387D124A248A1397005B0C05 /* SettingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1244248A1396005B0C05 /* SettingItemTableViewCell.swift */; };
-		387D124B248A1397005B0C05 /* MyRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1245248A1396005B0C05 /* MyRankingTableViewCell.swift */; };
-		387D124C248A1397005B0C05 /* RankingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1246248A1396005B0C05 /* RankingItemTableViewCell.swift */; };
-		387D124D248A1397005B0C05 /* MyRankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1247248A1396005B0C05 /* MyRankingTableViewCell.xib */; };
 		387D124E248A1397005B0C05 /* SettingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1248248A1397005B0C05 /* SettingItemTableViewCell.xib */; };
-		387D124F248A1397005B0C05 /* RankingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1249248A1397005B0C05 /* RankingItemTableViewCell.xib */; };
 		388F7A9F248A292E00A9E123 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7A9E248A292E00A9E123 /* SettingViewController.swift */; };
 		388F7AA1248A297C00A9E123 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7AA0248A297C00A9E123 /* Ranking.swift */; };
 		388F7AA3248A29A100A9E123 /* MoyaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7AA2248A29A100A9E123 /* MoyaAPI.swift */; };
@@ -66,6 +60,7 @@
 		388F7AAD248A322C00A9E123 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 388F7AAC248A322C00A9E123 /* SettingViewController.storyboard */; };
 		38A3E86224A731480097E7FA /* RankingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3E86124A731480097E7FA /* RankingRepository.swift */; };
 		38A3E86424A731A30097E7FA /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3E86324A731A30097E7FA /* ViewModelType.swift */; };
+		9C00806624A767FA002968D2 /* client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C00806524A767F9002968D2 /* client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist */; };
 		9C07E6EC2467CFD400F87838 /* PlusButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C07E6EB2467CFD400F87838 /* PlusButtonCell.xib */; };
 		9C2275FD246FAAFC00DF5911 /* BakeryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2275FC246FAAFC00DF5911 /* BakeryRepository.swift */; };
 		9C2275FF246FAB3A00DF5911 /* HabitAddRepsitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2275FE246FAB3A00DF5911 /* HabitAddRepsitory.swift */; };
@@ -73,22 +68,17 @@
 		9C227603246FAD4400DF5911 /* BakeryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C227602246FAD4400DF5911 /* BakeryViewController.swift */; };
 		9C227605246FAD5900DF5911 /* HabitAddViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C227604246FAD5900DF5911 /* HabitAddViewController.storyboard */; };
 		9C227607246FAD6A00DF5911 /* BakeryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C227606246FAD6A00DF5911 /* BakeryViewController.storyboard */; };
-		9C2489D8248A18C8005B70ED /* HabitDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2489D7248A18C8005B70ED /* HabitDetailViewModel.swift */; };
 		9C7B4B3124713A68007B21DA /* HabitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B4B3024713A68007B21DA /* HabitAPI.swift */; };
 		9C7B4B3424713B37007B21DA /* RankingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B4B3324713B37007B21DA /* RankingAPI.swift */; };
 		9C7B4B362471429E007B21DA /* Moya+Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B4B352471429E007B21DA /* Moya+Plugin.swift */; };
 		9C910CB024A704780018E16B /* AddHabitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C910CAE24A704780018E16B /* AddHabitCell.swift */; };
 		9C910CB124A704780018E16B /* AddHabitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C910CAF24A704780018E16B /* AddHabitCell.xib */; };
-		9CA8AD252489D44600859CA6 /* RankingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD1F2489D44600859CA6 /* RankingItemTableViewCell.swift */; };
-		9CA8AD262489D44600859CA6 /* RankingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA8AD202489D44600859CA6 /* RankingItemTableViewCell.xib */; };
-		9CA8AD272489D44600859CA6 /* SettingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD212489D44600859CA6 /* SettingItemTableViewCell.swift */; };
-		9CA8AD282489D44600859CA6 /* SettingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA8AD222489D44600859CA6 /* SettingItemTableViewCell.xib */; };
-		9CA8AD292489D44600859CA6 /* MyRankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA8AD232489D44600859CA6 /* MyRankingTableViewCell.xib */; };
-		9CA8AD2A2489D44600859CA6 /* MyRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD242489D44600859CA6 /* MyRankingTableViewCell.swift */; };
-		9CA8AD2C2489D48200859CA6 /* SettingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD2B2489D48200859CA6 /* SettingCoordinator.swift */; };
 		9CA8AD2E2489F55600859CA6 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD2D2489F55600859CA6 /* PopUp.swift */; };
 		9CA8AD312489F61A00859CA6 /* HabitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8AD302489F61900859CA6 /* HabitDetailViewController.swift */; };
 		9CA8AD332489F63E00859CA6 /* HabitDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA8AD322489F63E00859CA6 /* HabitDetailViewController.storyboard */; };
+		9CBAEC8424B1FCD200A547CF /* HabitDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAEC8324B1FCD200A547CF /* HabitDetailViewModel.swift */; };
+		9CBAEC8524B200E800A547CF /* MyRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1245248A1396005B0C05 /* MyRankingTableViewCell.swift */; };
+		9CBAEC8624B200F400A547CF /* RankingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1246248A1396005B0C05 /* RankingItemTableViewCell.swift */; };
 		9CE11BD0247A290D00F6EAC1 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE11BCF247A290D00F6EAC1 /* IndicatorView.swift */; };
 		9CE11BD2247A296F00F6EAC1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE11BD1247A296F00F6EAC1 /* Constants.swift */; };
 		9CE11BD4247A2CC900F6EAC1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE11BD3247A2CC900F6EAC1 /* UIViewExtension.swift */; };
@@ -183,7 +173,6 @@
 		7440281B8358D1DB3A274291 /* Pods-uso-usoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso-usoUITests.debug.xcconfig"; path = "Target Support Files/Pods-uso-usoUITests/Pods-uso-usoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8811C256C820F8643C061922 /* Pods-usoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-usoTests.debug.xcconfig"; path = "Target Support Files/Pods-usoTests/Pods-usoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D473F0558E305B2D24B9D05 /* Pods-uso-usoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso-usoUITests.release.xcconfig"; path = "Target Support Files/Pods-uso-usoUITests/Pods-uso-usoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		9C00806324A72E6C002968D2 /* HabitDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailViewModel.swift; sourceTree = "<group>"; };
 		9C00806524A767F9002968D2 /* client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist"; path = "../../6th-team4-ios/uso/client_191839451290-4kkn9ttisgklp7fc5713pbqesi6u4ghe.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
 		9C07E6EB2467CFD400F87838 /* PlusButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlusButtonCell.xib; sourceTree = "<group>"; };
 		9C2275FC246FAAFC00DF5911 /* BakeryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryRepository.swift; sourceTree = "<group>"; };
@@ -192,22 +181,19 @@
 		9C227602246FAD4400DF5911 /* BakeryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryViewController.swift; sourceTree = "<group>"; };
 		9C227604246FAD5900DF5911 /* HabitAddViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitAddViewController.storyboard; sourceTree = "<group>"; };
 		9C227606246FAD6A00DF5911 /* BakeryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BakeryViewController.storyboard; sourceTree = "<group>"; };
-		9C2489D7248A18C8005B70ED /* HabitDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailViewModel.swift; sourceTree = "<group>"; };
 		9C7B4B3024713A68007B21DA /* HabitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitAPI.swift; sourceTree = "<group>"; };
 		9C7B4B3324713B37007B21DA /* RankingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingAPI.swift; sourceTree = "<group>"; };
 		9C7B4B352471429E007B21DA /* Moya+Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Plugin.swift"; sourceTree = "<group>"; };
 		9C910CAE24A704780018E16B /* AddHabitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitCell.swift; sourceTree = "<group>"; };
 		9C910CAF24A704780018E16B /* AddHabitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddHabitCell.xib; sourceTree = "<group>"; };
-		9CA8AD1F2489D44600859CA6 /* RankingItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RankingItemTableViewCell.swift; path = "../../../../Downloads/6th-team4-ios-develop/uso/Cell/RankingItemTableViewCell.swift"; sourceTree = "<group>"; };
-		9CA8AD202489D44600859CA6 /* RankingItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RankingItemTableViewCell.xib; path = "../../../../Downloads/6th-team4-ios-develop/uso/Cell/RankingItemTableViewCell.xib"; sourceTree = "<group>"; };
-		9CA8AD212489D44600859CA6 /* SettingItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingItemTableViewCell.swift; path = "../../../../Downloads/6th-team4-ios-develop/uso/Cell/SettingItemTableViewCell.swift"; sourceTree = "<group>"; };
-		9CA8AD222489D44600859CA6 /* SettingItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingItemTableViewCell.xib; path = "../../../../Downloads/6th-team4-ios-develop/uso/Cell/SettingItemTableViewCell.xib"; sourceTree = "<group>"; };
-		9CA8AD232489D44600859CA6 /* MyRankingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyRankingTableViewCell.xib; path = "../../../../Downloads/6th-team4-ios-develop/uso/Cell/MyRankingTableViewCell.xib"; sourceTree = "<group>"; };
-		9CA8AD242489D44600859CA6 /* MyRankingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyRankingTableViewCell.swift; path = "../../../../Downloads/6th-team4-ios-develop/uso/Cell/MyRankingTableViewCell.swift"; sourceTree = "<group>"; };
-		9CA8AD2B2489D48200859CA6 /* SettingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingCoordinator.swift; path = "../../../Downloads/6th-team4-ios-develop/uso/Coordinator/SettingCoordinator.swift"; sourceTree = "<group>"; };
+		9CA8AD1F2489D44600859CA6 /* RankingItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RankingItemTableViewCell.swift; path = "/Downloads/6th-team4-ios-develop/uso/Cell/RankingItemTableViewCell.swift"; sourceTree = "<absolute>"; };
+		9CA8AD202489D44600859CA6 /* RankingItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RankingItemTableViewCell.xib; path = "/Downloads/6th-team4-ios-develop/uso/Cell/RankingItemTableViewCell.xib"; sourceTree = "<absolute>"; };
+		9CA8AD242489D44600859CA6 /* MyRankingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyRankingTableViewCell.swift; path = "/Downloads/6th-team4-ios-develop/uso/Cell/MyRankingTableViewCell.swift"; sourceTree = "<absolute>"; };
+		9CA8AD2B2489D48200859CA6 /* SettingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingCoordinator.swift; path = "/Downloads/6th-team4-ios-develop/uso/Coordinator/SettingCoordinator.swift"; sourceTree = "<absolute>"; };
 		9CA8AD2D2489F55600859CA6 /* PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
 		9CA8AD302489F61900859CA6 /* HabitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailViewController.swift; sourceTree = "<group>"; };
 		9CA8AD322489F63E00859CA6 /* HabitDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitDetailViewController.storyboard; sourceTree = "<group>"; };
+		9CBAEC8324B1FCD200A547CF /* HabitDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailViewModel.swift; sourceTree = "<group>"; };
 		9CE11BCF247A290D00F6EAC1 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 		9CE11BD1247A296F00F6EAC1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9CE11BD3247A2CC900F6EAC1 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -268,6 +254,7 @@
 				185D2A142446C27800A09E99 /* Products */,
 				2984303282596BEAA562F753 /* Pods */,
 				048BE9BE502F83F678638ED1 /* Frameworks */,
+				9CBAEC8224B1FB5200A547CF /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -377,8 +364,7 @@
 				1861430224583F3A007151A0 /* HabitListViewModel.swift */,
 				1861430424583F49007151A0 /* RankingViewModel.swift */,
 				1861430624583F54007151A0 /* SettingViewModel.swift */,
-				9C00806324A72E6C002968D2 /* HabitDetailViewModel.swift */,
-				9C2489D7248A18C8005B70ED /* HabitDetailViewModel.swift */,
+				9CBAEC8324B1FCD200A547CF /* HabitDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -542,6 +528,17 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9CBAEC8224B1FB5200A547CF /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				9CA8AD242489D44600859CA6 /* MyRankingTableViewCell.swift */,
+				9CA8AD2B2489D48200859CA6 /* SettingCoordinator.swift */,
+				9CA8AD1F2489D44600859CA6 /* RankingItemTableViewCell.swift */,
+				9CA8AD202489D44600859CA6 /* RankingItemTableViewCell.xib */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -666,14 +663,11 @@
 				388F7AAD248A322C00A9E123 /* SettingViewController.storyboard in Resources */,
 				9C227605246FAD5900DF5911 /* HabitAddViewController.storyboard in Resources */,
 				9C910CB124A704780018E16B /* AddHabitCell.xib in Resources */,
-				9CA8AD262489D44600859CA6 /* RankingItemTableViewCell.xib in Resources */,
-				387D124F248A1397005B0C05 /* RankingItemTableViewCell.xib in Resources */,
 				18F6664324611D9200499CBC /* ProfileCell.xib in Resources */,
 				9C227607246FAD6A00DF5911 /* BakeryViewController.storyboard in Resources */,
 				182F46FA244968C300D1730B /* SignViewController.storyboard in Resources */,
 				387D124E248A1397005B0C05 /* SettingItemTableViewCell.xib in Resources */,
 				185D2A202446C27D00A09E99 /* Assets.xcassets in Resources */,
-				387D124D248A1397005B0C05 /* MyRankingTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -852,6 +846,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CBAEC8624B200F400A547CF /* RankingItemTableViewCell.swift in Sources */,
+				9CBAEC8524B200E800A547CF /* MyRankingTableViewCell.swift in Sources */,
 				9CE11BD0247A290D00F6EAC1 /* IndicatorView.swift in Sources */,
 				18404674245AD07E002C04C7 /* SignViewController.swift in Sources */,
 				185D2A562446C49700A09E99 /* Repository.swift in Sources */,
@@ -864,10 +860,8 @@
 				185D2A5A2446C54200A09E99 /* UIColorExtension.swift in Sources */,
 				1861430524583F49007151A0 /* RankingViewModel.swift in Sources */,
 				1874820C24612BC0004A40DE /* PlusButtonCell.swift in Sources */,
-				9C2489D8248A18C8005B70ED /* HabitDetailViewModel.swift in Sources */,
 				388F7AA3248A29A100A9E123 /* MoyaAPI.swift in Sources */,
 				18F6664224611D9200499CBC /* ProfileCell.swift in Sources */,
-				387D124B248A1397005B0C05 /* MyRankingTableViewCell.swift in Sources */,
 				18748209246129F0004A40DE /* Habit.swift in Sources */,
 				185D2A172446C27800A09E99 /* AppDelegate.swift in Sources */,
 				185D2A5F2446C7A900A09E99 /* ViewBindable.swift in Sources */,
@@ -891,10 +885,6 @@
 				185D2A652446C8B100A09E99 /* Storyboarded.swift in Sources */,
 				9C2275FD246FAAFC00DF5911 /* BakeryRepository.swift in Sources */,
 				1861430724583F54007151A0 /* SettingViewModel.swift in Sources */,
-				9CA8AD2A2489D44600859CA6 /* MyRankingTableViewCell.swift in Sources */,
-				9C00806424A72E6C002968D2 /* HabitDetailViewModel.swift in Sources */,
-				9CA8AD2C2489D48200859CA6 /* SettingCoordinator.swift in Sources */,
-				9CA8AD252489D44600859CA6 /* RankingItemTableViewCell.swift in Sources */,
 				388F7AA1248A297C00A9E123 /* Ranking.swift in Sources */,
 				9CE11BD4247A2CC900F6EAC1 /* UIViewExtension.swift in Sources */,
 				9C227603246FAD4400DF5911 /* BakeryViewController.swift in Sources */,
@@ -902,10 +892,10 @@
 				1874820524612803004A40DE /* ResponseStatus.swift in Sources */,
 				9C7B4B3124713A68007B21DA /* HabitAPI.swift in Sources */,
 				38A3E86424A731A30097E7FA /* ViewModelType.swift in Sources */,
+				9CBAEC8424B1FCD200A547CF /* HabitDetailViewModel.swift in Sources */,
 				1861430324583F3A007151A0 /* HabitListViewModel.swift in Sources */,
 				1882372524579CEE002C523E /* MainTabViewController.swift in Sources */,
 				1882372B24579DFA002C523E /* RankingViewController.swift in Sources */,
-				387D124C248A1397005B0C05 /* RankingItemTableViewCell.swift in Sources */,
 				9C7B4B3424713B37007B21DA /* RankingAPI.swift in Sources */,
 				388F7AA5248A2A6600A9E123 /* CALayer+Border.swift in Sources */,
 			);

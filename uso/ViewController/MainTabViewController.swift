@@ -40,7 +40,6 @@ class MainTabViewController: UITabBarController {
         let tabTwo = RankingViewController.instantiate()
         let tabTwoBarItem2 = UITabBarItem(title: "Ranking", image: UIImage(named: "rankingTabIcon.png"), selectedImage: UIImage(named: "rankingTabIcon.png"))
         let rankingViewModel = RankingViewModel.init()
-        rankingViewModel.bind(usecase: RankingUseCase())
         tabTwo.viewModel = rankingViewModel
         tabTwo.coordinator = coordinator.self
         tabTwo.modalPresentationStyle = .fullScreen
