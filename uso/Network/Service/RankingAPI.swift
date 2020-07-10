@@ -29,7 +29,10 @@ class RankingAPI {
     static func handleSuccessResponse(_ response: Response, _ subject: PublishSubject<[RankingItem]>) {
         do {
             let searchResult = try JSONDecoder().decode(RankingItems.self, from: response.data)
-            guard var user = searchResult.user else { return }
+            var user = RankingItem.init(Model.init(data: "만다"))
+            if let myItem = searchResult.user {
+                user = myItem
+            }
             user.achievement = searchResult.userTotalCount
             var rankings = searchResult.rankings
             rankings.insert(user, at: 0)

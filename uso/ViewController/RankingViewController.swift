@@ -17,14 +17,15 @@ class RankingViewController: UIViewController {
     weak var coordinator: MainCoordinator?
     let bag = DisposeBag()
     var viewModel = RankingViewModel()
-    lazy var input = RankingViewModel.Input(viewModelExecuted: .init())
+    lazy var input = RankingViewModel.Input(viewModelExecuted: .init(value: .trigger))
     lazy var output = viewModel.transform(input: input)
     var screenWidth = UIScreen.main.bounds.width
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        bindRX()
         layout()
+        bindRX()
+        
         tableView.delegate = self
     }
     
