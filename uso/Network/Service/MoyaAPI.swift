@@ -19,11 +19,12 @@ enum MoyaAPI {
     case getHabits(query: Int)
     case fetchRanking
     case fetchSetting
+    case postHabit(title: String, category: String, description: String, dayOfWeek: String, alarmTime: String)
 }
 
 extension MoyaAPI: TargetType {
     var baseURL: URL {
-        return URL(string: "https://habitbread.tk")!
+        return URL(string: "https://habitbread.com")!
     }
     
     var path: String {
@@ -34,11 +35,18 @@ extension MoyaAPI: TargetType {
             return "/ranking"
         case .fetchSetting:
             return "/users"
+        case .postHabit( _,  _,  _,  _,  _):
+            return "/habits"
         }
     }
     
     var method: Moya.Method {
-        return .get
+        switch self {
+        case .postHabit( _,  _,  _,  _,  _):
+            return .post
+        default:
+            return .get
+        }
     }
     
     var sampleData: Data {
@@ -47,12 +55,9 @@ extension MoyaAPI: TargetType {
     
     var task: Moya.Task {
         switch self {
-        case .getHabits:
-            return .requestPlain
-            //            return .requestParameters(parameters: ["q" : query], encoding: URLEncoding.default)
-        case .fetchRanking:
-            return .requestPlain
-        case .fetchSetting:
+        case .postHabit(let title, let category, let description, let dayOfWeek, let alarmTime):
+            return .requestParameters(parameters: ["title" : title, "category" : category, "description" : description, "dayOfWeek" : dayOfWeek, "alarmTime" : alarmTime], encoding: URLEncoding.default)
+        default:
             return .requestPlain
         }
     }
@@ -65,3 +70,4 @@ extension MoyaAPI: TargetType {
         return ["Authorization": "Bearer "+token]
     }
 }
+
