@@ -35,39 +35,39 @@
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="빵 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwv-Ds-tAw">
-                                <rect key="frame" x="44" y="188" width="59.5" height="25.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="습관빵 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwv-Ds-tAw">
+                                <rect key="frame" x="44" y="188" width="95.5" height="25.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="필라테스" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N9K-WO-7sA">
-                                <rect key="frame" x="52" y="221.5" width="318" height="23"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="제목을 적어주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N9K-WO-7sA">
+                                <rect key="frame" x="52" y="221.5" width="318" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="설명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjK-Md-34b">
-                                <rect key="frame" x="44" y="284.5" width="36.5" height="25.5"/>
+                                <rect key="frame" x="44" y="289.5" width="36.5" height="25.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="쭉쭉" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LXh-R6-3ZT">
-                                <rect key="frame" x="52" y="318" width="318" height="23"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="내용을 적어주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LXh-R6-3ZT">
+                                <rect key="frame" x="52" y="323" width="318" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="빵 굽는 날" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PA2-cv-4T5">
-                                <rect key="frame" x="44" y="381" width="82" height="25.5"/>
+                                <rect key="frame" x="44" y="391" width="82" height="25.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3H-Ex-i2L" customClass="UIButton">
-                                <rect key="frame" x="44" y="414" width="44" height="44"/>
+                                <rect key="frame" x="44" y="424" width="44" height="44"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYQ-tg-x7a">
-                                        <rect key="frame" x="6" y="13" width="31.5" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYQ-tg-x7a">
+                                        <rect key="frame" x="15.5" y="13" width="13" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -84,10 +84,10 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PxH-Gt-M6j" customClass="UIButton">
-                                <rect key="frame" x="91" y="414" width="44" height="44"/>
+                                <rect key="frame" x="91" y="424" width="44" height="44"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJd-fO-IGc">
-                                        <rect key="frame" x="4" y="13" width="36" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="월" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJd-fO-IGc">
+                                        <rect key="frame" x="15.5" y="13" width="13" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -106,10 +106,10 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCR-Pq-fkL" customClass="UIButton">
-                                <rect key="frame" x="138" y="414" width="44" height="44"/>
+                                <rect key="frame" x="138" y="424" width="44" height="44"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TUE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDr-ve-1Oq">
-                                        <rect key="frame" x="7.5" y="13" width="29" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="화" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDr-ve-1Oq">
+                                        <rect key="frame" x="15.5" y="13" width="13" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -124,10 +124,10 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEs-k2-6Um" customClass="UIButton">
-                                <rect key="frame" x="185" y="414" width="44" height="44"/>
+                                <rect key="frame" x="185" y="424" width="44" height="44"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1Z-D9-IbA">
-                                        <rect key="frame" x="5" y="13" width="34" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1Z-D9-IbA">
+                                        <rect key="frame" x="15.5" y="13" width="13" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -142,10 +142,10 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zm-mc-yVB" customClass="UIButton">
-                                <rect key="frame" x="232" y="414" width="44" height="44"/>
+                                <rect key="frame" x="232" y="424" width="44" height="44"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJ1-F2-xrh">
-                                        <rect key="frame" x="7" y="13" width="30" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJ1-F2-xrh">
+                                        <rect key="frame" x="15.5" y="13" width="13" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -160,10 +160,10 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JqT-sf-C6n" customClass="UIButton">
-                                <rect key="frame" x="279" y="414" width="44" height="44"/>
+                                <rect key="frame" x="279" y="424" width="44" height="44"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJK-hm-fYk">
-                                        <rect key="frame" x="11" y="13" width="22" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="금" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJK-hm-fYk">
+                                        <rect key="frame" x="15.5" y="13" width="13" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -178,10 +178,10 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJW-5Q-cZX" customClass="UIButton">
-                                <rect key="frame" x="326" y="414" width="44" height="44"/>
+                                <rect key="frame" x="326" y="424" width="44" height="44"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rck-w7-fC7">
-                                        <rect key="frame" x="8" y="13" width="28" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="토" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rck-w7-fC7">
+                                        <rect key="frame" x="15.5" y="13" width="13" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -196,19 +196,19 @@
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알람" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZP-Bm-Sqn">
-                                <rect key="frame" x="44" y="510" width="36.5" height="25"/>
+                                <rect key="frame" x="44" y="520" width="36.5" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Phx-FB-xAl">
-                                <rect key="frame" x="91" y="507" width="51" height="31"/>
+                                <rect key="frame" x="341.5" y="517" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="feT-aA-QIi"/>
                                 </constraints>
                             </switch>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="7Xs-cl-UbM">
-                                <rect key="frame" x="0.0" y="546" width="414" height="162"/>
+                                <rect key="frame" x="0.0" y="556" width="414" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="gOg-kl-C9u"/>
                                 </constraints>
@@ -232,7 +232,6 @@
                             <constraint firstItem="7zm-mc-yVB" firstAttribute="width" secondItem="Q3H-Ex-i2L" secondAttribute="width" id="C5C-nT-AdK"/>
                             <constraint firstItem="tHs-HZ-z0o" firstAttribute="centerX" secondItem="pmR-Gc-gRU" secondAttribute="centerX" id="C9B-8H-lUx"/>
                             <constraint firstItem="gwv-Ds-tAw" firstAttribute="leading" secondItem="0gA-P6-rYi" secondAttribute="leading" constant="44" id="CFt-Ea-8lk"/>
-                            <constraint firstItem="Phx-FB-xAl" firstAttribute="leading" secondItem="PxH-Gt-M6j" secondAttribute="leading" id="D4r-kt-nI6"/>
                             <constraint firstItem="0gA-P6-rYi" firstAttribute="trailing" secondItem="N9K-WO-7sA" secondAttribute="trailing" constant="44" id="D5U-9E-cIP"/>
                             <constraint firstItem="JqT-sf-C6n" firstAttribute="height" secondItem="Q3H-Ex-i2L" secondAttribute="height" id="DRw-TH-gYo"/>
                             <constraint firstItem="YEs-k2-6Um" firstAttribute="height" secondItem="Q3H-Ex-i2L" secondAttribute="height" id="Db8-ca-mOH"/>
@@ -258,6 +257,7 @@
                             <constraint firstItem="7Xs-cl-UbM" firstAttribute="centerX" secondItem="YEs-k2-6Um" secondAttribute="centerX" id="izJ-Am-Se1"/>
                             <constraint firstItem="I4c-Bx-NXL" firstAttribute="top" secondItem="0gA-P6-rYi" secondAttribute="top" constant="37.5" id="jHQ-uR-05q"/>
                             <constraint firstItem="N9K-WO-7sA" firstAttribute="leading" secondItem="gwv-Ds-tAw" secondAttribute="leading" constant="8" id="mlE-Ku-X92"/>
+                            <constraint firstItem="Phx-FB-xAl" firstAttribute="leading" secondItem="Rck-w7-fC7" secondAttribute="leading" id="o9c-dA-6bb"/>
                             <constraint firstItem="xZP-Bm-Sqn" firstAttribute="top" secondItem="Q3H-Ex-i2L" secondAttribute="bottom" constant="52" id="oAY-S2-4dt"/>
                             <constraint firstItem="TjK-Md-34b" firstAttribute="top" secondItem="N9K-WO-7sA" secondAttribute="bottom" constant="40" id="p7D-p9-vbl"/>
                             <constraint firstItem="lUb-Jr-Sa1" firstAttribute="trailing" secondItem="pmR-Gc-gRU" secondAttribute="trailingMargin" id="pxS-Ki-B67"/>

@@ -19,7 +19,7 @@ enum MoyaAPI {
     case getHabits(query: Int)
     case fetchRanking
     case fetchSetting
-    case postHabit(title: String, category: String, description: String, dayOfWeek: String, alarmTime: String)
+    case postHabit(_ title: String, _  category: String, _  description: String?, _  dayOfWeek: String, _  alarmTime: String?)
 }
 
 extension MoyaAPI: TargetType {

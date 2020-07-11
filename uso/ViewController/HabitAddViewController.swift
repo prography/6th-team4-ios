@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class HabitAddViewController: UIViewController {
+class HabitAddViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var cancelButton: UIButton!
     @IBOutlet var doneButton:UIButton!
     @IBOutlet var breadNameField: UITextField!
@@ -39,6 +39,8 @@ class HabitAddViewController: UIViewController {
         dayViewArr.append(thrView)
         dayViewArr.append(friView)
         dayViewArr.append(satView)
+        breadNameField.delegate = self
+        descriptionField.delegate = self
 
         bindRX()
         layout()
@@ -53,11 +55,14 @@ class HabitAddViewController: UIViewController {
             .disposed(by: bag)
         
         doneButton.rx
-        .tap
-        .subscribe { _ in
-            //API로 POST
-        }
-        .disposed(by: bag)
+            .tap
+            .subscribe { [weak self] in
+                //API로 POST
+                print("탭")
+//                print(self?.timePicker.date)
+    //            AddHabitAPI.searchWithSwift(newHabit: NewHabit(title: (self?.breadNameField.text)!, category: "운동", description: self?.descriptionField.text, dayOfWeek: (self?.convertDayBoolToNumString())!, alarmTime: "09:00"))
+            }
+            .disposed(by: bag)
         
         alarmSwitch.rx
             .isOn
@@ -72,22 +77,44 @@ class HabitAddViewController: UIViewController {
         self.dayBoolArr[index].toggle()
         print(self.dayBoolArr)
         if self.dayBoolArr[index] {
-            sender.backgroundColor = UIColor(hex: 0xAD9C82)
+            sender.backgroundColor = UIColor(hex: 0x4C7A65)
+            let label = sender.subviews.first as? UILabel
+            label?.textColor = UIColor.white
         } else {
             sender.backgroundColor = UIColor.white
+            let label = sender.subviews.first as? UILabel
+            label?.textColor = UIColor.black
         }
     }
+    
+    private func convertDayBoolToNumString() -> String {
+        var numString = ""
+        dayBoolArr.map {
+            if $0 == true {
+                numString += "1"
+            } else {
+                numString += "0"
+            }
+        }
+        return numString
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+
 }
 
 extension HabitAddViewController: Storyboarded {
     func layout() {
         self.view.backgroundColor = UIColor(hex: 0xF5F4F1)
-        breadNameField.addBorderBottom(width: breadNameField.bounds.width, height: 1, color: UIColor.label)
-        descriptionField.addBorderBottom(width: breadNameField.bounds.width, height: 1, color: UIColor.label)
+        breadNameField.addBorderBottom(width: breadNameField.bounds.width, height: 1, color: UIColor.lightGray)
+        descriptionField.addBorderBottom(width: breadNameField.bounds.width, height: 1, color: UIColor.lightGray)
         dayViewArr.forEach {
             $0.backgroundColor = UIColor.white
             $0.layer.cornerRadius = $0.bounds.width/2
         }
-        alarmSwitch.onTintColor = UIColor(hex: 0xAD9C82)
+        alarmSwitch.onTintColor = UIColor(hex: 0x4C7A65)
     }
 }
