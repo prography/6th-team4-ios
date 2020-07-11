@@ -56,7 +56,12 @@ class RankingItemTableViewCell: UITableViewCell {
     }
     
     func layout() {
-        crownImage.isHidden = true
+        if rank.text == "1" {
+            crownImage.isHidden = false
+        } else if rank.text == "2" {
+            crownImage.isHidden = false
+            crownImage.image = UIImage(named: "silver_crown")
+        }
     }
 
 }
