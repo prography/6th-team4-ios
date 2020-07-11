@@ -112,6 +112,7 @@
                 <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="cYM-kn-4r1" firstAttribute="leading" secondItem="ltR-D8-Rf5" secondAttribute="trailing" id="00W-fM-I9p"/>
+                    <constraint firstItem="Bzk-qg-foV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="121" id="2sp-Ur-Sz7"/>
                     <constraint firstItem="Bzk-qg-foV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="6TT-55-XFc"/>
                     <constraint firstItem="TuQ-X9-PdN" firstAttribute="centerY" secondItem="3dq-qj-5t0" secondAttribute="centerY" id="7pI-7F-B9Z"/>
                     <constraint firstItem="TuQ-X9-PdN" firstAttribute="leading" secondItem="3dq-qj-5t0" secondAttribute="trailing" id="7yN-dY-ASQ"/>
@@ -128,7 +129,6 @@
                     <constraint firstItem="Pr2-z6-Atd" firstAttribute="centerY" secondItem="3dq-qj-5t0" secondAttribute="centerY" id="Y7n-CH-J3v"/>
                     <constraint firstItem="cYM-kn-4r1" firstAttribute="centerY" secondItem="3dq-qj-5t0" secondAttribute="centerY" id="baM-UI-IMo"/>
                     <constraint firstItem="Nnv-72-g8o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pAu-yt-3tk"/>
-                    <constraint firstItem="Bzk-qg-foV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-10" id="qiz-ZU-eGf"/>
                     <constraint firstItem="CvP-Z6-f6M" firstAttribute="leading" secondItem="M1T-h3-oKc" secondAttribute="trailing" constant="6" id="wQm-BP-hHl"/>
                 </constraints>
             </tableViewCellContentView>

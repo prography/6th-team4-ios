@@ -10,16 +10,17 @@ import UIKit
 import RxSwift
 
 class SettingViewController: UIViewController {
-    @IBOutlet var imageView: UIImageView!
-    @IBOutlet var nicknameLabel: UILabel!
-    @IBOutlet var expLabel: UILabel!
-    @IBOutlet var numberOfBreadLabel: UILabel!
-    @IBOutlet var numberOfBreadLabel2: UILabel!
-    @IBOutlet var progressView: UIProgressView!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var nicknameLabel: UILabel!
+    @IBOutlet weak var expLabel: UILabel!
+    @IBOutlet weak var numberOfBreadLabel: UILabel!
+    @IBOutlet weak var numberOfBreadLabel2: UILabel!
+    @IBOutlet weak var progressView: UIProgressView!
+    @IBOutlet weak var backgroundView: UIView!
     
-    @IBOutlet var notiOnOffSwitch: UISwitch!
-    @IBOutlet var tableView: UITableView!
-    @IBOutlet var notiView: UIView!
+    @IBOutlet weak var notiOnOffSwitch: UISwitch!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var notiView: UIView!
     
     weak var coordinator: MainCoordinator?
     var viewModel: SettingViewModel!
@@ -57,12 +58,12 @@ class SettingViewController: UIViewController {
 // MARK: Detail func definition of VC
 extension SettingViewController: Storyboarded {
     func layout() {
+        backgroundView.layer.cornerRadius = 12
+        
         tableView.layer.addBorder([.top], color: UIColor.lightGray, width: 0.6)
-        notiView.backgroundColor = UIColor.clear
+        notiView.backgroundColor = UIColor.systemBackground
         notiView.layer.addBorder([.top], color: UIColor.lightGray, width: 0.6)
         notiOnOffSwitch.onTintColor = UIColor(hex: 0xAD9C82)
-//        progressView.frame = CGRect(origin: .zero, size: CGSize(width: 0, height: 4))
-//        progressView.backgroundColor = .black
         let settingItemTableViewCellNib = UINib(nibName: "SettingItemTableViewCell", bundle: nil)
         tableView.register(settingItemTableViewCellNib, forCellReuseIdentifier: SettingItemTableViewCell.identifier)
     }
