@@ -56,11 +56,15 @@ class HabitAddViewController: UIViewController, UITextFieldDelegate {
         
         doneButton.rx
             .tap
-            .subscribe { [weak self] in
+            .subscribe { _ in
                 //API로 POST
-                print("탭")
-//                print(self?.timePicker.date)
-    //            AddHabitAPI.searchWithSwift(newHabit: NewHabit(title: (self?.breadNameField.text)!, category: "운동", description: self?.descriptionField.text, dayOfWeek: (self?.convertDayBoolToNumString())!, alarmTime: "09:00"))
+                guard let habitTitle = self.breadNameField.text else { return }
+                var habitAlarmTime: String?
+                if self.alarmSwitch.isOn {
+                    habitAlarmTime = self.convertDateToTime()
+                }
+                AddHabitAPI.searchWithSwift(newHabit: NewHabit(title: habitTitle, category: "기타", description: self.descriptionField.text, dayOfWeek: self.convertDayBoolToNumString(), alarmTime: habitAlarmTime))
+                self.dismiss(animated: true, completion: nil)
             }
             .disposed(by: bag)
         
@@ -75,7 +79,7 @@ class HabitAddViewController: UIViewController, UITextFieldDelegate {
     @IBAction func tapDay(_ sender: UIButton) {
         guard let index = dayViewArr.firstIndex(of: sender) else {return}
         self.dayBoolArr[index].toggle()
-        print(self.dayBoolArr)
+
         if self.dayBoolArr[index] {
             sender.backgroundColor = UIColor(hex: 0x4C7A65)
             let label = sender.subviews.first as? UILabel
@@ -85,6 +89,25 @@ class HabitAddViewController: UIViewController, UITextFieldDelegate {
             let label = sender.subviews.first as? UILabel
             label?.textColor = UIColor.black
         }
+    }
+    
+    private func convertDateToTime() -> String {
+        let dateformatter = DateFormatter()
+        dateformatter.dateStyle = .none
+        dateformatter.timeStyle = .short
+        
+        let dateStr = dateformatter.string(from: timePicker.date).components(separatedBy: " ")
+        let timeStr = dateStr[0].components(separatedBy: ":")
+        var hourStr = timeStr[0]
+        let minuStr = timeStr[1]
+        
+        if dateStr[1] == "PM" {
+            hourStr = String(((Int(hourStr) ?? 0) + 12)%24)
+        } else if hourStr.count < 2 {
+            hourStr = "0" + hourStr
+        }
+
+        return hourStr + ":" + minuStr
     }
     
     private func convertDayBoolToNumString() -> String {
