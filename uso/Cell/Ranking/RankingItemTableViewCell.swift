@@ -30,6 +30,12 @@ class RankingItemTableViewCell: UITableViewCell {
 
         data.observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] ranking in
+                if ranking.rank == "1" {
+                    self?.crownImage.isHidden = false
+                } else if ranking.rank == "2" {
+                    self?.crownImage.isHidden = false
+                    self?.crownImage.image = UIImage(named: "silver_crown")
+                }
                 self?.rank.text = "\(ranking.rank)"
                 self?.nickName.text = ranking.userName
                 self?.exp.text = "\(ranking.exp)"
@@ -41,7 +47,6 @@ class RankingItemTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        layout()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -55,13 +60,4 @@ class RankingItemTableViewCell: UITableViewCell {
         bag = DisposeBag()
     }
     
-    func layout() {
-        if rank.text == "1" {
-            crownImage.isHidden = false
-        } else if rank.text == "2" {
-            crownImage.isHidden = false
-            crownImage.image = UIImage(named: "silver_crown")
-        }
-    }
-
 }
