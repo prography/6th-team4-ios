@@ -51,6 +51,7 @@
 		3854F5C9248A440B00AD0DAF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3854F5C8248A440B00AD0DAF /* User.swift */; };
 		3854F5CB248A447D00AD0DAF /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3854F5CA248A447D00AD0DAF /* UserAPI.swift */; };
 		3859DDE0245D5EA400C799BF /* RankingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859DDDF245D5EA400C799BF /* RankingUseCase.swift */; };
+		387B599924B96F8800FDD7DC /* AddHabitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B599824B96F8800FDD7DC /* AddHabitAPI.swift */; };
 		387D124A248A1397005B0C05 /* SettingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1244248A1396005B0C05 /* SettingItemTableViewCell.swift */; };
 		387D124E248A1397005B0C05 /* SettingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1248248A1397005B0C05 /* SettingItemTableViewCell.xib */; };
 		388F7A9F248A292E00A9E123 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7A9E248A292E00A9E123 /* SettingViewController.swift */; };
@@ -154,6 +155,7 @@
 		3854F5C8248A440B00AD0DAF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3854F5CA248A447D00AD0DAF /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		3859DDDF245D5EA400C799BF /* RankingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingUseCase.swift; sourceTree = "<group>"; };
+		387B599824B96F8800FDD7DC /* AddHabitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitAPI.swift; sourceTree = "<group>"; };
 		387D1244248A1396005B0C05 /* SettingItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingItemTableViewCell.swift; sourceTree = "<group>"; };
 		387D1245248A1396005B0C05 /* MyRankingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRankingTableViewCell.swift; sourceTree = "<group>"; };
 		387D1246248A1396005B0C05 /* RankingItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -516,6 +518,7 @@
 				388F7AA2248A29A100A9E123 /* MoyaAPI.swift */,
 				9C7B4B3324713B37007B21DA /* RankingAPI.swift */,
 				3854F5CA248A447D00AD0DAF /* UserAPI.swift */,
+				387B599824B96F8800FDD7DC /* AddHabitAPI.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -880,6 +883,7 @@
 				1882372724579DDA002C523E /* HabitListViewController.swift in Sources */,
 				18F6663E24611B5400499CBC /* HabitListCell.swift in Sources */,
 				185D2A502446C3E000A09E99 /* SignViewModel.swift in Sources */,
+				387B599924B96F8800FDD7DC /* AddHabitAPI.swift in Sources */,
 				9CA8AD2E2489F55600859CA6 /* PopUp.swift in Sources */,
 				9C910CB024A704780018E16B /* AddHabitCell.swift in Sources */,
 				185D2A652446C8B100A09E99 /* Storyboarded.swift in Sources */,

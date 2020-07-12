@@ -23,3 +23,11 @@ struct Habit: Decodable {
     let description     : String
     let category        : String
 }
+
+struct NewHabit: Decodable {
+    let title           : String
+    let category        : String
+    let description     : String?
+    let dayOfWeek       : String
+    let alarmTime       : String?
+}
