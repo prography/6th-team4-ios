@@ -27,7 +27,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gold_crown" translatesAutoresizingMaskIntoConstraints="NO" id="PH8-Mm-jWg">
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gold_crown" translatesAutoresizingMaskIntoConstraints="NO" id="PH8-Mm-jWg">
                                         <rect key="frame" x="2.5" y="40" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="0Do-0Q-YLN"/>
@@ -82,6 +82,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="gold_crown" width="207" height="144"/>
+        <image name="gold_crown" width="23" height="23"/>
     </resources>
 </document>
