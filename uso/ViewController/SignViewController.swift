@@ -113,7 +113,6 @@ class SignViewController: UIViewController {
         return
       }
         
-        
       guard let authentication = user.authentication else { return }
     }
 

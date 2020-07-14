@@ -106,17 +106,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tSy-Ct-9BE">
-                                <rect key="frame" x="409" y="18" width="49" height="31"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0uZ-aU-0Tk">
+                                <rect key="frame" x="417" y="18" width="49" height="31"/>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="tSy-Ct-9BE" firstAttribute="centerY" secondItem="EBV-Eb-Izi" secondAttribute="centerY" id="9A6-Dh-m93"/>
                             <constraint firstItem="y1d-ck-Rah" firstAttribute="leading" secondItem="EBV-Eb-Izi" secondAttribute="leading" constant="30" id="LTG-HL-c0i"/>
+                            <constraint firstItem="0uZ-aU-0Tk" firstAttribute="centerY" secondItem="EBV-Eb-Izi" secondAttribute="centerY" id="Qb4-BC-A89"/>
+                            <constraint firstAttribute="trailing" secondItem="0uZ-aU-0Tk" secondAttribute="trailing" constant="26" id="SBP-7B-gVS"/>
                             <constraint firstAttribute="height" constant="66" id="bT4-By-Iop"/>
                             <constraint firstItem="y1d-ck-Rah" firstAttribute="centerY" secondItem="EBV-Eb-Izi" secondAttribute="centerY" id="p2l-xv-zh8"/>
-                            <constraint firstAttribute="trailing" secondItem="tSy-Ct-9BE" secondAttribute="trailing" constant="27" id="zoz-ff-dgi"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -142,7 +142,7 @@
                 <outlet property="breadImageView" destination="2nb-by-CXH" id="TIa-YH-w4T"/>
                 <outlet property="expLabel" destination="Jvg-eK-MER" id="sIL-oM-fzE"/>
                 <outlet property="nicknameLabel" destination="lfG-Ct-sXF" id="ruG-AI-Acd"/>
-                <outlet property="notiOnOffSwitch" destination="tSy-Ct-9BE" id="rFO-W1-ARP"/>
+                <outlet property="notiOnOffSwitch" destination="0uZ-aU-0Tk" id="c0f-WK-jSN"/>
                 <outlet property="notiView" destination="EBV-Eb-Izi" id="oa3-JK-hoP"/>
                 <outlet property="numberOfBreadLabel" destination="OWi-SL-EeX" id="dcA-iI-9MG"/>
                 <outlet property="numberOfBreadLabel2" destination="LSi-Mb-tDs" id="pzu-oP-3AE"/>
