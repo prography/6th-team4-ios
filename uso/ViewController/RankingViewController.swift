@@ -51,7 +51,6 @@ class RankingViewController: UIViewController {
 // MARK: Detail func definition of VC, UITableView
 extension RankingViewController: Storyboarded, UITableViewDelegate {
     func layout() {
-        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableView.allowsSelection = false
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 110

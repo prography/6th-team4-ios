@@ -26,4 +26,14 @@ struct UserItem: Decodable {
         itemTotalCount = 0
         percent = 0
     }
+    
+    init(_ menu: String) {
+        userId = 0
+        name = menu
+        exp = 0
+        createdAt = ""
+        updatedAt = ""
+        itemTotalCount = 0
+        percent = 0
+    }
 }

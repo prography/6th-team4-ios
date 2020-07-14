@@ -54,6 +54,8 @@
 		387B599924B96F8800FDD7DC /* AddHabitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B599824B96F8800FDD7DC /* AddHabitAPI.swift */; };
 		387D124A248A1397005B0C05 /* SettingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387D1244248A1396005B0C05 /* SettingItemTableViewCell.swift */; };
 		387D124E248A1397005B0C05 /* SettingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1248248A1397005B0C05 /* SettingItemTableViewCell.xib */; };
+		388BDAA524BDBE2200E8796E /* MySettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388BDAA324BDBE2200E8796E /* MySettingTableViewCell.swift */; };
+		388BDAA624BDBE2200E8796E /* MySettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 388BDAA424BDBE2200E8796E /* MySettingTableViewCell.xib */; };
 		388F7A9F248A292E00A9E123 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7A9E248A292E00A9E123 /* SettingViewController.swift */; };
 		388F7AA1248A297C00A9E123 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7AA0248A297C00A9E123 /* Ranking.swift */; };
 		388F7AA3248A29A100A9E123 /* MoyaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7AA2248A29A100A9E123 /* MoyaAPI.swift */; };
@@ -162,6 +164,8 @@
 		387D1247248A1396005B0C05 /* MyRankingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyRankingTableViewCell.xib; sourceTree = "<group>"; };
 		387D1248248A1397005B0C05 /* SettingItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingItemTableViewCell.xib; sourceTree = "<group>"; };
 		387D1249248A1397005B0C05 /* RankingItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankingItemTableViewCell.xib; sourceTree = "<group>"; };
+		388BDAA324BDBE2200E8796E /* MySettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySettingTableViewCell.swift; sourceTree = "<group>"; };
+		388BDAA424BDBE2200E8796E /* MySettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySettingTableViewCell.xib; sourceTree = "<group>"; };
 		388F7A9E248A292E00A9E123 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		388F7AA0248A297C00A9E123 /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
 		388F7AA2248A29A100A9E123 /* MoyaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaAPI.swift; sourceTree = "<group>"; };
@@ -495,6 +499,8 @@
 		38A85091248A187300102E09 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				388BDAA324BDBE2200E8796E /* MySettingTableViewCell.swift */,
+				388BDAA424BDBE2200E8796E /* MySettingTableViewCell.xib */,
 				387D1244248A1396005B0C05 /* SettingItemTableViewCell.swift */,
 				387D1248248A1397005B0C05 /* SettingItemTableViewCell.xib */,
 			);
@@ -657,6 +663,7 @@
 				1882372D24579E13002C523E /* RankingViewController.storyboard in Resources */,
 				38E70E0A24B2108400C1721D /* MyRankingTableViewCell.xib in Resources */,
 				18F6663F24611B5400499CBC /* HabitListCell.xib in Resources */,
+				388BDAA624BDBE2200E8796E /* MySettingTableViewCell.xib in Resources */,
 				9C07E6EC2467CFD400F87838 /* PlusButtonCell.xib in Resources */,
 				9CA8AD332489F63E00859CA6 /* HabitDetailViewController.storyboard in Resources */,
 				1882372124579B33002C523E /* MainTabViewController.storyboard in Resources */,
@@ -875,6 +882,7 @@
 				9C2275FF246FAB3A00DF5911 /* HabitAddRepsitory.swift in Sources */,
 				9CA8AD312489F61A00859CA6 /* HabitDetailViewController.swift in Sources */,
 				9CE11BD2247A296F00F6EAC1 /* Constants.swift in Sources */,
+				388BDAA524BDBE2200E8796E /* MySettingTableViewCell.swift in Sources */,
 				9C7B4B362471429E007B21DA /* Moya+Plugin.swift in Sources */,
 				388F7A9F248A292E00A9E123 /* SettingViewController.swift in Sources */,
 				38A3E86224A731480097E7FA /* RankingRepository.swift in Sources */,
