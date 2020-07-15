@@ -44,6 +44,10 @@ class ProfileCell: UITableViewCell {
     
     func layout() {
         self.contentView.backgroundColor = UIColor(hex: 0xF5F4F1)
+        bakeryButton.backgroundColor = UIColor.systemBackground
+        bakeryButton.layer.cornerRadius = bakeryButton.bounds.width/2
+        bakeryButton.layer.borderWidth = 1
+        bakeryButton.layer.borderColor = UIColor(hex: 0x787877).cgColor
     }
     
 }

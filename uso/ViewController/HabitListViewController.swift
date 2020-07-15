@@ -52,7 +52,6 @@ class HabitListViewController: UIViewController {
                     guard let cell = tableView.dequeueReusableCell(
                         withIdentifier: AddHabitCell.identifier) as? AddHabitCell
                         else { fatalError() }
-                    
                     return cell
                 } else {
                     guard let cell = tableView.dequeueReusableCell(

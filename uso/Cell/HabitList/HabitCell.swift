@@ -32,6 +32,7 @@ class HabitCell: UITableViewCell {
             .subscribe(onNext: { [weak self] item in
                 self?.titleLabel.text = item.name
                 self?.descriptionLabel.text = "\(item.ratio)"
+//                item.
             })
             .disposed(by: cellDisposeBag)
     }

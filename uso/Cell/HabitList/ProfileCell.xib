@@ -22,43 +22,50 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urY-9U-zdg">
-                        <rect key="frame" x="225" y="121" width="50" height="50"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="50" id="8Zn-L0-uiZ"/>
-                            <constraint firstAttribute="width" constant="50" id="SeS-vA-Aon"/>
-                        </constraints>
-                        <state key="normal" image="bakery"/>
-                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="베이커리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hc-5U-FTt">
-                        <rect key="frame" x="226" y="183" width="48.5" height="17"/>
+                        <rect key="frame" x="216" y="189" width="48.5" height="17"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                         <color key="textColor" red="0.44705882352941173" green="0.42352941176470588" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="1" text="Comment" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmh-Ji-02x">
-                        <rect key="frame" x="24" y="167" width="186" height="49"/>
+                        <rect key="frame" x="24" y="167" width="75" height="49"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.51764705882352935" green="0.48627450980392156" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afk-xF-cbg">
+                        <rect key="frame" x="210" y="121" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="PNH-au-uzY"/>
+                            <constraint firstAttribute="width" constant="60" id="n9m-qM-gzk"/>
+                        </constraints>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bakery" translatesAutoresizingMaskIntoConstraints="NO" id="MGe-tK-NnK">
+                        <rect key="frame" x="222.5" y="133.5" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="VIs-q4-W2v"/>
+                            <constraint firstAttribute="height" constant="35" id="rGu-qG-51t"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="4hc-5U-FTt" firstAttribute="centerX" secondItem="urY-9U-zdg" secondAttribute="centerX" id="BZy-oJ-vhE"/>
-                    <constraint firstItem="urY-9U-zdg" firstAttribute="leading" secondItem="mmh-Ji-02x" secondAttribute="trailing" constant="15" id="DYM-At-XU4"/>
-                    <constraint firstItem="4hc-5U-FTt" firstAttribute="top" secondItem="urY-9U-zdg" secondAttribute="bottom" constant="12" id="NKe-lg-Gtj"/>
+                    <constraint firstItem="MGe-tK-NnK" firstAttribute="centerY" secondItem="afk-xF-cbg" secondAttribute="centerY" id="AXb-HI-yUR"/>
                     <constraint firstItem="U4t-q8-boB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="121" id="Qfk-lf-tEt"/>
-                    <constraint firstItem="urY-9U-zdg" firstAttribute="top" secondItem="U4t-q8-boB" secondAttribute="top" id="Rlf-pN-qcd"/>
                     <constraint firstItem="mmh-Ji-02x" firstAttribute="top" secondItem="U4t-q8-boB" secondAttribute="bottom" constant="7.5" id="TG3-wX-HfS"/>
                     <constraint firstAttribute="bottom" secondItem="mmh-Ji-02x" secondAttribute="bottom" constant="30" id="UJ9-DC-x5h"/>
-                    <constraint firstAttribute="trailing" secondItem="urY-9U-zdg" secondAttribute="trailing" constant="45" id="jR1-Ff-qKr"/>
+                    <constraint firstAttribute="trailing" secondItem="afk-xF-cbg" secondAttribute="trailing" constant="50" id="bwy-Td-QV6"/>
+                    <constraint firstItem="afk-xF-cbg" firstAttribute="top" secondItem="U4t-q8-boB" secondAttribute="top" id="fGT-qK-g85"/>
+                    <constraint firstItem="MGe-tK-NnK" firstAttribute="centerX" secondItem="afk-xF-cbg" secondAttribute="centerX" id="kwp-kg-nTW"/>
                     <constraint firstItem="U4t-q8-boB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="mwK-Co-hd3"/>
+                    <constraint firstItem="4hc-5U-FTt" firstAttribute="centerX" secondItem="afk-xF-cbg" secondAttribute="centerX" id="rph-QL-fCk"/>
                     <constraint firstItem="mmh-Ji-02x" firstAttribute="leading" secondItem="U4t-q8-boB" secondAttribute="leading" id="yHD-Qy-ABq"/>
+                    <constraint firstItem="4hc-5U-FTt" firstAttribute="top" secondItem="afk-xF-cbg" secondAttribute="bottom" constant="8" id="zht-q8-U7K"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="bakeryButton" destination="urY-9U-zdg" id="a6p-Kw-Kkf"/>
+                <outlet property="bakeryButton" destination="afk-xF-cbg" id="EaW-bL-xBz"/>
                 <outlet property="descriptionLabel" destination="mmh-Ji-02x" id="dbT-hb-BaB"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="154.6875"/>
