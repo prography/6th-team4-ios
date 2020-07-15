@@ -11,23 +11,20 @@ import RxSwift
 import RxCocoa
 
 protocol SettingViewBindable: ViewBindable {
-    var allSettings: Observable<[String]> { get }
-    var userSubject: BehaviorSubject<UserItem> { get }
+    var allSettings: Observable<[UserItem]> { get }
+    var settingItemOutput : BehaviorSubject<[UserItem]> { get }
 }
 
 class SettingViewModel: SettingViewBindable {
     // Abstraction of VC
     // ViewModel should be one for a VC in this project
     let bag = DisposeBag()
-    let allSettings: Observable<[String]>
-    let settingMenus = ["개인 정보 변경", "문의하기", "계정 삭제", "로그아웃"]
-    let userSubject: BehaviorSubject<UserItem> = BehaviorSubject<UserItem>(value: UserItem.init())
+    let allSettings: Observable<[UserItem]>
+    let settingItemOutput: BehaviorSubject<[UserItem]> = BehaviorSubject<[UserItem]>.init(value: [])
     
     init() {
-        let settings = BehaviorSubject<[String]>(value: settingMenus)
-        allSettings = settings
-        
-        UserAPI.searchWithSwift(userSubject)
+        UserAPI.searchWithSwift(settingItemOutput)
+        allSettings = settingItemOutput
     }
     
     // Bind UseCase

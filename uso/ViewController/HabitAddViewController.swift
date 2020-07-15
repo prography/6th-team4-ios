@@ -59,6 +59,7 @@ class HabitAddViewController: UIViewController, UITextFieldDelegate {
             .subscribe { _ in
                 //API로 POST
                 guard let habitTitle = self.breadNameField.text else { return }
+                print(habitTitle)
                 var habitAlarmTime: String?
                 if self.alarmSwitch.isOn {
                     habitAlarmTime = self.convertDateToTime()
@@ -112,7 +113,7 @@ class HabitAddViewController: UIViewController, UITextFieldDelegate {
     
     private func convertDayBoolToNumString() -> String {
         var numString = ""
-        dayBoolArr.map {
+        dayBoolArr.forEach {
             if $0 == true {
                 numString += "1"
             } else {

@@ -15,7 +15,7 @@ class UserAPI {
         completion(nil)
     }
     
-    static func searchWithSwift(_ subject: BehaviorSubject<UserItem>) {
+    static func searchWithSwift(_ subject: BehaviorSubject<[UserItem]>) {
         moyaProvider.request(.fetchSetting) { result in
             switch result {
             case .success(let response):
@@ -26,10 +26,13 @@ class UserAPI {
         }
     }
     
-    static func handleSuccessResponse(_ response: Response, _ subject: BehaviorSubject<UserItem>) {
+    static func handleSuccessResponse(_ response: Response, _ subject: BehaviorSubject<[UserItem]>) {
         do {
             let searchResult = try JSONDecoder().decode(UserItem.self, from: response.data)
-            subject.onNext(searchResult)
+            var settingMenus = [UserItem("개인 정보 변경"), UserItem("문의하기"), UserItem("계정 삭제"), UserItem("로그아웃")]
+            settingMenus.insert(searchResult, at: 0)
+            
+            subject.onNext(settingMenus)
         } catch {
             print(error.localizedDescription)
         }

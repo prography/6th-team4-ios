@@ -28,7 +28,7 @@ class HabitListViewModel: HabitListViewBindable {
     init() {
         isLoading = PublishSubject.init()
         responseStatus = PublishSubject.init()
-        habitList = BehaviorSubject.init(value: [HabitItem(name: "Sleep at 12am", ratio: 88, contributions: [0,1,2,3,4,2]),HabitItem(name: "Work out!", ratio: 62, contributions: [3,1,1,3,4,2])])
+        habitList = BehaviorSubject.init(value: [HabitItem(name: "Sleep at 12am", ratio: 88, contributions: [0, 1, 2, 3, 4, 2]),HabitItem(name: "Work out!", ratio: 62, contributions: [3, 1, 1, 3, 4, 2])])
         profile = BehaviorSubject.init(value: [Profile(description: "You should do  workout today!!")])
     }
     
