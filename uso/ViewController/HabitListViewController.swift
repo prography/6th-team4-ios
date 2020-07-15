@@ -17,9 +17,6 @@ class HabitListViewController: UIViewController {
     var viewModel: HabitListViewBindable!
     let bag = DisposeBag()
     
-    @IBOutlet weak var bakeryView: UIView!
-    @IBOutlet weak var todayMessageTitle: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         bindRX()
@@ -38,30 +35,29 @@ class HabitListViewController: UIViewController {
         
         items
             .bind(to: tableView.rx.items) { (tableView, row, item) -> UITableViewCell in
-                // 이거 마지막에 + 어떻게 나타낼지 고민해보자
                 let totalRows = tableView.numberOfRows(inSection: 0)
                 if row == 0 {
                     guard let cell = tableView.dequeueReusableCell(
-                        withIdentifier: HabitListCell.identifier,
-                        for: IndexPath.init(row: row, section: 0)) as? HabitListCell
+                        withIdentifier: ProfileCell.identifier) as? ProfileCell
                         else { fatalError() }
-                    
-                    cell.onData.onNext((item as? HabitItem ?? HabitItem(name: "error", ratio: 0, contributions: [])))
+                    cell.onData.onNext(item as? Profile ?? Profile(description: "description"))
+                    cell.bakeryButton.rx
+                        .tap
+                        .subscribe { _ in
+                            self.coordinator?.presentBakeryVC()
+                    }
+                    .disposed(by: self.bag)
                     return cell
                 } else if row  == totalRows - 1 {
                     guard let cell = tableView.dequeueReusableCell(
-                        withIdentifier: PlusButtonCell.identifier,
-                        for: IndexPath.init(row: row, section: 0)) as? PlusButtonCell
+                        withIdentifier: AddHabitCell.identifier) as? AddHabitCell
                         else { fatalError() }
                     
                     return cell
-                    
                 } else {
                     guard let cell = tableView.dequeueReusableCell(
-                        withIdentifier: HabitListCell.identifier,
-                        for: IndexPath.init(row: row, section: 0)) as? HabitListCell
+                        withIdentifier: HabitCell.identifier) as? HabitCell
                         else { fatalError() }
-                    cell.parentVC = self
                     cell.onData.onNext((item as? HabitItem ?? HabitItem(name: "error", ratio: 0, contributions: [])))
                     return cell
                 }
@@ -69,7 +65,9 @@ class HabitListViewController: UIViewController {
         
         tableView.rx
             .itemSelected.subscribe(onNext: { indexPath in
-                if indexPath.row == indexPath.count {
+                if indexPath.row == 0 {
+                    return
+                } else if indexPath.row == indexPath.count {
                     self.coordinator?.presentHabitAddVC()
                 } else {
                     self.coordinator?.presentHabitDetailVC()
@@ -80,27 +78,23 @@ class HabitListViewController: UIViewController {
 }
 
 // MARK: Detail func definition of VC
-extension HabitListViewController: Storyboarded, UITableViewDelegate {
+extension HabitListViewController: Storyboarded {
     
     func layout() {
-        tableView.rx
-            .setDelegate(self)
-            .disposed(by: self.bag)
-        
+        tableView.backgroundColor = UIColor(hex: 0xF5F4F1)
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 800
+        tableView.estimatedRowHeight = 66
         
-        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
-        let habitListCellNib = UINib(nibName: "HabitListCell", bundle: nil)
-        self.tableView.register(habitListCellNib, forCellReuseIdentifier: HabitListCell.identifier)
+        let habitCellNib = UINib(nibName: "HabitCell", bundle: nil)
+        self.tableView.register(habitCellNib, forCellReuseIdentifier: HabitCell.identifier)
         let profileCellNib = UINib(nibName: "ProfileCell", bundle: nil)
         self.tableView.register(profileCellNib, forCellReuseIdentifier: ProfileCell.identifier)
-        let plusButtonCellNib = UINib(nibName: "PlusButtonCell", bundle: nil)
-        self.tableView.register(plusButtonCellNib, forCellReuseIdentifier: PlusButtonCell.identifier)
+        let addHabitCellNib = UINib(nibName: "AddHabitCell", bundle: nil)
+        self.tableView.register(addHabitCellNib, forCellReuseIdentifier: AddHabitCell.identifier)
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 143
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 143
+//    }
 }
