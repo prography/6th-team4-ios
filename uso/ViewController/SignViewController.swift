@@ -119,6 +119,8 @@ class SignViewController: UIViewController {
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
         // Perform any operations when the user disconnects from app here.
         // ...
+        
+        
     }
 }
 
@@ -137,15 +139,23 @@ ASAuthorizationControllerDelegate, ASAuthorizationControllerPresentationContextP
         // TODO
         if let credential = authorization.credential as? ASAuthorizationAppleIDCredential {
             let userEmail = credential.email ?? ""
+            let authCode =  credential.authorizationCode as? String ?? ""
             let familyName = credential.fullName?.familyName ?? ""
             let givenName = credential.fullName?.givenName ?? ""
             let userIdentifier = credential.user
             let token = credential.identityToken
-            print(token)
-            print("userIdentifier", userIdentifier)
+            print("userIdentifier", credential.authorizationCode!)
             print("userEmail: ",userEmail)
             print("familyName: ",familyName)
             print("givenName: ",givenName)
+            let userID = UserID.init(name: UserName.init(lastName: givenName, firstName: ""))
+            let user = UserComponent.init(code: authCode, user: userID)
+            UserAPI.appleLoginRequest(user) { response in
+                
+                print(response)
+                
+                self.coordinator?.presentMainTabVC()
+            }
         }
     }
     

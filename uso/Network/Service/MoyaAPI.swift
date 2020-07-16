@@ -21,6 +21,7 @@ enum MoyaAPI {
     case fetchSetting
     case postHabit(_ title: String, _  category: String,
         _  description: String?, _  dayOfWeek: String, _  alarmTime: String?)
+    case appleLogin(comp: UserComponent)
 }
 
 extension MoyaAPI: TargetType {
@@ -38,12 +39,16 @@ extension MoyaAPI: TargetType {
             return "/users"
         case .postHabit( _, _, _, _, _):
             return "/habits"
+        case .appleLogin:
+            return "/oauth/apple/verify"
         }
     }
     
     var method: Moya.Method {
         switch self {
         case .postHabit( _, _, _, _, _):
+            return .post
+        case .appleLogin:
             return .post
         default:
             return .get
@@ -59,6 +64,8 @@ extension MoyaAPI: TargetType {
         case .postHabit(let title, let category, let description, let dayOfWeek, let alarmTime):
             return .requestParameters(parameters: ["title" : title, "category" : category,
                                                    "description" : description, "dayOfWeek" : dayOfWeek, "alarmTime" : alarmTime], encoding: JSONEncoding.default)
+        case .appleLogin(let comp):
+            return .requestJSONEncodable(comp)
         default:
             return .requestPlain
         }
@@ -71,4 +78,17 @@ extension MoyaAPI: TargetType {
     var headers: [String: String]? {
         return ["Authorization": "Bearer "+token]
     }
+}
+
+struct UserComponent: Encodable {
+    let code: String
+    let user: UserID
+}
+struct UserID : Encodable {
+    let name: UserName
+}
+
+struct UserName: Encodable {
+    let lastName: String
+    let firstName: String
 }
