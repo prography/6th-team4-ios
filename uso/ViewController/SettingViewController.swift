@@ -44,7 +44,7 @@ class SettingViewController: UIViewController {
 // MARK: Detail func definition of VC
 extension SettingViewController: Storyboarded {
     func layout() {
-        tableView.layer.addBorder([.top], color: UIColor.lightGray, width: 0.6)
+//        tableView.layer.addBorder([.top], color: UIColor.lightGray, width: 0.6)
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 66
         

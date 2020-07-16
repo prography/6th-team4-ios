@@ -132,10 +132,11 @@ class HabitAddViewController: UIViewController, UITextFieldDelegate {
 
 extension HabitAddViewController: Storyboarded {
     func layout() {
-        self.view.backgroundColor = UIColor(hex: 0xF5F4F1)
         breadNameField.addBorderBottom(width: breadNameField.bounds.width, height: 1, color: UIColor.lightGray)
         descriptionField.addBorderBottom(width: breadNameField.bounds.width, height: 1, color: UIColor.lightGray)
         dayViewArr.forEach {
+            $0.layer.borderWidth = 1
+            $0.layer.borderColor = UIColor(hex: 0x787877).cgColor
             $0.backgroundColor = UIColor.white
             $0.layer.cornerRadius = $0.bounds.width/2
         }

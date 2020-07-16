@@ -32,6 +32,7 @@ class RankingItemTableViewCell: UITableViewCell {
             .subscribe(onNext: { [weak self] ranking in
                 if ranking.rank == "1" {
                     self?.crownImage.isHidden = false
+                    self?.crownImage.image = UIImage(named: "gold_crown")
                 } else if ranking.rank == "2" {
                     self?.crownImage.isHidden = false
                     self?.crownImage.image = UIImage(named: "silver_crown")
@@ -57,6 +58,7 @@ class RankingItemTableViewCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        crownImage.isHidden = true
         bag = DisposeBag()
     }
     

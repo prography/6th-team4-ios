@@ -55,6 +55,7 @@ class MainCoordinator: Coordinator {
     func presentBakeryVC() {
         let viewController = BakeryViewController.instantiate()
         viewController.coordinator = self
+        navigationController.navigationBar.isHidden = false
         navigationController.pushViewController(viewController, animated: true)
     }
     

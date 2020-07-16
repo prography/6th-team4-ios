@@ -35,7 +35,6 @@
 		1874820524612803004A40DE /* ResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874820424612803004A40DE /* ResponseStatus.swift */; };
 		18748207246129E7004A40DE /* HabitItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18748206246129E7004A40DE /* HabitItem.swift */; };
 		18748209246129F0004A40DE /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18748208246129F0004A40DE /* Habit.swift */; };
-		1874820C24612BC0004A40DE /* PlusButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1874820A24612BC0004A40DE /* PlusButtonCell.swift */; };
 		1882372124579B33002C523E /* MainTabViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1882372024579B33002C523E /* MainTabViewController.storyboard */; };
 		1882372524579CEE002C523E /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882372424579CEE002C523E /* MainTabViewController.swift */; };
 		1882372724579DDA002C523E /* HabitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882372624579DDA002C523E /* HabitListViewController.swift */; };
@@ -43,8 +42,6 @@
 		1882372D24579E13002C523E /* RankingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1882372C24579E13002C523E /* RankingViewController.storyboard */; };
 		1882372F24579E23002C523E /* HabitListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1882372E24579E23002C523E /* HabitListViewController.storyboard */; };
 		18CB4FCD245AB81100FD6651 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 18CB4FCC245AB81100FD6651 /* .swiftlint.yml */; };
-		18F6663E24611B5400499CBC /* HabitListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6663C24611B5400499CBC /* HabitListCell.swift */; };
-		18F6663F24611B5400499CBC /* HabitListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F6663D24611B5400499CBC /* HabitListCell.xib */; };
 		18F6664224611D9200499CBC /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6664024611D9200499CBC /* ProfileCell.swift */; };
 		18F6664324611D9200499CBC /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F6664124611D9200499CBC /* ProfileCell.xib */; };
 		18F666452461244400499CBC /* HabitListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F666442461244400499CBC /* HabitListUseCase.swift */; };
@@ -61,11 +58,12 @@
 		388F7AA3248A29A100A9E123 /* MoyaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7AA2248A29A100A9E123 /* MoyaAPI.swift */; };
 		388F7AA5248A2A6600A9E123 /* CALayer+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F7AA4248A2A6600A9E123 /* CALayer+Border.swift */; };
 		388F7AAD248A322C00A9E123 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 388F7AAC248A322C00A9E123 /* SettingViewController.storyboard */; };
+		38925DF224BF2CBF0036C69C /* HabitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38925DF024BF2CBF0036C69C /* HabitCell.swift */; };
+		38925DF324BF2CBF0036C69C /* HabitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38925DF124BF2CBF0036C69C /* HabitCell.xib */; };
 		38A3E86224A731480097E7FA /* RankingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3E86124A731480097E7FA /* RankingRepository.swift */; };
 		38A3E86424A731A30097E7FA /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3E86324A731A30097E7FA /* ViewModelType.swift */; };
 		38E70E0924B2108100C1721D /* RankingItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1249248A1397005B0C05 /* RankingItemTableViewCell.xib */; };
 		38E70E0A24B2108400C1721D /* MyRankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387D1247248A1396005B0C05 /* MyRankingTableViewCell.xib */; };
-		9C07E6EC2467CFD400F87838 /* PlusButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C07E6EB2467CFD400F87838 /* PlusButtonCell.xib */; };
 		9C2275FD246FAAFC00DF5911 /* BakeryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2275FC246FAAFC00DF5911 /* BakeryRepository.swift */; };
 		9C2275FF246FAB3A00DF5911 /* HabitAddRepsitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2275FE246FAB3A00DF5911 /* HabitAddRepsitory.swift */; };
 		9C227601246FAD3400DF5911 /* HabitAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C227600246FAD3400DF5911 /* HabitAddViewController.swift */; };
@@ -140,7 +138,6 @@
 		1874820424612803004A40DE /* ResponseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStatus.swift; sourceTree = "<group>"; };
 		18748206246129E7004A40DE /* HabitItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitItem.swift; sourceTree = "<group>"; };
 		18748208246129F0004A40DE /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
-		1874820A24612BC0004A40DE /* PlusButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButtonCell.swift; sourceTree = "<group>"; };
 		1882372024579B33002C523E /* MainTabViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabViewController.storyboard; sourceTree = "<group>"; };
 		1882372424579CEE002C523E /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		1882372624579DDA002C523E /* HabitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListViewController.swift; sourceTree = "<group>"; };
@@ -148,8 +145,6 @@
 		1882372C24579E13002C523E /* RankingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RankingViewController.storyboard; sourceTree = "<group>"; };
 		1882372E24579E23002C523E /* HabitListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitListViewController.storyboard; sourceTree = "<group>"; };
 		18CB4FCC245AB81100FD6651 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		18F6663C24611B5400499CBC /* HabitListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListCell.swift; sourceTree = "<group>"; };
-		18F6663D24611B5400499CBC /* HabitListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitListCell.xib; sourceTree = "<group>"; };
 		18F6664024611D9200499CBC /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		18F6664124611D9200499CBC /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		18F666442461244400499CBC /* HabitListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListUseCase.swift; sourceTree = "<group>"; };
@@ -171,6 +166,8 @@
 		388F7AA2248A29A100A9E123 /* MoyaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaAPI.swift; sourceTree = "<group>"; };
 		388F7AA4248A2A6600A9E123 /* CALayer+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Border.swift"; sourceTree = "<group>"; };
 		388F7AAC248A322C00A9E123 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
+		38925DF024BF2CBF0036C69C /* HabitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCell.swift; sourceTree = "<group>"; };
+		38925DF124BF2CBF0036C69C /* HabitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitCell.xib; sourceTree = "<group>"; };
 		38A3E86124A731480097E7FA /* RankingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingRepository.swift; sourceTree = "<group>"; };
 		38A3E86324A731A30097E7FA /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		4A3AC7C8FD7C0F1A1EF65293 /* Pods-uso_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso_ios.release.xcconfig"; path = "Target Support Files/Pods-uso_ios/Pods-uso_ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,7 +177,6 @@
 		7440281B8358D1DB3A274291 /* Pods-uso-usoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso-usoUITests.debug.xcconfig"; path = "Target Support Files/Pods-uso-usoUITests/Pods-uso-usoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8811C256C820F8643C061922 /* Pods-usoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-usoTests.debug.xcconfig"; path = "Target Support Files/Pods-usoTests/Pods-usoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D473F0558E305B2D24B9D05 /* Pods-uso-usoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uso-usoUITests.release.xcconfig"; path = "Target Support Files/Pods-uso-usoUITests/Pods-uso-usoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		9C07E6EB2467CFD400F87838 /* PlusButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlusButtonCell.xib; sourceTree = "<group>"; };
 		9C2275FC246FAAFC00DF5911 /* BakeryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryRepository.swift; sourceTree = "<group>"; };
 		9C2275FE246FAB3A00DF5911 /* HabitAddRepsitory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitAddRepsitory.swift; sourceTree = "<group>"; };
 		9C227600246FAD3400DF5911 /* HabitAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitAddViewController.swift; sourceTree = "<group>"; };
@@ -455,12 +451,10 @@
 		18F6663B24611ADE00499CBC /* HabitList */ = {
 			isa = PBXGroup;
 			children = (
-				18F6663C24611B5400499CBC /* HabitListCell.swift */,
-				18F6663D24611B5400499CBC /* HabitListCell.xib */,
 				18F6664024611D9200499CBC /* ProfileCell.swift */,
 				18F6664124611D9200499CBC /* ProfileCell.xib */,
-				1874820A24612BC0004A40DE /* PlusButtonCell.swift */,
-				9C07E6EB2467CFD400F87838 /* PlusButtonCell.xib */,
+				38925DF024BF2CBF0036C69C /* HabitCell.swift */,
+				38925DF124BF2CBF0036C69C /* HabitCell.xib */,
 				9C910CAE24A704780018E16B /* AddHabitCell.swift */,
 				9C910CAF24A704780018E16B /* AddHabitCell.xib */,
 			);
@@ -662,9 +656,7 @@
 				18CB4FCD245AB81100FD6651 /* .swiftlint.yml in Resources */,
 				1882372D24579E13002C523E /* RankingViewController.storyboard in Resources */,
 				38E70E0A24B2108400C1721D /* MyRankingTableViewCell.xib in Resources */,
-				18F6663F24611B5400499CBC /* HabitListCell.xib in Resources */,
 				388BDAA624BDBE2200E8796E /* MySettingTableViewCell.xib in Resources */,
-				9C07E6EC2467CFD400F87838 /* PlusButtonCell.xib in Resources */,
 				9CA8AD332489F63E00859CA6 /* HabitDetailViewController.storyboard in Resources */,
 				1882372124579B33002C523E /* MainTabViewController.storyboard in Resources */,
 				1882372F24579E23002C523E /* HabitListViewController.storyboard in Resources */,
@@ -672,6 +664,7 @@
 				388F7AAD248A322C00A9E123 /* SettingViewController.storyboard in Resources */,
 				9C227605246FAD5900DF5911 /* HabitAddViewController.storyboard in Resources */,
 				38E70E0924B2108100C1721D /* RankingItemTableViewCell.xib in Resources */,
+				38925DF324BF2CBF0036C69C /* HabitCell.xib in Resources */,
 				9C910CB124A704780018E16B /* AddHabitCell.xib in Resources */,
 				18F6664324611D9200499CBC /* ProfileCell.xib in Resources */,
 				9C227607246FAD6A00DF5911 /* BakeryViewController.storyboard in Resources */,
@@ -869,7 +862,6 @@
 				3859DDE0245D5EA400C799BF /* RankingUseCase.swift in Sources */,
 				185D2A5A2446C54200A09E99 /* UIColorExtension.swift in Sources */,
 				1861430524583F49007151A0 /* RankingViewModel.swift in Sources */,
-				1874820C24612BC0004A40DE /* PlusButtonCell.swift in Sources */,
 				388F7AA3248A29A100A9E123 /* MoyaAPI.swift in Sources */,
 				18F6664224611D9200499CBC /* ProfileCell.swift in Sources */,
 				18748209246129F0004A40DE /* Habit.swift in Sources */,
@@ -889,7 +881,6 @@
 				18748207246129E7004A40DE /* HabitItem.swift in Sources */,
 				185D2A542446C40000A09E99 /* Model.swift in Sources */,
 				1882372724579DDA002C523E /* HabitListViewController.swift in Sources */,
-				18F6663E24611B5400499CBC /* HabitListCell.swift in Sources */,
 				185D2A502446C3E000A09E99 /* SignViewModel.swift in Sources */,
 				387B599924B96F8800FDD7DC /* AddHabitAPI.swift in Sources */,
 				9CA8AD2E2489F55600859CA6 /* PopUp.swift in Sources */,
@@ -901,6 +892,7 @@
 				9CE11BD4247A2CC900F6EAC1 /* UIViewExtension.swift in Sources */,
 				9C227603246FAD4400DF5911 /* BakeryViewController.swift in Sources */,
 				18F666452461244400499CBC /* HabitListUseCase.swift in Sources */,
+				38925DF224BF2CBF0036C69C /* HabitCell.swift in Sources */,
 				1874820524612803004A40DE /* ResponseStatus.swift in Sources */,
 				9C7B4B3124713A68007B21DA /* HabitAPI.swift in Sources */,
 				38A3E86424A731A30097E7FA /* ViewModelType.swift in Sources */,

@@ -12,7 +12,7 @@ import RxCocoa
 
 class ProfileCell: UITableViewCell {
     static let identifier = "ProfileCell"
-    @IBOutlet weak var profileView: UIView!
+    @IBOutlet weak var bakeryButton: UIButton!
     @IBOutlet weak var descriptionLabel: UILabel!
     
     let onData: AnyObserver<Profile>
@@ -34,12 +34,20 @@ class ProfileCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        layout()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
+    }
+    
+    func layout() {
+        self.contentView.backgroundColor = UIColor(hex: 0xF5F4F1)
+        bakeryButton.backgroundColor = UIColor.systemBackground
+        bakeryButton.layer.cornerRadius = bakeryButton.bounds.width/2
+        bakeryButton.layer.borderWidth = 1
+        bakeryButton.layer.borderColor = UIColor(hex: 0x787877).cgColor
     }
     
 }
