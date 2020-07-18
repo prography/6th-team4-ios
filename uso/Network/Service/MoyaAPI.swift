@@ -11,7 +11,9 @@ import Moya
 import RxSwift
 
 //임시 토큰
-let token = "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsImlhdCI6MTU5MTg4MDg3NX0.43cddF2LE7YmhNYAC5uWCNKUgE28RaZ49ZTm9erXhsO_s41cXkHaKUP1OU78jbcn"
+class Token {
+    static var token = "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsImlhdCI6MTU5MTg4MDg3NX0.43cddF2LE7YmhNYAC5uWCNKUgE28RaZ49ZTm9erXhsO_s41cXkHaKUP1OU78jbcn"
+}
 
 let moyaProvider = MoyaProvider<MoyaAPI>()
 
@@ -72,11 +74,17 @@ extension MoyaAPI: TargetType {
     }
     
     var validationType: Moya.ValidationType {
-        return .successAndRedirectCodes
+            return .successAndRedirectCodes
     }
     
     var headers: [String: String]? {
-        return ["Authorization": "Bearer "+token]
+        switch self {
+        case .appleLogin:
+            return ["Content-Type": "application/json"]
+        default:
+            return ["Authorization": "Bearer "+Token.token]
+        }
+        
     }
 }
 

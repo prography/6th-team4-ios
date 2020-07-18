@@ -41,7 +41,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aB2-VR-WOC">
                                 <rect key="frame" x="0.0" y="363" width="414" height="533"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aek-Hg-Kia" customClass="FSCalendar" customModule="uso" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aek-Hg-Kia" customClass="FSCalendar">
                                         <rect key="frame" x="15" y="30" width="384" height="300"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="jSo-7y-JFh"/>

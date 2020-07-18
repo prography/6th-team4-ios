@@ -12,7 +12,12 @@ import Moya
 
 struct ResponseToken: Decodable {
     let accessToken: String
-    let isNewUser: String
+    let isNewUser: Bool
+    
+    enum CodingKeys: String, CodingKey {
+        case accessToken
+        case isNewUser
+    }
 }
 
 class UserAPI {
@@ -21,15 +26,22 @@ class UserAPI {
     }
     
     static func appleLoginRequest(_ user: UserComponent, _ completion: @escaping (ResponseToken?) -> Void) {
+        
         moyaProvider.request(.appleLogin(comp: user)) { response in
+            
             switch response {
+                
             case .success(let value):
+                print("done  ", String(decoding: value.data, as: UTF8.self))
                 if let result = try? value.map(ResponseToken.self) {
+                    
                         completion(result)
                 } else {
+                    
                     completion(nil)
                 }
             case .failure(let error):
+                
                 print(error.localizedDescription)
             }
         }
