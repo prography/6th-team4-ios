@@ -32,10 +32,9 @@ class SignViewController: UIViewController {
     // 버튼 먹게 한다음에 client or reserved id 를 맞춰준다면
     // 기본 로직은 맞다고 보면 된다.
     
-    
-    
     // Use delegate pattern for using coordinator from VC
     // ViewModel should be set from coordinator
+    
     weak var coordinator: MainCoordinator?
     var viewModel: SignViewBindable!
     let bag = DisposeBag()
@@ -50,32 +49,6 @@ class SignViewController: UIViewController {
     
     // Collection of view model binded data
     private func bind() {
-        viewModel.number
-            .map { String($0) }
-            .bind(to: numberLabel.rx.text)
-            .disposed(by: bag)
-        
-        plusButton.rx
-            .tap
-            .subscribe { _ in
-                do {
-                    let val = try self.viewModel.number.value()
-                    GIDSignIn.sharedInstance()?.signIn()
-                    
-                } catch {
-                    print(UsoError.getRepositoryError)
-                }
-        }.disposed(by: bag)
-        
-        minusButton.rx
-            .tap
-            .subscribe { _ in
-                do {
-                     GIDSignIn.sharedInstance()?.signIn()
-                } catch {
-                    print(UsoError.getRepositoryError)
-                }
-        }.disposed(by: bag)
     }
     
     // Layout definition of RootVC
@@ -90,12 +63,6 @@ class SignViewController: UIViewController {
         
         appleLoginBtn.addTarget(self, action: #selector(appleLogin), for: .touchUpInside)
         
-        navigateButton.rx
-            .tap
-            .subscribe { _ in
-                self.coordinator?.presentMainTabVC()
-        }
-        .disposed(by: bag)
     }
     
     @objc fileprivate func appleLogin() {
@@ -137,15 +104,24 @@ ASAuthorizationControllerDelegate, ASAuthorizationControllerPresentationContextP
         // TODO
         if let credential = authorization.credential as? ASAuthorizationAppleIDCredential {
             let userEmail = credential.email ?? ""
+            let authCode = String(decoding: credential.authorizationCode!, as: UTF8.self)
             let familyName = credential.fullName?.familyName ?? ""
             let givenName = credential.fullName?.givenName ?? ""
             let userIdentifier = credential.user
             let token = credential.identityToken
-            print(token)
-            print("userIdentifier", userIdentifier)
+            
+            print("userIdentifier", credential.authorizationCode!)
             print("userEmail: ",userEmail)
             print("familyName: ",familyName)
             print("givenName: ",givenName)
+            let userID = UserID.init(name: UserName.init(lastName: givenName, firstName: ""))
+            
+            let user = UserComponent.init(code: authCode, user: userID)
+            UserAPI.appleLoginRequest(user) { response in
+                print("reponse: ",response)
+                Token.token = String((response?.accessToken ?? nil)!)
+                self.coordinator?.presentMainTabVC()
+            }
         }
     }
     
